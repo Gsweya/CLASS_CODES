@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { DataStructure } from '../../base/StructureInterface';
 import { GuideContent } from '../../base/types';
 import LinkedListVisualization from '../../../components/linked_list/LinkedListVisualization';
@@ -15,6 +15,9 @@ import ExplainLikeImFive from '../../../components/linked_list/ExplainLikeImFive
 import LineByLineExplanation from '../../../components/linked_list/LineByLineExplanation';
 import BigONotation from '../../../components/linked_list/BigONotation';
 import LinkedListSorting from '../../../components/linked_list/LinkedListSorting';
+import NavigationSidebar from '../../../components/shared/NavigationSidebar';
+import SiteMap from '../../../components/shared/SiteMap';
+import SectionHeader from '../../../components/shared/SectionHeader';
 import SettingsPanel from '../../../components/shared/SettingsPanel';
 import Icon from '../../../components/shared/Icon';
 import { useTheme } from '../../../contexts/ThemeContext';
@@ -38,6 +41,8 @@ const LinkedListComponent: React.FC = () => {
   const [showLearningMode, setShowLearningMode] = useState(false);
   const [showELI5, setShowELI5] = useState(false);
   const [showLineByLine, setShowLineByLine] = useState(false);
+  const [currentSection, setCurrentSection] = useState<string>('overview');
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const [state, setState] = useState<ExecutionState>({
     head: null,
@@ -401,19 +406,78 @@ head = newNode;`;
     ? 'linear-gradient(135deg, #0a0a0f 0%, #1a1a25 50%, #0f0f15 100%)'
     : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
 
+  const handleNavigate = useCallback((sectionId: string) => {
+    setCurrentSection(sectionId);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    const sections = [
+      'overview', 'header',
+      'learning-mode', 'eli5', 'line-by-line', 'educational-content', 'code-examples',
+      'operations', 'challenges', 'code-editor', 'visualization',
+      'sorting', 'big-o-notation', 'search-algorithm',
+      'references', 'traversal-guide'
+    ];
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section) {
+          const sectionTop = section.offsetTop;
+          if (scrollPosition >= sectionTop) {
+            setCurrentSection(sections[i]);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div style={{ 
       minHeight: '100vh',
       background: bgGradient,
-      padding: '20px',
-      fontFamily: uiFont
+      fontFamily: uiFont,
+      display: 'flex'
     }}>
-      <SettingsPanel />
+      <NavigationSidebar 
+        currentSection={currentSection}
+        onNavigate={handleNavigate}
+        isOpen={sidebarOpen}
+        onToggle={() => setSidebarOpen(!sidebarOpen)}
+      />
+      <SiteMap onNavigate={handleNavigate} />
+      
       <div style={{ 
-        maxWidth: '1600px', 
-        margin: '0 auto',
+        flex: 1,
+        padding: '20px',
+        marginLeft: sidebarOpen ? '280px' : '0',
+        transition: 'margin-left 0.3s ease',
+        width: sidebarOpen ? 'calc(100% - 280px)' : '100%'
       }}>
-        <header style={{ 
+        <SettingsPanel />
+        <div style={{ 
+          maxWidth: '1600px', 
+          margin: '0 auto',
+        }}>
+        <section id="overview">
+        <header id="header" style={{ 
           textAlign: 'center', 
           marginBottom: '30px',
           padding: '30px',
@@ -480,7 +544,12 @@ head = newNode;`;
             flexWrap: 'wrap'
           }}>
             <button
-              onClick={() => setShowLearningMode(!showLearningMode)}
+              onClick={() => {
+                setShowLearningMode(!showLearningMode);
+                if (!showLearningMode) {
+                  setTimeout(() => handleNavigate('learning-mode'), 100);
+                }
+              }}
               style={{
                 background: isDark ? 'rgba(74, 158, 255, 0.2)' : 'rgba(255, 255, 255, 0.25)',
                 border: `1px solid ${isDark ? 'rgba(74, 158, 255, 0.4)' : 'rgba(255, 255, 255, 0.4)'}`,
@@ -499,7 +568,12 @@ head = newNode;`;
               {showLearningMode ? 'Hide' : 'Show'} Learning Mode
             </button>
             <button
-              onClick={() => setShowELI5(!showELI5)}
+              onClick={() => {
+                setShowELI5(!showELI5);
+                if (!showELI5) {
+                  setTimeout(() => handleNavigate('eli5'), 100);
+                }
+              }}
               style={{
                 background: isDark ? 'rgba(255, 200, 100, 0.2)' : 'rgba(255, 255, 100, 0.3)',
                 border: `1px solid ${isDark ? 'rgba(255, 200, 100, 0.4)' : 'rgba(255, 255, 100, 0.5)'}`,
@@ -518,7 +592,12 @@ head = newNode;`;
               👶 {showELI5 ? 'Hide' : 'Show'} Explain Like I'm 5
             </button>
             <button
-              onClick={() => setShowLineByLine(!showLineByLine)}
+              onClick={() => {
+                setShowLineByLine(!showLineByLine);
+                if (!showLineByLine) {
+                  setTimeout(() => handleNavigate('line-by-line'), 100);
+                }
+              }}
               style={{
                 background: isDark ? 'rgba(150, 255, 150, 0.2)' : 'rgba(150, 255, 150, 0.3)',
                 border: `1px solid ${isDark ? 'rgba(150, 255, 150, 0.4)' : 'rgba(150, 255, 150, 0.5)'}`,
@@ -551,153 +630,216 @@ head = newNode;`;
             </div>
           </div>
         </header>
+        </section>
 
-        {showELI5 && (
-          <div style={{ marginBottom: '25px' }}>
+        <section id="learning-mode" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="learning-mode"
+            title="Step-by-Step Tutorial"
+            icon="📖"
+            description="Interactive guided learning with progressive steps"
+          />
+          {showLearningMode && (
+            <LearningMode 
+              onStep={handleLearningStep}
+              onReset={handleLearningReset}
+            />
+          )}
+        </section>
+
+        <section id="eli5" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="eli5"
+            title="Explain Like I'm 5"
+            icon="👶"
+            description="Simple, child-friendly explanations of complex concepts"
+          />
+          {showELI5 && (
             <ExplainLikeImFive />
-          </div>
-        )}
+          )}
+        </section>
 
-        {showLineByLine && (
-          <div style={{ marginBottom: '25px' }}>
+        <section id="line-by-line" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="line-by-line"
+            title="Line-by-Line Code Explanations"
+            icon="📝"
+            description="Hover over code lines to see detailed explanations"
+          />
+          {showLineByLine && (
             <LineByLineExplanation 
               code={sampleCode}
               explanations={lineExplanations}
               title="Insert at Beginning - Line by Line"
             />
+          )}
+        </section>
+
+        <section id="educational-content" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="educational-content"
+            title="Educational Concepts & Code Examples"
+            icon="📚"
+            description="Learn through analogies, use cases, and complete code implementations"
+          />
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
+            gap: '20px',
+            marginTop: '20px'
+          }}>
+            <EducationalContent />
+            <div id="code-examples">
+              <CodeExamples />
+            </div>
           </div>
-        )}
+        </section>
 
-        {showLearningMode && (
-          <div style={{ marginBottom: '25px' }}>
-            <LearningMode 
-              onStep={handleLearningStep}
-              onReset={handleLearningReset}
-            />
-          </div>
-        )}
-
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
-          gap: '20px',
-          marginBottom: '25px'
-        }}>
-          <EducationalContent />
-          <CodeExamples />
-        </div>
-
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
-          gap: '20px',
-          marginBottom: '25px'
-        }}>
-          <div>
-            <ChallengePanel
-              currentChallenge={currentChallenge}
-              onStartChallenge={handleStartChallenge}
-              score={score}
-            />
-            
-            <OperationButtons
-              onCreateList={createList}
-              onInsertBeginning={insertBeginning}
-              onInsertEnd={insertEnd}
-              onInsertMiddle={insertMiddle}
-              onDelete={deleteNode}
-              onTraverse={traverse}
-              onSearch={search}
-              onDemonstrateWrong={demonstrateWrong}
-              onShowCode={handleShowCode}
-            />
-          </div>
-
-          <div>
-            <CodeEditor
-              onExecute={handleExecute}
-              onClear={handleClear}
-            />
-            
-            {operationCode && (
-              <div style={{
-                background: isDark ? 'rgba(74, 158, 255, 0.15)' : '#E3F2FD',
-                padding: '15px',
-                borderRadius: '12px',
-                margin: '20px 0',
-                border: `2px solid ${isDark ? 'rgba(74, 158, 255, 0.4)' : '#2196F3'}`
-              }}>
-                <h4 style={{ 
-                  color: isDark ? '#4a9eff' : '#1976D2', 
-                  marginBottom: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
-                  <Icon name="code" size={18} color={isDark ? '#4a9eff' : '#1976D2'} />
-                  Operation Code Executed
-                </h4>
-                <p style={{ color: isDark ? '#c0c0c0' : '#666', fontSize: '13px', marginBottom: '10px' }}>
-                  {operationDescription}
-                </p>
-                <pre style={{
-                  margin: 0,
-                  fontFamily: 'var(--code-font)',
-                  fontSize: '13px',
-                  color: isDark ? '#e0e0e0' : '#212529',
-                  background: isDark ? '#1a1a1f' : 'white',
-                  padding: '15px',
-                  borderRadius: '8px',
-                  overflowX: 'auto',
-                  border: `1px solid ${isDark ? '#333' : '#dee2e6'}`,
-                  lineHeight: '1.6'
-                }}>
-                  {operationCode}
-                </pre>
+        <section id="operations" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="operations"
+            title="Interactive Operations & Code Editor"
+            icon="⚡"
+            description="Practice operations and write C++ code interactively"
+          />
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', 
+            gap: '20px',
+            marginTop: '20px'
+          }}>
+            <div>
+              <div id="challenges">
+                <ChallengePanel
+                  currentChallenge={currentChallenge}
+                  onStartChallenge={handleStartChallenge}
+                  score={score}
+                />
               </div>
-            )}
-            
-            <ExplanationPanel
-              explanation={currentExplanation}
-              error={currentError}
-              warning={currentWarning}
+              
+              <OperationButtons
+                onCreateList={createList}
+                onInsertBeginning={insertBeginning}
+                onInsertEnd={insertEnd}
+                onInsertMiddle={insertMiddle}
+                onDelete={deleteNode}
+                onTraverse={traverse}
+                onSearch={search}
+                onDemonstrateWrong={demonstrateWrong}
+                onShowCode={handleShowCode}
+              />
+            </div>
+
+            <div id="code-editor">
+              <CodeEditor
+                onExecute={handleExecute}
+                onClear={handleClear}
+              />
+              
+              {operationCode && (
+                <div style={{
+                  background: isDark ? 'rgba(74, 158, 255, 0.15)' : '#E3F2FD',
+                  padding: '15px',
+                  borderRadius: '12px',
+                  margin: '20px 0',
+                  border: `2px solid ${isDark ? 'rgba(74, 158, 255, 0.4)' : '#2196F3'}`
+                }}>
+                  <h4 style={{ 
+                    color: isDark ? '#4a9eff' : '#1976D2', 
+                    marginBottom: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}>
+                    <Icon name="code" size={18} color={isDark ? '#4a9eff' : '#1976D2'} />
+                    Operation Code Executed
+                  </h4>
+                  <p style={{ color: isDark ? '#c0c0c0' : '#666', fontSize: '13px', marginBottom: '10px' }}>
+                    {operationDescription}
+                  </p>
+                  <pre style={{
+                    margin: 0,
+                    fontFamily: 'var(--code-font)',
+                    fontSize: '13px',
+                    color: isDark ? '#e0e0e0' : '#212529',
+                    background: isDark ? '#1a1a1f' : 'white',
+                    padding: '15px',
+                    borderRadius: '8px',
+                    overflowX: 'auto',
+                    border: `1px solid ${isDark ? '#333' : '#dee2e6'}`,
+                    lineHeight: '1.6'
+                  }}>
+                    {operationCode}
+                  </pre>
+                </div>
+              )}
+              
+              <ExplanationPanel
+                explanation={currentExplanation}
+                error={currentError}
+                warning={currentWarning}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="visualization" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="visualization"
+            title="Visualization & References"
+            icon="👁️"
+            description="Live visual representation of the linked list structure"
+          />
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '2fr 1fr',
+            gap: '20px',
+            marginTop: '20px'
+          }}>
+            <LinkedListVisualization
+              state={state}
+              allNodes={allNodes}
+              pointerColors={POINTER_COLORS}
             />
+            <div>
+              <div id="references" style={{ scrollMarginTop: '100px' }}>
+                <References />
+              </div>
+              <div id="traversal-guide" style={{ marginTop: '20px', scrollMarginTop: '100px' }}>
+                <TraversalGuide onStepTraverse={traverse} />
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '2fr 1fr',
-          gap: '20px',
-          marginBottom: '25px'
-        }}>
-          <LinkedListVisualization
-            state={state}
-            allNodes={allNodes}
-            pointerColors={POINTER_COLORS}
+        <section id="sorting" style={{ scrollMarginTop: '100px', marginBottom: '40px' }}>
+          <SectionHeader 
+            id="sorting"
+            title="Algorithms & Complexity Analysis"
+            icon="🔄"
+            description="Sorting algorithms and Big O notation complexity analysis"
           />
-          <div>
-            <References />
-            <TraversalGuide onStepTraverse={traverse} />
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '20px',
+            marginTop: '20px'
+          }}>
+            <div id="big-o-notation" style={{ scrollMarginTop: '100px' }}>
+              <BigONotation />
+            </div>
+            <div id="search-algorithm" style={{ scrollMarginTop: '100px' }}>
+            <LinkedListSorting
+              listNodes={allNodes}
+              currentHead={state.head}
+              onUpdateList={(nodes, head) => {
+                setAllNodes(nodes);
+                setState(prev => ({ ...prev, head }));
+              }}
+            />
+            </div>
           </div>
-        </div>
-
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '20px',
-          marginBottom: '25px'
-        }}>
-          <BigONotation />
-          <LinkedListSorting
-            listNodes={allNodes}
-            currentHead={state.head}
-            onUpdateList={(nodes, head) => {
-              setAllNodes(nodes);
-              setState(prev => ({ ...prev, head }));
-            }}
-          />
-        </div>
+        </section>
 
         <footer style={{ 
           textAlign: 'center', 
@@ -711,7 +853,8 @@ head = newNode;`;
         }}>
           <p>Step {state.stepNumber} | Nodes: {allNodes.size} | Lost Nodes: {state.lostNodes.size}</p>
         </footer>
-      </div>
+        </div>
+        </div>
     </div>
   );
 };
