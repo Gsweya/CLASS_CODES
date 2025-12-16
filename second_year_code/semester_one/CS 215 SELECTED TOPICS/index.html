@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DFA/NFA Designer - CS 215 Selected Topics</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: #f5f5f5;
+		}
+
+		.container {
+			display: flex;
+			height: 100vh;
+		}
+
+		.sidebar {
+			width: 350px;
+			background: white;
+			border-right: 1px solid #ddd;
+			overflow-y: auto;
+			padding: 20px;
+		}
+
+		.main-content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.toolbar {
+			background: #2196F3;
+			color: white;
+			padding: 15px;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.btn {
+			padding: 8px 16px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+			background: rgba(255, 255, 255, 0.2);
+			color: white;
+			transition: background 0.3s;
+		}
+
+		.btn:hover {
+			background: rgba(255, 255, 255, 0.3);
+		}
+
+		.btn.active {
+			background: white;
+			color: #2196F3;
+		}
+
+		#nfaModeBtn {
+			background: #4CAF50;
+		}
+
+		.canvas-container {
+			flex: 1;
+			position: relative;
+			background: white;
+		}
+
+		#canvas {
+			display: block;
+			cursor: crosshair;
+		}
+
+		.section {
+			margin-bottom: 25px;
+		}
+
+		.section h2 {
+			color: #2196F3;
+			font-size: 20px;
+			margin-bottom: 10px;
+			border-bottom: 2px solid #2196F3;
+			padding-bottom: 5px;
+		}
+
+		.section h3 {
+			color: #333;
+			font-size: 16px;
+			margin-top: 15px;
+			margin-bottom: 8px;
+		}
+
+		.section p {
+			color: #666;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+
+		.section ul, .section ol {
+			margin-left: 20px;
+			margin-bottom: 10px;
+			color: #666;
+		}
+
+		.section li {
+			margin-bottom: 5px;
+		}
+
+		.example-box {
+			background: #f9f9f9;
+			border-left: 4px solid #2196F3;
+			padding: 12px;
+			margin: 10px 0;
+			border-radius: 4px;
+		}
+
+		.example-box strong {
+			color: #2196F3;
+		}
+
+		.code {
+			background: #2d2d2d;
+			color: #f8f8f2;
+			padding: 10px;
+			border-radius: 4px;
+			font-family: 'Courier New', monospace;
+			margin: 10px 0;
+			overflow-x: auto;
+		}
+
+		.grade-btn {
+			background: #FF9800;
+			color: white;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 100%;
+			margin-top: 15px;
+		}
+
+		.grade-btn:hover {
+			background: #F57C00;
+		}
+
+		.grade-result {
+			margin-top: 15px;
+			padding: 15px;
+			border-radius: 4px;
+			display: none;
+		}
+
+		.grade-result.show {
+			display: block;
+		}
+
+		.grade-result.success {
+			background: #d4edda;
+			border: 1px solid #c3e6cb;
+			color: #155724;
+		}
+
+		.grade-result.warning {
+			background: #fff3cd;
+			border: 1px solid #ffeaa7;
+			color: #856404;
+		}
+
+		.grade-result.error {
+			background: #f8d7da;
+			border: 1px solid #f5c6cb;
+			color: #721c24;
+		}
+
+		.tab-buttons {
+			display: flex;
+			gap: 5px;
+			margin-bottom: 15px;
+			border-bottom: 2px solid #ddd;
+		}
+
+		.tab-btn {
+			padding: 10px 15px;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			color: #666;
+			border-bottom: 2px solid transparent;
+			margin-bottom: -2px;
+		}
+
+		.tab-btn.active {
+			color: #2196F3;
+			border-bottom-color: #2196F3;
+		}
+
+		.tab-content {
+			display: none;
+		}
+
+		.tab-content.active {
+			display: block;
+		}
+
+		.instructions {
+			background: #e3f2fd;
+			padding: 15px;
+			border-radius: 4px;
+			margin-bottom: 15px;
+		}
+
+		.instructions h4 {
+			color: #1976D2;
+			margin-bottom: 8px;
+		}
+
+		.instructions ul {
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="tab-buttons">
+				<button class="tab-btn active" onclick="showTab('learn')">Learn</button>
+				<button class="tab-btn" onclick="showTab('examples')">Examples</button>
+				<button class="tab-btn" onclick="showTab('grader')">Grader</button>
+			</div>
+
+			<div id="learnTab" class="tab-content active">
+				<div class="section">
+					<h2>Finite Automata</h2>
+					<p>Finite automata are computational models used to recognize patterns in strings. They consist of states, transitions, and an alphabet.</p>
+				</div>
+
+				<div class="section">
+					<h2>DFA (Deterministic Finite Automaton)</h2>
+					<h3>Definition</h3>
+					<p>A DFA is a finite automaton where for each state and input symbol, there is exactly one transition to a next state.</p>
+					
+					<h3>Properties</h3>
+					<ul>
+						<li>Each transition is deterministic (exactly one next state)</li>
+						<li>No epsilon transitions</li>
+						<li>Each state has exactly one transition for each input symbol</li>
+						<li>Represented by solid lines in diagrams</li>
+					</ul>
+
+					<div class="example-box">
+						<strong>Example:</strong> A DFA that accepts strings ending with "01"
+						<ul>
+							<li>States: q0 (start), q1, q2 (accept)</li>
+							<li>On '0': q0→q1, q1→q1, q2→q1</li>
+							<li>On '1': q0→q0, q1→q2, q2→q0</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section">
+					<h2>NFA (Nondeterministic Finite Automaton)</h2>
+					<h3>Definition</h3>
+					<p>An NFA is a finite automaton where a state can have zero, one, or multiple transitions for the same input symbol.</p>
+					
+					<h3>Properties</h3>
+					<ul>
+						<li>Multiple transitions possible for same input</li>
+						<li>May have epsilon transitions</li>
+						<li>More flexible than DFA</li>
+						<li>Represented by dotted/broken lines in diagrams</li>
+					</ul>
+
+					<div class="example-box">
+						<strong>Example:</strong> An NFA that accepts strings containing "01" or "10"
+						<ul>
+							<li>States: q0 (start), q1, q2 (accept)</li>
+							<li>On '0': q0→q1 (dotted), q1→q1</li>
+							<li>On '1': q0→q2 (dotted), q2→q2</li>
+							<li>Multiple paths possible</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section">
+					<h2>Regular Expressions</h2>
+					<h3>Basic Operations</h3>
+					<ul>
+						<li><strong>Concatenation:</strong> ab (a followed by b)</li>
+						<li><strong>Union:</strong> a|b (a or b)</li>
+						<li><strong>Kleene Star:</strong> a* (zero or more a's)</li>
+						<li><strong>Plus:</strong> a+ (one or more a's)</li>
+						<li><strong>Question Mark:</strong> a? (zero or one a)</li>
+					</ul>
+
+					<h3>Common Patterns</h3>
+					<div class="code">
+(a|b)*          - Any string of a's and b's<br>
+a*b*            - Zero or more a's followed by zero or more b's<br>
+(a|b)*abb       - Strings ending with "abb"<br>
+(0|1)*00(0|1)*  - Strings containing "00"<br>
+a+b+            - One or more a's followed by one or more b's
+					</div>
+
+					<h3>Equivalence</h3>
+					<p>Every regular expression can be converted to an NFA, and every NFA can be converted to a DFA. All three are equivalent in expressive power.</p>
+				</div>
+
+				<div class="section">
+					<h2>Key Differences</h2>
+					<table style="width: 100%; border-collapse: collapse;">
+						<tr style="background: #f0f0f0;">
+							<td style="padding: 8px; border: 1px solid #ddd;"><strong>Feature</strong></td>
+							<td style="padding: 8px; border: 1px solid #ddd;"><strong>DFA</strong></td>
+							<td style="padding: 8px; border: 1px solid #ddd;"><strong>NFA</strong></td>
+						</tr>
+						<tr>
+							<td style="padding: 8px; border: 1px solid #ddd;">Transitions</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Exactly one per symbol</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Zero or more per symbol</td>
+						</tr>
+						<tr>
+							<td style="padding: 8px; border: 1px solid #ddd;">Line Style</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Solid</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Dotted</td>
+						</tr>
+						<tr>
+							<td style="padding: 8px; border: 1px solid #ddd;">Epsilon</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Not allowed</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">Allowed</td>
+						</tr>
+						<tr>
+							<td style="padding: 8px; border: 1px solid #ddd;">Complexity</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">O(n)</td>
+							<td style="padding: 8px; border: 1px solid #ddd;">O(2^n) worst case</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="examplesTab" class="tab-content">
+				<div class="section">
+					<h2>DFA Examples</h2>
+					
+					<div class="example-box">
+						<strong>Example 1: Even number of 0's</strong>
+						<p>Language: Strings with even number of 0's</p>
+						<p>States: q0 (even, accept), q1 (odd)</p>
+						<p>Transitions: On '0', toggle between q0 and q1. On '1', stay in current state.</p>
+					</div>
+
+					<div class="example-box">
+						<strong>Example 2: Strings ending with "ab"</strong>
+						<p>Language: All strings ending with "ab"</p>
+						<p>States: q0 (start), q1 (saw 'a'), q2 (saw "ab", accept)</p>
+						<p>Transitions: Track the last two characters seen.</p>
+					</div>
+
+					<div class="example-box">
+						<strong>Example 3: Binary numbers divisible by 3</strong>
+						<p>Language: Binary strings representing numbers divisible by 3</p>
+						<p>States: q0 (remainder 0, accept), q1 (remainder 1), q2 (remainder 2)</p>
+						<p>Transitions: Update remainder based on current bit.</p>
+					</div>
+				</div>
+
+				<div class="section">
+					<h2>NFA Examples</h2>
+					
+					<div class="example-box">
+						<strong>Example 1: Strings containing "01" or "10"</strong>
+						<p>Language: Strings that contain substring "01" or "10"</p>
+						<p>States: q0 (start), q1 (saw '0'), q2 (saw '1'), q3 (accept)</p>
+						<p>Transitions: Use dotted lines for nondeterministic choices.</p>
+					</div>
+
+					<div class="example-box">
+						<strong>Example 2: Strings with third-to-last symbol '1'</strong>
+						<p>Language: Strings where third character from end is '1'</p>
+						<p>States: q0 (start), q1, q2, q3 (accept)</p>
+						<p>Transitions: Nondeterministically guess position.</p>
+					</div>
+				</div>
+
+				<div class="section">
+					<h2>Regular Expression Examples</h2>
+					
+					<div class="example-box">
+						<strong>Example 1: Email pattern</strong>
+						<div class="code">[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}</div>
+					</div>
+
+					<div class="example-box">
+						<strong>Example 2: Phone number</strong>
+						<div class="code">(\+1[- ]?)?\(?[0-9]{3}\)?[- ]?[0-9]{3}[- ]?[0-9]{4}</div>
+					</div>
+
+					<div class="example-box">
+						<strong>Example 3: Binary strings with even length</strong>
+						<div class="code">((0|1)(0|1))*</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="graderTab" class="tab-content">
+				<div class="section">
+					<h2>Automaton Grader</h2>
+					<p>Click the grade button to evaluate your automaton. The grader checks for:</p>
+					<ul>
+						<li>Presence of start state</li>
+						<li>Presence of accept state(s)</li>
+						<li>Minimum number of states</li>
+						<li>Transitions defined</li>
+						<li>NFA transitions (if applicable)</li>
+					</ul>
+					<button class="grade-btn" onclick="runGrader()">Grade Automaton</button>
+					<div id="gradeResult" class="grade-result"></div>
+				</div>
+
+				<div class="section">
+					<h2>Grading Criteria</h2>
+					<ul>
+						<li><strong>Start State (20 points):</strong> Must have an arrow pointing to initial state</li>
+						<li><strong>Accept State (20 points):</strong> Must have at least one double-circled state</li>
+						<li><strong>Minimum States (20 points):</strong> At least 2 states required</li>
+						<li><strong>Transitions (20 points):</strong> Must have at least one transition</li>
+						<li><strong>NFA Support (20 points):</strong> Dotted lines for NFA transitions</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content">
+			<div class="toolbar">
+				<button class="btn" id="nfaModeBtn" onclick="toggleNFAMode()">DFA Mode</button>
+				<button class="btn" onclick="toggleLinkDotted()">Toggle Dotted Line (D)</button>
+				<button class="btn" onclick="saveAsPNG()">Save as PNG</button>
+				<button class="btn" onclick="saveAsSVG()">Save as SVG</button>
+				<button class="btn" onclick="saveAsLaTeX()">Save as LaTeX</button>
+			</div>
+			<div class="canvas-container">
+				<canvas id="canvas" width="800" height="600"></canvas>
+			</div>
+			<div class="instructions" style="position: absolute; bottom: 10px; left: 10px; right: 10px; max-width: 800px;">
+				<h4>Instructions:</h4>
+				<ul>
+					<li>Double-click to create a state</li>
+					<li>Double-click a state to toggle accept state</li>
+					<li>Shift+drag from a state to create a transition</li>
+					<li>Completed transitions are solid lines (DFA)</li>
+					<li>Hanging/incomplete transitions appear as dotted lines</li>
+					<li>Click a transition and press 'D' to toggle dotted line (for NFA dead paths)</li>
+					<li>Click and type to label states/transitions</li>
+					<li>Delete key removes selected object</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="static.js"></script>
+	<script>
+		function showTab(tabName) {
+			document.querySelectorAll('.tab-content').forEach(tab => {
+				tab.classList.remove('active');
+			});
+			document.querySelectorAll('.tab-btn').forEach(btn => {
+				btn.classList.remove('active');
+			});
+			
+			document.getElementById(tabName + 'Tab').classList.add('active');
+			event.target.classList.add('active');
+		}
+
+		function runGrader() {
+			var result = gradeAutomaton();
+			var resultDiv = document.getElementById('gradeResult');
+			var percentage = Math.round((result.score / result.total) * 100);
+			
+			resultDiv.className = 'grade-result';
+			if(percentage >= 80) {
+				resultDiv.classList.add('success');
+			} else if(percentage >= 50) {
+				resultDiv.classList.add('warning');
+			} else {
+				resultDiv.classList.add('error');
+			}
+			resultDiv.classList.add('show');
+			
+			var html = '<h3>Score: ' + result.score + '/' + result.total + ' (' + percentage + '%)</h3>';
+			html += '<ul>';
+			result.feedback.forEach(function(feedback) {
+				html += '<li>' + feedback + '</li>';
+			});
+			html += '</ul>';
+			resultDiv.innerHTML = html;
+		}
+	</script>
+</body>
+</html>

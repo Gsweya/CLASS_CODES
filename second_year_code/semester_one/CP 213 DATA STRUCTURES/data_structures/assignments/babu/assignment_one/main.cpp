@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 struct employee {
@@ -25,7 +26,7 @@ int main() {
     cout << "Work Time: " << emp.worktime << " hourse/weel\n";
     cout << "Gender: " << emp.gender << endl;
     cout << "Department: " << emp.department << endl;
-    cout << "Salary: TZS" << emp.salary << endl;
+    cout << "Salary: TZS " << fixed << setprecision(0) << emp.salary << endl;
 
     
     if (emp.worktime > 40) {
