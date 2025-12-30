@@ -1,5 +1,3 @@
-package personal.oop_one.stat;
-
 
 class Test {
 
