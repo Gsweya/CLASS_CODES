@@ -2,8 +2,6 @@ package assignments.practical_7.QuestionTwo;
 
 abstract class Shape {
 
-    private int dimensions;
-
     public void get_description() {
 
     }
@@ -128,7 +126,7 @@ class Triangle extends TwoDimensionalShape {
         System.out.println("------------------------------------");
         // super key has been used to call the method fromteh Dimensional Class
         super.get_description();
-        System.out.printf("The base of the Triangle is %f and the height is \n" , base, height);
+        System.out.printf("The base of the Triangle is %.2f and the height is %.2f \n" , base, height);
 
         System.out.println("Area = !/2 * Base * Height");
         System.out.printf("Area of the Triangle: %.2f\n", getArea() );     
@@ -158,7 +156,7 @@ class Sphere extends ThreeDimensionalShape {
     @Override
     public double getVolume(){
         double volume;
-        volume = (4/3) * Math.PI * Math.pow(radius, 3);
+        volume = (4.0/3.0) * Math.PI * Math.pow(radius, 3);
 
         return volume;
     }
@@ -171,7 +169,7 @@ class Sphere extends ThreeDimensionalShape {
         super.get_description();
         System.out.println("The radius of the Sphere is: " + this.radius);
 
-        System.out.println("Volume = 4 * Pie * radius^2");
+        System.out.println("Area= 4 * Pie * radius^2");
         System.out.printf("Area of the Sphere: %.2f\n", getArea());
         
         System.out.println("Volume = 4/3 * Pie * radius^3");

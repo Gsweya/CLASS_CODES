@@ -2,7 +2,7 @@ package assignments.practical_7.QuestionOne;
 import java.util.Scanner;
 
 abstract class Employee {
-    private double salary;  
+    
 
 }
 
@@ -30,13 +30,13 @@ class HourlyEmployee extends Employee {
     public double get_salary() {
         
         if ( hours > 40){
-            this.hourly_salary = 1.5 * (this.hours) * this.hourly_salary;
-            return this.hourly_salary;
+            double regular_pay = 40 * hourly_salary;
+            double overtime_pay = (hours - 40) * hourly_salary * 1.5;
+            return regular_pay + overtime_pay;
         }
 
-        else {
-            this.hourly_salary = hours * this.hourly_salary;
-            return this.hourly_salary;
+        else {          
+            return this.hourly_salary * hours;
         
         }       
     }
@@ -72,7 +72,8 @@ class BasePlusCommissionEmployee extends Employee {
     }
 
     public double get_salary(){
-        this.salary = this.salary + (this.sales_percentage * this.sales);
+        double bonus = this.salary * 0.10;
+        this.salary = this.salary + bonus + (this.sales_percentage * this.sales);
         return this.salary;
     }
 }
@@ -123,7 +124,7 @@ public class QuestionOne {
         salary = input.nextDouble();
 
         SalariedEmployee employee_three = new SalariedEmployee(salary);
-        System.out.printf("Salary for Commission Employee %.2f \n", employee_three.get_salary());
+        System.out.printf("Salary for Salaried Employee %.2f \n", employee_three.get_salary());
 
 
         System.out.println("---------------------------------------------------");
@@ -138,7 +139,7 @@ public class QuestionOne {
         sales_percentage = input.nextFloat();
 
         BasePlusCommissionEmployee employee_four = new BasePlusCommissionEmployee(salary, sales, sales_percentage);
-        System.out.printf("Salary for Commission Employee %.2f \n", employee_four.get_salary());
+        System.out.printf("Salary for Base Plus Commision Employee %.2f \n", employee_four.get_salary());
 
 
     }
