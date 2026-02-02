@@ -1,3 +1,5 @@
+package CLASS_EXERCISES;
+
 class Animal {
 
     void speak() {

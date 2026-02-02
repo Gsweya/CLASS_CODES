@@ -1,4 +1,7 @@
+package inheritance;
+
 public class Employee {
+
     private String name;
     private int id;
     private double salary;
@@ -9,17 +12,16 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void display(String name, int id){
+    public void display(String name, int id) {
         System.out.println("Name: " + this.name);
-        System.out.println("Id: "+this.id);
-
+        System.out.println("Id: " + this.id);
     }
 
     public static void main(String[] args) {
         Employee employee_one = new Employee();
         Employee employee_two = new Employee();
 
-        employee_one.name= "James";
+        employee_one.name = "James";
         employee_one.id = 2;
         employee_one.salary = 2300;
 
@@ -32,6 +34,4 @@ public class Employee {
     }
 }
 
-class Programmer extends Employee {
-    
-}
+class Programmer extends Employee {}

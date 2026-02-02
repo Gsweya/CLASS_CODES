@@ -1,7 +1,6 @@
-package personal.oop_one;
-
 // Professor class (the "part")
 class Professor {
+
     String name;
     String specialization;
 
@@ -17,6 +16,7 @@ class Professor {
 
 // Department class (the "whole")
 class Department {
+
     String departmentName;
     // Aggregation: Department has a Professor, but Professor can exist independently
     Professor headOfDepartment; // Member variable of type Professor
@@ -38,6 +38,7 @@ class Department {
 }
 
 public class AggregationDemo {
+
     public static void main(String[] args) {
         // Create Professor objects independently
         Professor profSmith = new Professor("Dr. Smith", "Computer Science");

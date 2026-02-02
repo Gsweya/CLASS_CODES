@@ -1,35 +1,38 @@
-package CP_215_OOP_IN_JAVA.class_questoins;
+package CLASS_EXERCISES;
+
 import java.util.Scanner;
 
 class Employee {
+
     private String firstName;
     private String lastName;
     private String employeeID;
     private String hireDate;
 
-    public Employee (String firstName, String lastName, String employeeID, String hireDate){
+    public Employee(
+        String firstName,
+        String lastName,
+        String employeeID,
+        String hireDate
+    ) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeID = employeeID;
         this.hireDate = hireDate;
-
     }
 
     public String getEmployeeID() {
         return employeeID;
     }
 
-    public String getName(){
+    public String getName() {
         String fullName = this.firstName + " " + this.lastName;
         return fullName;
-
     }
 
-    public String getHireDate(){
+    public String getHireDate() {
         return this.hireDate;
-
     }
-     
 }
 
 class Manager extends Employee {
@@ -37,40 +40,51 @@ class Manager extends Employee {
     private String department;
     private int noOfSuboridnates;
 
-    public Manager(String firstName, String lastName, String employeeID, String hireDate, String departement, int noOfSuboridnates){
+    public Manager(
+        String firstName,
+        String lastName,
+        String employeeID,
+        String hireDate,
+        String departement,
+        int noOfSuboridnates
+    ) {
         super(firstName, lastName, employeeID, hireDate);
         this.department = departement;
         this.noOfSuboridnates = noOfSuboridnates;
     }
 
-    public String getdepartement(){
+    public String getdepartement() {
         return this.department;
     }
 
-    public int getnoOfSubordinates(){
+    public int getnoOfSubordinates() {
         return this.noOfSuboridnates;
     }
-
 }
 
 class SalesPerson extends Employee {
+
     String salesRegion;
 
-    public SalesPerson(String firstName, String lastName, String employeeID, String hireDate, String salesRegion) {
+    public SalesPerson(
+        String firstName,
+        String lastName,
+        String employeeID,
+        String hireDate,
+        String salesRegion
+    ) {
         super(firstName, lastName, employeeID, hireDate);
         this.salesRegion = salesRegion;
     }
 
-    String getSalesRegion(){
+    String getSalesRegion() {
         return this.salesRegion;
     }
 }
 
-
 public class TestEmployee {
 
-    public Employee createEmployee(){
-
+    public Employee createEmployee() {
         Scanner input = new Scanner(System.in);
 
         String firstName, lastName;
@@ -91,13 +105,17 @@ public class TestEmployee {
         System.out.print("Enter Hire Date: ");
         hireDate = input.nextLine();
 
-        Employee employeeOne = new Employee(firstName, lastName, employeeID, hireDate);    
+        Employee employeeOne = new Employee(
+            firstName,
+            lastName,
+            employeeID,
+            hireDate
+        );
 
         return employeeOne;
-
     }
 
-    public Manager createManager(){        
+    public Manager createManager() {
         Scanner input = new Scanner(System.in);
         String firstName, lastName;
         String hireDate;
@@ -123,21 +141,25 @@ public class TestEmployee {
         department = input.nextLine();
 
         System.out.print("Enter no. of Subordinates: ");
-        noOfSuboridnates = input.nextInt(); 
+        noOfSuboridnates = input.nextInt();
 
-
-        Manager managerOne = new Manager(firstName, lastName, employeeID, hireDate, department, noOfSuboridnates);
+        Manager managerOne = new Manager(
+            firstName,
+            lastName,
+            employeeID,
+            hireDate,
+            department,
+            noOfSuboridnates
+        );
         return managerOne;
     }
 
-    public SalesPerson createSalesPerson(){
-
+    public SalesPerson createSalesPerson() {
         Scanner input = new Scanner(System.in);
         String firstName, lastName;
         String hireDate;
         String employeeID;
-        String salesRegion;   
-
+        String salesRegion;
 
         System.out.println("===== Create SALES PERSON ======");
 
@@ -156,16 +178,23 @@ public class TestEmployee {
         System.out.print("Enter Sales Region:");
         salesRegion = input.nextLine();
 
-
-        SalesPerson salesPersonOne = new SalesPerson(firstName, lastName, employeeID, hireDate, salesRegion);
+        SalesPerson salesPersonOne = new SalesPerson(
+            firstName,
+            lastName,
+            employeeID,
+            hireDate,
+            salesRegion
+        );
         input.close();
 
-
-        return salesPersonOne;     
-
+        return salesPersonOne;
     }
 
-    public void displayClasses(Employee employeeOne, Manager managerOne, SalesPerson salesPersonOne){
+    public void displayClasses(
+        Employee employeeOne,
+        Manager managerOne,
+        SalesPerson salesPersonOne
+    ) {
         System.out.println("==== SHOW CLASSES DETAILS =====");
         System.out.println("---- EMPLOYEE ----");
         System.out.println("----------------------");
@@ -193,7 +222,7 @@ public class TestEmployee {
 
         System.out.print("Department: ");
         System.out.println(managerOne.getdepartement());
-        
+
         System.out.print("No. of Subordinates: ");
         System.out.println(managerOne.getnoOfSubordinates());
 
@@ -212,22 +241,22 @@ public class TestEmployee {
         System.out.print("Sales Region: ");
         System.out.println(salesPersonOne.getSalesRegion());
 
-        System.out.println("----------------------");    }
+        System.out.println("----------------------");
+    }
 
     public static void main(String[] args) {
-        
-        System.out.println("=== A SYSTEM RECORD EMPLOYEE, MANAGER AND SALES PERSON ===");
-        
+        System.out.println(
+            "=== A SYSTEM RECORD EMPLOYEE, MANAGER AND SALES PERSON ==="
+        );
+
         TestEmployee main = new TestEmployee();
 
         Employee employeeOne = main.createEmployee();
         System.out.println();
         Manager managerOne = main.createManager();
         System.out.println();
-        SalesPerson salespersonOne =  main.createSalesPerson();        
+        SalesPerson salespersonOne = main.createSalesPerson();
         System.out.println();
         main.displayClasses(employeeOne, managerOne, salespersonOne);
-
     }
-    
 }

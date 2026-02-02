@@ -1,7 +1,6 @@
-package personal.oop_one;
-
 // Engine class (the "part") - tightly coupled with Car
 class Engine {
+
     String type;
     int horsepower;
 
@@ -24,11 +23,16 @@ class Engine {
 
 // Car class (the "whole")
 class CarComposition {
+
     String model;
     // Composition: Car owns its Engine
     Engine carEngine; // Member variable of type Engine
 
-    public CarComposition(String model, String engineType, int engineHorsepower) {
+    public CarComposition(
+        String model,
+        String engineType,
+        int engineHorsepower
+    ) {
         this.model = model;
         // The Engine is created within the Car's constructor
         this.carEngine = new Engine(engineType, engineHorsepower);
@@ -43,12 +47,15 @@ class CarComposition {
     // Demonstrating lifecycle dependency: finalizer (not recommended for general use, but for demo)
     @Override
     protected void finalize() throws Throwable {
-        System.out.println("Car '" + model + "' destroyed. Its engine will also be destroyed.");
+        System.out.println(
+            "Car '" + model + "' destroyed. Its engine will also be destroyed."
+        );
         // When the Car is garbage collected, its Engine will also become eligible for GC
     }
 }
 
 public class CompositionDemo {
+
     public static void main(String[] args) {
         System.out.println("Creating a car...");
         CarComposition myCar = new CarComposition("Sedan", "V6", 250);

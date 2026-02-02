@@ -1,7 +1,6 @@
-package personal.oop_one;
-
 // Superclass (Parent Class)
 class Vehicle {
+
     String brand;
     int year;
 
@@ -21,6 +20,7 @@ class Vehicle {
 
 // Subclass (Child Class) - Car inherits from Vehicle
 class Car extends Vehicle {
+
     int numberOfDoors;
 
     public Car(String brand, int year, int numberOfDoors) {
@@ -43,6 +43,7 @@ class Car extends Vehicle {
 
 // Subclass (Child Class) - Motorcycle inherits from Vehicle
 class Motorcycle extends Vehicle {
+
     boolean hasSidecar;
 
     public Motorcycle(String brand, int year, boolean hasSidecar) {
@@ -63,9 +64,14 @@ class Motorcycle extends Vehicle {
 }
 
 public class InheritanceDemo {
+
     public static void main(String[] args) {
         Car myCar = new Car("Toyota", 2022, 4);
-        Motorcycle myMotorcycle = new Motorcycle("Harley-Davidson", 2023, false);
+        Motorcycle myMotorcycle = new Motorcycle(
+            "Harley-Davidson",
+            2023,
+            false
+        );
 
         System.out.println("--- Car Info ---");
         myCar.startEngine();

@@ -1,4 +1,4 @@
-package personal.oop_one.method_overloading;
+package method_overloading;
 
 /*
 public class MethodOverloading {
@@ -14,23 +14,23 @@ public class MethodOverloading {
         display(1);
         display(1, 4);
     }
-    
+
 }
 */
 
 public class MethodOverloading {
 
-    // this method accepts int 
+    // this method accepts int
     private static void display(int a) {
         System.out.println("Got Integer data.");
     }
 
-    // this method accepts String object 
-    private static void display(String a){
+    // this method accepts String object
+    private static void display(String a) {
         System.out.println("Got String object.");
     }
 
-    private static void main(String[] args){
+    private static void main(String[] args) {
         display(1);
         display("Hello");
     }
