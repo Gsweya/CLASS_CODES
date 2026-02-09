@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Demonstration of grep with anchors and regex expressions.
+# Usage: bash file
+
+set -euo pipefail
+
+cat <<'SAMPLE' > demo.txt
+Error: disk full
+warning: retrying
+Info: operation completed
+User: alice
+User: Bob
+Order ID: 12345
+order id: 67890
+SAMPLE
+
+echo "== Lines that start with 'Error' (^) =="
+grep -n '^Error' demo.txt
+
+echo "== Lines that end with 'completed' ($) =="
+grep -n 'completed$' demo.txt
+
+echo "== Case-insensitive match for 'user:' =="
+grep -ni 'user:' demo.txt
+
+echo "== Match 'Order ID' with a number using regex =="
+grep -n 'Order ID: [0-9]\+' demo.txt
+
+echo "== Match either 'Error' or 'warning' using alternation =="
+grep -En '^(Error|warning):' demo.txt
+
+echo "== Match lines with capitalized user name (User: + Capital letter) =="
+grep -n 'User: [A-Z][a-z]+' demo.txt
+
+rm demo.txt
