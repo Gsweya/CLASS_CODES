@@ -1,0 +1,17 @@
+- Switch cases in Linux , can be used to perform a variety of code executions for the given conditions in place
+- how to make sure that the program can treat upper cases and lowercases the same way.
+- functions() in bash*
+
+
+* Advanced Text Processing Commands
+- grep, - sed - awk
+
+Regex expressions,
+Anchors, Qualifiers
+
+grep 'txt \| assign' filenameaaaa
+sed, edit , remove gaps and delete lines and file extensions, allowed
+
+substituting letters or lines in scripts and replacing with others instead
+
+awk command

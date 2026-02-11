@@ -1,38 +1,35 @@
 [
   {
     "label": "Build C++",
-    "command": "g++ -std=c++20 -Wall -g $ZED_FILE -o ${ZED_FILE%.cpp}",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "always",
-    "reveal_target": "dock",
-    "hide": "never",
-    "shell": "system",
-    "show_summary": true,
-    "show_command": true
+    "command": "g++",
+    "args": ["-std=c++20", "-Wall", "$ZED_FILE", "-o", "${ZED_STEM}"],
+    "cwd": "$ZED_DIRNAME",
   },
   {
     "label": "Run C++",
-    "command": "${ZED_FILE%.cpp}",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "always",
-    "reveal_target": "dock",
-    "hide": "never",
-    "shell": "system",
-    "show_summary": true,
-    "show_command": true
+    "command": "./${ZED_STEM}",
+    "cwd": "$ZED_DIRNAME",
   },
   {
-    "label": "Build and Run C++",
-    "command": "g++ -std=c++20 -Wall -g $ZED_FILE -o ${ZED_FILE%.cpp} && ${ZED_FILE%.cpp}",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false,
-    "reveal": "always",
-    "reveal_target": "dock",
-    "hide": "never",
-    "shell": "system",
-    "show_summary": true,
-    "show_command": true
-  }
+    "label": "Build & Run C++",
+    "command": "g++ -std=c++20 -Wall \"$ZED_FILE\" -o \"${ZED_STEM}\" && ./${ZED_STEM}",
+    "cwd": "$ZED_DIRNAME",
+  },
+  {
+    "label": "Compile Java",
+    "command": "javac",
+    "args": ["$ZED_FILE"],
+    "cwd": "$ZED_DIRNAME",
+  },
+  {
+    "label": "Run Java",
+    "command": "java",
+    "args": ["$ZED_STEM"],
+    "cwd": "$ZED_DIRNAME",
+  },
+  {
+    "label": "Run Python",
+    "command": "python",
+    "args": ["$ZED_FILE"],
+  },
 ]

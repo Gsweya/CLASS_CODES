@@ -1,0 +1,7 @@
+How to add elements btn elements in array
+
+How to show the element btn after copying arrays
+
+If we delete an element where does space go
+
+In nano using if statements allow the instructions when u enter name or anything so as the program to get correct output correct if it gets wrong to give another chance

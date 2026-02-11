@@ -1,0 +1,3 @@
+Linux is powerful
+Linux scripting is fun
+Bash is everywhere
