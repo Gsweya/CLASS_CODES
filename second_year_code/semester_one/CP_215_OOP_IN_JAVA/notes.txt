@@ -7,3 +7,5 @@ checked and unchecked exceptions in Java
 one shta t will allow you to compile but will be deteted at run time
 
 what type sor exapmples like out of bound
+
+all exceptions that inherit from runtime are called ___
