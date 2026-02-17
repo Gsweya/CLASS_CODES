@@ -1,0 +1,223 @@
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+ls
+JDBC_Assignment_Complete  JDBC_Assignment_Complete.zip  mysql84-community-release-fc43-1.noarch.rpm
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo dnf install mysql84-community-release-fc43-1.noarch.rpm
+[sudo] password for sweya:
+Updating and loading repositories:
+ Fedora 43 - x86_64 - Updates                                 100% |   2.1 KiB/s |   7.4 KiB |  00m04s
+Repositories loaded.
+Package                         Arch     Version                          Repository              Size
+Installing:
+ mysql84-community-release      noarch   fc43-1                           @commandline         8.2 KiB
+
+Transaction Summary:
+ Installing:         1 package
+
+Total size of inbound packages is 11 KiB. Need to download 0 B.
+After this operation, 8 KiB extra will be used (install 8 KiB, remove 0 B).
+Is this ok [y/N]: y
+Running transaction
+[1/3] Verify package files                                    100% | 100.0   B/s |   1.0   B |  00m00s
+[2/3] Prepare transaction                                     100% |   1.0   B/s |   1.0   B |  00m01s
+[3/3] Installing mysql84-community-release-0:fc43-1.noarch    100% |  13.9 KiB/s |   9.0 KiB |  00m01s
+Warning: skipped OpenPGP checks for 1 package from repository: @commandline
+Complete!
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo dnf install mysql-server
+Updating and loading repositories:
+ MySQL Tools 8.4 LTS Community                                100% |   1.1 KiB/s |   5.2 KiB |  00m05s
+ MySQL Connectors Community                                   100% |   1.4 KiB/s |   6.4 KiB |  00m05s
+ MySQL 8.4 LTS Community Server                               100% |   1.6 KiB/s |   8.2 KiB |  00m05s
+Repositories loaded.
+Package                                 Arch   Version                       Repository           Size
+Installing:
+ mysql-community-server                 x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c 102.0 MiB
+   replacing mariadb-connector-c-config noarch 3.4.8-1.fc43                  updates         497.0   B
+Installing dependencies:
+ mecab                                  x86_64 0.996-10.fc43                 fedora            1.2 MiB
+ mysql-community-client                 x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c  63.1 MiB
+ mysql-community-client-plugins         x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c  13.0 MiB
+ mysql-community-common                 x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c  10.9 MiB
+ mysql-community-icu-data-files         x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c   4.3 MiB
+ mysql-community-libs                   x86_64 8.4.8-10.fc43                 mysql-8.4-lts-c   7.2 MiB
+Installing weak dependencies:
+ mecab-ipadic                           x86_64 2.7.0.20070801-33.fc43        fedora           50.6 MiB
+ mecab-ipadic-EUCJP                     x86_64 2.7.0.20070801-33.fc43        fedora           39.7 MiB
+
+Transaction Summary:
+ Installing:         9 packages
+ Replacing:          1 package
+
+Total size of inbound packages is 49 MiB. Need to download 49 MiB.
+After this operation, 292 MiB extra will be used (install 292 MiB, remove 497 B).
+Is this ok [y/N]: y
+[1/9] mecab-0:0.996-10.fc43.x86_64                            100% | 117.6 KiB/s | 360.6 KiB |  00m03s
+[2/9] mysql-community-client-0:8.4.8-10.fc43.x86_64           100% | 497.1 KiB/s |   2.8 MiB |  00m06s
+[3/9] mysql-community-icu-data-files-0:8.4.8-10.fc43.x86_64   100% |   1.0 MiB/s |   2.3 MiB |  00m02s
+[4/9] mysql-community-client-plugins-0:8.4.8-10.fc43.x86_64   100% | 642.5 KiB/s |   1.3 MiB |  00m02s
+[5/9] mysql-community-libs-0:8.4.8-10.fc43.x86_64             100% | 552.9 KiB/s |   1.4 MiB |  00m03s
+[6/9] mysql-community-server-0:8.4.8-10.fc43.x86_64           100% |   1.5 MiB/s |  20.7 MiB |  00m13s
+[7/9] mysql-community-common-0:8.4.8-10.fc43.x86_64           100% |  56.2 KiB/s | 579.7 KiB |  00m10s
+[8/9] mecab-ipadic-0:2.7.0.20070801-33.fc43.x86_64            100% |   2.3 MiB/s |  10.4 MiB |  00m04s
+[9/9] mecab-ipadic-EUCJP-0:2.7.0.20070801-33.fc43.x86_64      100% |   1.2 MiB/s |   9.5 MiB |  00m08s
+------------------------------------------------------------------------------------------------------
+[9/9] Total                                                   100% |   2.1 MiB/s |  49.4 MiB |  00m23s
+Running transaction
+Importing OpenPGP key 0xA8D3785C:
+ UserID     : "MySQL Release Engineering <mysql-build@oss.oracle.com>"
+ Fingerprint: BCA43417C3B485DD128EC6D4B7B3B788A8D3785C
+ From       : file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql-2025
+Is this ok [y/N]: y
+The key was successfully imported.
+[ 1/12] Verify package files                                  100% |  11.0   B/s |   9.0   B |  00m01s
+[ 2/12] Prepare transaction                                   100% |  10.0   B/s |  10.0   B |  00m01s
+[ 3/12] Installing mecab-0:0.996-10.fc43.x86_64               100% |  21.4 MiB/s |   1.2 MiB |  00m00s
+[ 4/12] Installing mysql-community-client-plugins-0:8.4.8-10. 100% | 122.3 MiB/s |  13.0 MiB |  00m00s
+[ 5/12] Installing mysql-community-common-0:8.4.8-10.fc43.x86 100% | 140.2 MiB/s |  10.9 MiB |  00m00s
+[ 6/12] Installing mysql-community-libs-0:8.4.8-10.fc43.x86_6 100% | 137.8 MiB/s |   7.2 MiB |  00m00s
+[ 7/12] Installing mysql-community-client-0:8.4.8-10.fc43.x86 100% | 171.9 MiB/s |  63.1 MiB |  00m00s
+[ 8/12] Installing mysql-community-icu-data-files-0:8.4.8-10. 100% |  37.8 MiB/s |   4.3 MiB |  00m00s
+[ 9/12] Installing mysql-community-server-0:8.4.8-10.fc43.x86 100% |  59.3 MiB/s | 102.0 MiB |  00m02s
+[10/12] Installing mecab-ipadic-0:2.7.0.20070801-33.fc43.x86_ 100% | 107.4 MiB/s |  50.6 MiB |  00m00s
+[11/12] Installing mecab-ipadic-EUCJP-0:2.7.0.20070801-33.fc4 100% |  41.6 MiB/s |  39.7 MiB |  00m01s
+[12/12] Removing mariadb-connector-c-config-0:3.4.8-1.fc43.no 100% |   1.0   B/s |   3.0   B |  00m02s
+Complete!
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo systemctl start mysqld
+
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo systemctl enable mysqld
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo grep 'temporary password' /var/log/mysqld.log
+2026-02-17T02:00:45.090969Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@l
+ocalhost: D9ttk)AHd>kh
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo mysql_secure_installation
+
+Securing the MySQL server deployment.
+
+Enter password for user root:
+
+The existing password for the user account root has expired. Please set a new password.
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+Sorry, passwords do not match.
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+Sorry, passwords do not match.
+
+New password:
+
+Re-enter new password:
+ ... Failed! Error: Your password does not satisfy the current policy requirements
+
+New password:
+
+Re-enter new password:
+The 'validate_password' component is installed on the server.
+The subsequent steps will run with the existing configuration
+of the component.
+Using existing password for root.
+
+Estimated strength of the password: 100
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : y
+
+New password:
+
+Re-enter new password:
+
+Estimated strength of the password: 100
+Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : y
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done!
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+sudo mysql -u root -p
+[sudo] password for sweya:
+Sorry, try again.
+[sudo] password for sweya:
+Sorry, try again.
+[sudo] password for sweya:
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.4.8 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2026, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> ^C
+mysql> \q
+Bye
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP_215_OOP_IN_JAVA/GROUP_ASSIGNMENT$
+
+
+
+
+

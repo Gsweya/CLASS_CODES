@@ -1,0 +1,44 @@
+graph TB
+    subgraph "Java Application Layer"
+        A[Java Application Code]
+    end
+    
+    subgraph "JDBC API Layer"
+        B[JDBC API<br/>java.sql package]
+        C[DriverManager]
+        D[Connection Interface]
+        E[Statement Interface]
+        F[PreparedStatement Interface]
+        G[ResultSet Interface]
+    end
+    
+    subgraph "JDBC Driver Layer"
+        H[MySQL JDBC Driver<br/>mysql-connector-java.jar]
+        I[Driver Implementation]
+    end
+    
+    subgraph "Database Layer"
+        J[MySQL Database Server<br/>localhost:3306 or Remote IP]
+        K[(StudentData Database)]
+    end
+    
+    A -->|Uses| B
+    B --> C
+    C -->|Loads| H
+    B --> D
+    B --> E
+    B --> F
+    B --> G
+    D -->|Creates| E
+    D -->|Creates| F
+    E -->|Executes SQL| I
+    F -->|Executes SQL| I
+    I -->|Communicates| J
+    J -->|Stores Data| K
+    E -->|Returns| G
+    F -->|Returns| G
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style H fill:#ffe1e1
+    style J fill:#e1ffe1

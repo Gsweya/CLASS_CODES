@@ -1,0 +1,10 @@
+using tar, package manage,r building from source code, form dpkg and using a repo manager like apt
+meaning of the color codes, red blure and green in the terminal in Ubunt u or bash shell
+
+TASK:
+1.  Install package GUI calculator , DEB and APT, calculator 1 and 2 Respectively
+-- GCC (compiler)
+
+2. Archive
+- ZIp using gz
+- Unzip using gz

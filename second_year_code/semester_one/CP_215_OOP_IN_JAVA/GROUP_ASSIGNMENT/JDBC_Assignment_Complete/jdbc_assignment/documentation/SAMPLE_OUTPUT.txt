@@ -1,0 +1,156 @@
+╔═══════════════════════════════════════════════════╗
+║   CP 215: JDBC Assignment - Complete Demo        ║
+║   Object Oriented Programming in Java            ║
+╚═══════════════════════════════════════════════════╝
+
+STEP 1: Loading JDBC Driver...
+✓ Driver loaded: com.mysql.cj.jdbc.Driver
+
+STEP 2: Establishing Connection...
+=== Database Configuration ===
+URL: jdbc:mysql://localhost:3306/StudentData?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+Username: root
+Driver: com.mysql.cj.jdbc.Driver
+==============================
+✓ Connection established
+✓ Database connection established successfully!
+
+=== DEMONSTRATION: Statement ===
+✓ Statement created
+Executing: SELECT * FROM Student
+
+--- Students in Database ---
+ID    First Name      Last Name       Email                          GPA   
+---------------------------------------------------------------------------
+1     John            Doe             john.doe@student.ac.tz        3.75
+2     Jane            Smith           jane.smith@student.ac.tz      3.90
+3     Michael         Johnson         michael.j@student.ac.tz       3.50
+4     Sarah           Williams        sarah.w@student.ac.tz         3.85
+5     David           Brown           david.b@student.ac.tz         3.60
+
+=== ALL COURSES ===
+ID    Code        Name                                     Credits  Instructor          
+------------------------------------------------------------------------------------------
+1     CP215       Object Oriented Programming in Java      4        Dr. Mwanga           
+2     CP201       Data Structures and Algorithms           4        Prof. Nyerere        
+3     CP301       Database Management Systems              3        Dr. Kikwete          
+4     CP305       Software Engineering                     3        Prof. Mkapa          
+5     CP401       Artificial Intelligence                  4        Dr. Magufuli         
+
+=== INSERT with PreparedStatement ===
+✓ 1 row(s) inserted
+✓ Generated Student ID: 6
+
+=== SELECT with PreparedStatement ===
+Student Found:
+  ID: 1
+  Name: John Doe
+  Email: john.doe@student.ac.tz
+  GPA: 3.75
+
+=== UPDATE with PreparedStatement ===
+✓ Student ID 1 GPA updated to 3.82
+
+=== BATCH INSERT Operation ===
+✓ Batch insert completed: 3 students inserted
+
+=== BATCH UPDATE Operation ===
+✓ Batch update completed: 3 students updated
+
+=== DYNAMIC MULTIPLE INSERT ===
+✓ Dynamically inserted 5 students
+
+=== DATABASE METADATA ===
+Database Product: MySQL
+Database Version: 8.0.33
+Driver Name: MySQL Connector/J
+Driver Version: mysql-connector-java-8.0.33 (Revision: 123abc456def)
+URL: jdbc:mysql://localhost:3306/StudentData
+Username: root@localhost
+
+--- Tables in Database ---
+  • course
+  • enrollment
+  • student
+
+=== RESULTSET METADATA ===
+Number of columns: 8
+
+--- Column Details ---
+Column 1:
+  Name: student_id
+  Type: INT
+  Size: 11
+  Nullable: No
+
+Column 2:
+  Name: first_name
+  Type: VARCHAR
+  Size: 50
+  Nullable: No
+
+Column 3:
+  Name: last_name
+  Type: VARCHAR
+  Size: 50
+  Nullable: No
+
+Column 4:
+  Name: email
+  Type: VARCHAR
+  Size: 100
+  Nullable: No
+
+Column 5:
+  Name: phone
+  Type: VARCHAR
+  Size: 15
+  Nullable: Yes
+
+Column 6:
+  Name: enrollment_date
+  Type: DATE
+  Size: 10
+  Nullable: No
+
+Column 7:
+  Name: gpa
+  Type: DECIMAL
+  Size: 5
+  Nullable: Yes
+
+Column 8:
+  Name: created_at
+  Type: TIMESTAMP
+  Size: 19
+  Nullable: Yes
+
+============================================================
+Final Student List:
+============================================================
+
+=== DEMONSTRATION: Statement ===
+✓ Statement created
+Executing: SELECT * FROM Student
+
+--- Students in Database ---
+ID    First Name      Last Name       Email                          GPA   
+---------------------------------------------------------------------------
+1     John            Doe             john.doe@student.ac.tz        3.82
+2     Jane            Smith           jane.smith@student.ac.tz      3.95
+3     Michael         Johnson         michael.j@student.ac.tz       3.65
+4     Sarah           Williams        sarah.w@student.ac.tz         3.85
+5     David           Brown           david.b@student.ac.tz         3.60
+6     Emma            Watson          emma.w@student.ac.tz          3.88
+7     Alice           Cooper          alice.c@student.ac.tz         3.70
+8     Bob             Martin          bob.m@student.ac.tz           3.55
+9     Carol           Davis           carol.d@student.ac.tz         3.95
+10    Student1        Batch1          student1@batch.ac.tz          3.45
+11    Student2        Batch2          student2@batch.ac.tz          3.67
+12    Student3        Batch3          student3@batch.ac.tz          3.89
+13    Student4        Batch4          student4@batch.ac.tz          3.23
+14    Student5        Batch5          student5@batch.ac.tz          3.78
+
+✓ Database connection closed
+
+✓ All JDBC operations completed successfully!

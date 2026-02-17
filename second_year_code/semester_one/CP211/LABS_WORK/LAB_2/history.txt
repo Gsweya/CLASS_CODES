@@ -1,0 +1,1868 @@
+LER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rb_tree_map_/erase_fn_imps.hpp /home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/inclu
+de/ext/pb_ds/detail/rb_tree_map_/find_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semest
+er_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rb_tree_map_/i
+nfo_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rb_tree_map_/insert_fn_imps.hpp /home/sweya/Desk
+top/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/
+include/ext/pb_ds/detail/rb_tree_map_/node.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_
+one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rb_tree_map_/rb_t
+ree_.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rb_tree_map_/split_join_fn_imps.hpp /home/sweya/Desktop
+/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/inc
+lude/ext/pb_ds/detail/rb_tree_map_/traits.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_o
+ne/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rc_binomial_heap_/
+constructors_destructor_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rc_binomial_heap_/debug_fn_i
+mps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rc_binomial_heap_/erase_fn_imps.hpp /home/sweya/Desktop/
+CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/incl
+ude/ext/pb_ds/detail/rc_binomial_heap_/insert_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_cod
+e/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rc_bin
+omial_heap_/rc_binomial_heap_.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LAB
+S_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/li
+bstdc++-v3/include/ext/pb_ds/detail/rc_binomial_heap_/split_join_fn_imps.hpp /home/sweya/Desktop/CLASS_CO
+DES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/
+pb_ds/detail/rc_binomial_heap_/trace_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/c
+c_hash_max_collision_check_resize_trigger_imp.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semest
+er_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/
+hash_exponential_size_policy_imp.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/hash_load_che
+ck_resize_trigger_imp.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/L
+AB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/hash_load_check_resize_t
+rigger_size_base.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hp
+p /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15
+.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp /home/sweya/
+Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++
+-v3/include/ext/pb_ds/detail/resize_policy/sample_resize_policy.hpp /home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/det
+ail/resize_policy/sample_resize_trigger.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one
+/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/resize_policy/sample
+_size_policy.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/constructors_destructor_fn_imps.hpp
+ /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.
+2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/debug_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/s
+econd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds
+/detail/splay_tree_/erase_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211
+/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/find_fn_imps.h
+pp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-1
+5.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/info_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/
+second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_d
+s/detail/splay_tree_/insert_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP2
+11/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/node.hpp /ho
+me/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/
+libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/splay_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/det
+ail/splay_tree_/splay_tree_.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_
+WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/split_join_fn_imps.h
+pp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-1
+5.2.0/libstdc++-v3/include/ext/pb_ds/detail/splay_tree_/traits.hpp /home/sweya/Desktop/CLASS_CODES/second
+_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/deta
+il/standard_policies.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LA
+B_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/thin_heap_/constructors_destructor_fn_i
+mps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/thin_heap_/debug_fn_imps.hpp /home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext
+/pb_ds/detail/thin_heap_/erase_fn_imps.hpp; do \
+  install_base=/usr/local/gcc-15/include/c++/15.2.0/./ext/pb_ds ; \
+  relative_name=`echo $file | sed -e "s|/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP2
+11/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds|.|g"` ;\
+  /usr/bin/install -c -m 644 ${file} ${install_base}/${relative_name} ; done
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/thin_heap_/find_fn_imps.hpp /home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/
+ext/pb_ds/detail/thin_heap_/insert_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_
+one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/thin_heap_/split_
+join_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp /home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/inclu
+de/ext/pb_ds/detail/thin_heap_/trace_fn_imps.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/tree_policy/nod
+e_metadata_selector.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB
+_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/tree_policy/order_statistics_imp.hpp /ho
+me/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/
+libstdc++-v3/include/ext/pb_ds/detail/tree_policy/sample_tree_node_update.hpp /home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext
+/pb_ds/detail/tree_trace_base.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LAB
+S_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/trie_policy/node_metadata_sele
+ctor.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/trie_policy/order_statistics_imp.hpp /home/sweya/Deskto
+p/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/in
+clude/ext/pb_ds/detail/trie_policy/prefix_search_node_update_imp.hpp /home/sweya/Desktop/CLASS_CODES/seco
+nd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/de
+tail/trie_policy/sample_trie_access_traits.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_
+one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/trie_policy/sampl
+e_trie_node_update.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_
+2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/trie_policy/trie_string_access_traits_imp
+.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc
+-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/trie_policy/trie_policy_base.hpp /home/sweya/Desktop/CLASS_
+CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ex
+t/pb_ds/detail/types_traits.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_
+WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/type_utils.hpp /home/sweya/Deskt
+op/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/i
+nclude/ext/pb_ds/detail/unordered_iterator/const_iterator.hpp /home/sweya/Desktop/CLASS_CODES/second_year
+_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/un
+ordered_iterator/point_const_iterator.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/C
+P211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/unordered_iterator/ite
+rator.hpp /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILE
+R/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds/detail/unordered_iterator/point_iterator.hpp; do \
+  install_base=/usr/local/gcc-15/include/c++/15.2.0/./ext/pb_ds ; \
+  relative_name=`echo $file | sed -e "s|/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP2
+11/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ext/pb_ds|.|g"` ;\
+  /usr/bin/install -c -m 644 ${file} ${install_base}/${relative_name} ; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./tr1
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/tr1/array /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_o
+ne/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/bessel_function.tcc /home/sweya
+/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc+
++-v3/include/tr1/beta_function.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LA
+BS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/ccomplex /home/sweya/Desktop/CLASS_CODES/s
+econd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cctyp
+e /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15
+.2.0/libstdc++-v3/include/tr1/cfenv /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cfloat /home/sweya/Desktop/CLASS_CODES/se
+cond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cintty
+pes /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-
+15.2.0/libstdc++-v3/include/tr1/climits /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP2
+11/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cmath /home/sweya/Desktop/CLASS_CODES
+/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/com
+plex /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc
+-15.2.0/libstdc++-v3/include/tr1/complex.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/
+CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cstdarg /home/sweya/Desktop/CLASS_
+CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr
+1/cstdbool /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPIL
+ER/gcc-15.2.0/libstdc++-v3/include/tr1/cstdint /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_
+one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cstdio /home/sweya/Desktop/CLA
+SS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include
+/tr1/cstdlib /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMP
+ILER/gcc-15.2.0/libstdc++-v3/include/tr1/ctgmath /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/ctime /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/includ
+e/tr1/ctype.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COM
+PILER/gcc-15.2.0/libstdc++-v3/include/tr1/cwchar /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/cwctype /home/sweya/Desktop/
+CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/incl
+ude/tr1/ell_integral.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LA
+B_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/exp_integral.tcc /home/sweya/Desktop/CLASS_CODES/sec
+ond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/fenv.h
+/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2
+.0/libstdc++-v3/include/tr1/float.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/functional /home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/fu
+nctional_hash.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/gamma.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/se
+mester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/hypergeometric.tcc /hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/l
+ibstdc++-v3/include/tr1/hashtable.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/hashtable_policy.h /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/includ
+e/tr1/inttypes.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/limits.h /home/sweya/Desktop/CLASS_CODES/second_year_code/se
+mester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/math.h /home/sweya/Desk
+top/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/
+include/tr1/memory /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GC
+C_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/modified_bessel_func.tcc /home/sweya/Desktop/CLASS_CODES/s
+econd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/poly_
+hermite.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/tr1/poly_laguerre.tcc /home/sweya/Desktop/CLASS_CODES/second_year_cod
+e/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/legendre_function.t
+cc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-1
+5.2.0/libstdc++-v3/include/tr1/random /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211
+/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/random.h /home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/ra
+ndom.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/libstdc++-v3/include/tr1/regex /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/
+CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/riemann_zeta.tcc /home/sweya/Deskt
+op/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/i
+nclude/tr1/shared_ptr.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB
+_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/special_function_util.h /home/sweya/Desktop/CLASS_COD
+ES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/s
+tdarg.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/include/tr1/stdbool.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_o
+ne/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/stdint.h /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/includ
+e/tr1/stdio.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COM
+PILER/gcc-15.2.0/libstdc++-v3/include/tr1/stdlib.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semes
+ter_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/tgmath.h /home/sweya/Deskt
+op/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/i
+nclude/tr1/tuple /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/type_traits /home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/unordered_map /home/
+sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/lib
+stdc++-v3/include/tr1/unordered_map.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211
+/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/unordered_set /home/sweya/Desktop/CLASS
+_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/t
+r1/unordered_set.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GC
+C_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/utility /home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr1/wchar.h /home/sweya/De
+sktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v
+3/include/tr1/wctype.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./tr1; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./tr2
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/tr2/bool_set /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr2/bool_set.tcc /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/tr2/dynamic_bitset /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr2/dynamic_bitset.tcc /home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/tr2/ra
+tio /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-
+15.2.0/libstdc++-v3/include/tr2/type_traits; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./tr2; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./decimal
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/decimal/decimal /home/sweya/Desktop/CLASS_CODES/second_year_code/seme
+ster_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/decimal/decimal.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./decimal; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./experimental
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/experimental/algorithm /home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/any /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/li
+bstdc++-v3/include/experimental/array /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211
+/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/buffer /home/sweya/Desktop/CLA
+SS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include
+/experimental/chrono /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/contract /home/sweya/Desktop/CLASS_CODES/second
+_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/d
+eque /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc
+-15.2.0/libstdc++-v3/include/experimental/executor /home/sweya/Desktop/CLASS_CODES/second_year_code/semes
+ter_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/forward_list /hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/l
+ibstdc++-v3/include/experimental/functional /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one
+/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/internet /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/experimental/io_context /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS
+_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/iterator /home/sweya/Desktop/CLASS_
+CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/ex
+perimental/list /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/map /home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/memory /hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/l
+ibstdc++-v3/include/experimental/memory_resource /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/net /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/experimental/netfwd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/numeric /home/sweya/Desktop/CLASS_CODES
+/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experim
+ental/optional /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_CO
+MPILER/gcc-15.2.0/libstdc++-v3/include/experimental/propagate_const /home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/
+random /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/g
+cc-15.2.0/libstdc++-v3/include/experimental/ratio /home/sweya/Desktop/CLASS_CODES/second_year_code/semest
+er_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/regex /home/sweya/
+Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++
+-v3/include/experimental/scope /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_W
+ORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/set /home/sweya/Desktop/CLASS_CODES/s
+econd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimen
+tal/simd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/libstdc++-v3/include/experimental/socket /home/sweya/Desktop/CLASS_CODES/second_year_code/sem
+ester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/source_location
+ /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.
+2.0/libstdc++-v3/include/experimental/string /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/string_view /home/sweya
+/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc+
++-v3/include/experimental/synchronized_value /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/system_error /home/swey
+a/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc
+++-v3/include/experimental/timer /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS
+_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/tuple /home/sweya/Desktop/CLASS_COD
+ES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/exper
+imental/type_traits /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/G
+CC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/unordered_map /home/sweya/Desktop/CLASS_CODES/se
+cond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experiment
+al/unordered_set /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/utility /home/sweya/Desktop/CLASS_CODES/second_year
+_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/vector
+ /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.
+2.0/libstdc++-v3/include/experimental/filesystem; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./experimental; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./experimental/bits
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/lfts_config.h /home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/
+bits/net.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPIL
+ER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/numeric_traits.h /home/sweya/Desktop/CLASS_CODES/sec
+ond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimenta
+l/bits/shared_ptr.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/G
+CC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd.h /home/sweya/Desktop/CLASS_CODES/seco
+nd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental
+/bits/simd_builtin.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd_converter.h /home/sweya/Desktop/CLASS
+_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/e
+xperimental/bits/simd_detail.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_W
+ORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd_fixed_size.h /home/sweya/De
+sktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v
+3/include/experimental/bits/simd_math.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP2
+11/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd_neon.h /home/sweya
+/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc+
++-v3/include/experimental/bits/simd_ppc.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/C
+P211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd_scalar.h /home/s
+weya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libs
+tdc++-v3/include/experimental/bits/simd_sve.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_o
+ne/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/simd_x86.h /home/
+sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/lib
+stdc++-v3/include/experimental/bits/simd_x86_conversions.h /home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/stri
+ng_view.tcc /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/fs_dir.h /home/sweya/Desktop/CLASS_CODES/second_yea
+r_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/
+fs_fwd.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/libstdc++-v3/include/experimental/bits/fs_ops.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/experimental/bits/fs_
+path.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./experimental/bits; done
+c_base_headers_extra_install='';\
+for file in $c_base_headers_extra_install; do \
+  /usr/bin/install -c -m 644 $file /usr/local/gcc-15/include/c++/15.2.0/./bits; done
+c_compatibility_headers_install='/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS
+_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/c_compatibility/complex.h /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/includ
+e/c_compatibility/fenv.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LA
+B_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/c_compatibility/tgmath.h /home/sweya/Desktop/CLASS_CODES
+/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/c_compa
+tibility/math.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/include/c_compatibility/stdatomic.h /home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/c_compatibili
+ty/stdbit.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/c_compatibility/stdckdint.h /home/sweya/Desktop/CLASS_CODES/second_ye
+ar_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/c_compatibility/s
+tdlib.h';\
+for file in $c_compatibility_headers_install; do \
+  /usr/bin/install -c -m 644 $file /usr/local/gcc-15/include/c++/15.2.0; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./parallel
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/parallel/algo.h /home/sweya/Desktop/CLASS_CODES/second_year_code/seme
+ster_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/algobase.h /home/swe
+ya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstd
+c++-v3/include/parallel/algorithm /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LAB
+S_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/algorithmfwd.h /home/sweya/Desktop/CLA
+SS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include
+/parallel/balanced_quicksort.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_W
+ORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/base.h /home/sweya/Desktop/CLASS_CODES/se
+cond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/b
+asic_iterator.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/checkers.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/compatibilit
+y.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-
+15.2.0/libstdc++-v3/include/parallel/compiletime_settings.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/equally_spli
+t.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-
+15.2.0/libstdc++-v3/include/parallel/features.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/find.h /home/sweya/Deskt
+op/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/i
+nclude/parallel/find_selectors.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS
+_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/for_each.h /home/sweya/Desktop/CLASS_CO
+DES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/para
+llel/for_each_selectors.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/L
+AB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/iterator.h /home/sweya/Desktop/CLASS_CODES/sec
+ond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/li
+st_partition.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_CO
+MPILER/gcc-15.2.0/libstdc++-v3/include/parallel/losertree.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/merge.h /hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/l
+ibstdc++-v3/include/parallel/multiseq_selection.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semest
+er_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/multiway_merge.h /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/li
+bstdc++-v3/include/parallel/multiway_mergesort.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/numeric /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/parallel/numericfwd.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_W
+ORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/omp_loop.h /home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parall
+el/omp_loop_static.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/par_loop.h /home/sweya/Desktop/CLASS_CODES/second_y
+ear_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/paralle
+l.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-
+15.2.0/libstdc++-v3/include/parallel/partial_sum.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semes
+ter_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/partition.h /home/swe
+ya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstd
+c++-v3/include/parallel/queue.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_
+WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/quicksort.h /home/sweya/Desktop/CLASS_CO
+DES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/para
+llel/random_number.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/random_shuffle.h /home/sweya/Desktop/CLASS_CODES/se
+cond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/s
+earch.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/include/parallel/set_operations.h /home/sweya/Desktop/CLASS_CODES/second_year_cod
+e/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/settings.h /ho
+me/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/
+libstdc++-v3/include/parallel/sort.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/tags.h /home/sweya/Desktop/CLASS_CO
+DES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/para
+llel/types.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMP
+ILER/gcc-15.2.0/libstdc++-v3/include/parallel/unique_copy.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/parallel/workstealing
+.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./parallel; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/x86_64-pc-linux-gnu/bits/..
+/ext
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/config/cpu/i486/opt/ext/opt_random.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/x86_64-pc-linux-gnu/bits/../ext
+; done
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/./pstl
+for file in /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/libstdc++-v3/include/pstl/algorithm_fwd.h /home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/algorithm_impl.h /h
+ome/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0
+/libstdc++-v3/include/pstl/execution_defs.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one
+/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/execution_impl.h /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/pstl/glue_algorithm_defs.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/glue_algorithm_impl.h /home/sweya/Deskto
+p/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/in
+clude/pstl/glue_execution_defs.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS
+_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/glue_memory_defs.h /home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/
+pstl/glue_memory_impl.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB
+_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/glue_numeric_defs.h /home/sweya/Desktop/CLASS_CODES/
+second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/glu
+e_numeric_impl.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/memory_impl.h /home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/numeric_fwd.h /h
+ome/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0
+/libstdc++-v3/include/pstl/numeric_impl.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/C
+P211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/parallel_backend.h /home/sweya/Des
+ktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3
+/include/pstl/parallel_backend_tbb.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/parallel_backend_serial.h /home/sweya/D
+esktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-
+v3/include/pstl/parallel_backend_utils.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP
+211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/parallel_impl.h /home/sweya/Desktop
+/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/inc
+lude/pstl/pstl_config.h /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB
+_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/unseq_backend_simd.h /home/sweya/Desktop/CLASS_CODES
+/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/pstl/ut
+ils.h; do \
+  /usr/bin/install -c -m 644 ${file} /usr/local/gcc-15/include/c++/15.2.0/./pstl; done
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include'
+Making install in libsupc++
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libsupc++.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libsupc++.lai /usr/local/gcc-15/lib/../lib64/libsupc++.la
+libtool: install: /usr/bin/install -c .libs/libsupc++.a /usr/local/gcc-15/lib/../lib64/libsupc++.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libsupc++.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libsupc++.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0/bits
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/atomic_lockfree_defines.h /usr/local/gcc-1
+5/include/c++/15.2.0/bits/atomic_lockfree_defines.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/cxxabi_forced.h /usr/local/gcc-15/include/
+c++/15.2.0/bits/cxxabi_forced.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/exception_defines.h /usr/local/gcc-15/incl
+ude/c++/15.2.0/bits/exception_defines.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/exception_ptr.h /usr/local/gcc-15/include/
+c++/15.2.0/bits/exception_ptr.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/hash_bytes.h /usr/local/gcc-15/include/c++
+/15.2.0/bits/hash_bytes.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/nested_exception.h /usr/local/gcc-15/inclu
+de/c++/15.2.0/bits/nested_exception.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/exception.h /usr/local/gcc-15/include/c++/
+15.2.0/bits/exception.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/cxxabi_init_exception.h /usr/local/gcc-15/
+include/c++/15.2.0/bits/cxxabi_init_exception.h
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/include/c++/15.2.0
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/compare /usr/local/gcc-15/include/c++/15.2
+.0/compare
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/cxxabi.h /usr/local/gcc-15/include/c++/15.
+2.0/cxxabi.h
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/exception /usr/local/gcc-15/include/c++/15
+.2.0/exception
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/initializer_list /usr/local/gcc-15/include
+/c++/15.2.0/initializer_list
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/new /usr/local/gcc-15/include/c++/15.2.0/n
+ew
+ /usr/bin/install -c -m 644 ../../../../libstdc++-v3/libsupc++/typeinfo /usr/local/gcc-15/include/c++/15.
+2.0/typeinfo
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++'
+Making install in src
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+Making install in c++98
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++98'
+Making install in c++11
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++11'
+Making install in c++17
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++17'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++17'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++17'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++17'
+Making install in c++20
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++20'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++20'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++20'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++20'
+Making install in c++23
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++23'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++23'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libstdc++.modules.json '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/include/c++/15.2.0/bits'
+ /usr/bin/install -c -m 644 std.cc std.compat.cc '/usr/local/gcc-15/include/c++/15.2.0/bits'
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++23'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++23'
+Making install in c++26
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++26'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++26'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++26'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/c++26'
+Making install in filesystem
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/filesystem'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/filesystem'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libstdc++fs.la '/usr/local/gcc-15/lib/../li
+b64'
+libtool: install: /usr/bin/install -c .libs/libstdc++fs.lai /usr/local/gcc-15/lib/../lib64/libstdc++fs.la
+libtool: install: /usr/bin/install -c .libs/libstdc++fs.a /usr/local/gcc-15/lib/../lib64/libstdc++fs.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libstdc++fs.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libstdc++fs.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/filesystem'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/filesystem'
+Making install in libbacktrace
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/libbacktrace'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/libbacktrace'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/libbacktrace'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/libbacktrace'
+Making install in experimental
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/experimental'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/experimental'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libstdc++exp.la '/usr/local/gcc-15/lib/../l
+ib64'
+libtool: install: /usr/bin/install -c .libs/libstdc++exp.lai /usr/local/gcc-15/lib/../lib64/libstdc++exp.
+la
+libtool: install: /usr/bin/install -c .libs/libstdc++exp.a /usr/local/gcc-15/lib/../lib64/libstdc++exp.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libstdc++exp.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libstdc++exp.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/experimental'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/experimental'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libstdc++.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libstdc++.so.6.0.34 /usr/local/gcc-15/lib/../lib64/libstdc++.
+so.6.0.34
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libstdc++.so.6.0.34 libstdc++.so.6 ||
+{ rm -f libstdc++.so.6 && ln -s libstdc++.so.6.0.34 libstdc++.so.6; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libstdc++.so.6.0.34 libstdc++.so || {
+rm -f libstdc++.so && ln -s libstdc++.so.6.0.34 libstdc++.so; }; })
+libtool: install: /usr/bin/install -c .libs/libstdc++.lai /usr/local/gcc-15/lib/../lib64/libstdc++.la
+libtool: install: /usr/bin/install -c .libs/libstdc++.a /usr/local/gcc-15/lib/../lib64/libstdc++.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libstdc++.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libstdc++.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src'
+Making install in doc
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/doc'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/doc'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/doc'
+Making install in po
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make[4]: Nothing to be done for 'install-exec-am'.
+/bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/libstdc++-v3/../mkinstalldirs /usr/local/gcc-15/share/locale
+catalogs='de.mo fr.mo'; \
+for cat in $catalogs; do \
+  cat=`basename $cat`; \
+  lang=`echo $cat | sed 's/\.mo$//'`; \
+  install_dir=/usr/local/gcc-15/share/locale/$lang/LC_MESSAGES; \
+  /bin/sh /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILE
+R/gcc-15.2.0/libstdc++-v3/../mkinstalldirs $install_dir; \
+  /usr/bin/install -c -m 644 $cat $install_dir/libstdc++.mo; \
+done
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/po'
+Making install in testsuite
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/testsuite'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/testsuite'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/testsuite'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/testsuite'
+Making install in python
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/python'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/python'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/install -c -m 644 gdb.py /usr/local/gcc-15/lib/../lib64/libstdc++.so.6.0.34-gdb.py
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/gcc-15.2.0/python'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/gcc-15.2.0/python/libstdcxx/v6'
+ /usr/bin/install -c -m 644  ../../../../libstdc++-v3/python/libstdcxx/v6/printers.py ../../../../libstdc
+++-v3/python/libstdcxx/v6/xmethods.py ../../../../libstdc++-v3/python/libstdcxx/v6/__init__.py '/usr/loca
+l/gcc-15/share/gcc-15.2.0/python/libstdcxx/v6'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/gcc-15.2.0/python/libstdcxx'
+ /usr/bin/install -c -m 644  ../../../../libstdc++-v3/python/libstdcxx/__init__.py '/usr/local/gcc-15/sha
+re/gcc-15.2.0/python/libstdcxx'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/python'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/python'
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CC_FOR_TARGET=/home/sweya/Desktop/CLASS_CODES/second_year_code/sem
+ester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -B/home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/" "CFLAGS=-g -O
+2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "
+INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install
+-c" "INSTALL_SCRIPT=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAK
+E=make" "MAKEINFO=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/missing makeinfo --split-size=5000000 --split-size=5000000  " "SHELL=/bin/sh" "RUNTE
+STFLAGS=" "exec_prefix=/usr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-1
+5/lib" "includedir=/usr/local/gcc-15/include" "prefix=/usr/local/gcc-15" "tooldir=/usr/local/gcc-15/x86_6
+4-pc-linux-gnu" "gxx_include_dir=/usr/local/gcc-15/include/c++/15.2.0" "AR=ar --plugin /usr/libexec/gcc/x
+86_64-redhat-linux/15/liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one
+/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "LD=/home/sweya/Desktop/CLASS_CODES/second
+_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "RANLIB=ran
+lib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "NM=/home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/nm" "NM_FOR_BUI
+LD=" "NM_FOR_TARGET=nm" "DESTDIR=" "WERROR=" DO=all multi-do # make
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CC_FOR_TARGET=/home/sweya/Desktop/CLASS_CODES/second_year_code/sem
+ester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -B/home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/" "CFLAGS=-g -O
+2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "
+INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install
+-c" "INSTALL_SCRIPT=/usr/bin/install -c" "LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAK
+E=make" "MAKEINFO=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/missing makeinfo --split-size=5000000 --split-size=5000000   " "SHELL=/bin/sh" "RUNT
+ESTFLAGS=" "exec_prefix=/usr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-
+15/lib" "includedir=/usr/local/gcc-15/include" "prefix=/usr/local/gcc-15" "tooldir=/usr/local/gcc-15/x86_
+64-pc-linux-gnu" "gxx_include_dir=/usr/local/gcc-15/include/c++/15.2.0" "AR=ar --plugin /usr/libexec/gcc/
+x86_64-redhat-linux/15/liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "LD=/home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "RANLIB=ra
+nlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "NM=/home/sweya/Desktop/CLASS_COD
+ES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/nm" "NM_FOR_BU
+ILD=" "NM_FOR_TARGET=nm" "DESTDIR=" "WERROR=" DO=install multi-do # make
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+Making install in sanitizer_common
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/sanitizer_common'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/sanitizer_common'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/sanitizer_common'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/sanitizer_common'
+Making install in interception
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/interception'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/interception'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/interception'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/interception'
+Making install in libbacktrace
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/libbacktrace'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/libbacktrace'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/libbacktrace'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/libbacktrace'
+Making install in lsan
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/lsan'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/lsan'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 liblsan_preinit.o '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   liblsan.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: warning: relinking `liblsan.la'
+libtool: install: (cd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/lsan; /bin/sh /home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gn
+u/libsanitizer/libtool  --tag CXX --mode=relink /home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/
+CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nost
+dinc++ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.l
+ibs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/b
+in/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -
+isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include -Wall -W -Wno-unused-parameter -Wwrite-strings
+-Wno-long-long -fPIC -fno-builtin -fno-exceptions -fno-rtti -fomit-frame-pointer -funwind-tables -fvisibi
+lity=hidden -Wno-variadic-macros -I../../libstdc++-v3/include -I../../libstdc++-v3/include/x86_64-pc-linu
+x-gnu -I../../../../libsanitizer/../libstdc++-v3/libsupc++ -std=gnu++17 -fcf-protection -mshstk -g -O2 -D
+_GNU_SOURCE -version-info 0:0:0 -ldl -lrt -lpthread -lm -o liblsan.la -rpath /usr/local/gcc-15/lib/../lib
+64 lsan_common.lo lsan_common_linux.lo lsan_common_mac.lo lsan.lo lsan_linux.lo lsan_mac.lo lsan_malloc_m
+ac.lo lsan_allocator.lo lsan_interceptors.lo lsan_thread.lo lsan_posix.lo ../sanitizer_common/libsanitize
+r_common.la ../interception/libinterception.la ../libbacktrace/libsanitizer_libbacktrace.la ../../libstdc
+++-v3/src/libstdc++.la )
+libtool: relink:  /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nostdinc++ -L/home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-li
+nux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux
+-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include     -fPIC -DPIC -shared -nostdlib /lib/../lib64/crti.o /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtbegi
+nS.o  .libs/lsan_common.o .libs/lsan_common_linux.o .libs/lsan_common_mac.o .libs/lsan.o .libs/lsan_linux
+.o .libs/lsan_mac.o .libs/lsan_malloc_mac.o .libs/lsan_allocator.o .libs/lsan_interceptors.o .libs/lsan_t
+hread.o .libs/lsan_posix.o  -Wl,--whole-archive ../sanitizer_common/.libs/libsanitizer_common.a ../interc
+eption/.libs/libinterception.a ../libbacktrace/.libs/libsanitizer_libbacktrace.a -Wl,--no-whole-archive
+-Wl,-rpath -Wl,/usr/local/gcc-15/lib/../lib64 -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/ho
+me/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/
+build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -l
+dl -lrt -lpthread -L/usr/local/gcc-15/lib/../lib64 -lstdc++ -lm -L/home/sweya/Desktop/CLASS_CODES/second_
+year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -L/lib/../lib64 -L/usr/l
+ib/../lib64 -L/lib -L/usr/lib -lc -lgcc_s /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/C
+P211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtendS.o /lib/../lib64/crtn.o  -mshstk -g -O2
+ -Wl,-soname -Wl,liblsan.so.0 -o .libs/liblsan.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/liblsan.so.0.0.0T /usr/local/gcc-15/lib/../lib64/liblsan.so.0
+.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f liblsan.so.0.0.0 liblsan.so.0 || { rm
+-f liblsan.so.0 && ln -s liblsan.so.0.0.0 liblsan.so.0; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f liblsan.so.0.0.0 liblsan.so || { rm -f
+ liblsan.so && ln -s liblsan.so.0.0.0 liblsan.so; }; })
+libtool: install: /usr/bin/install -c .libs/liblsan.lai /usr/local/gcc-15/lib/../lib64/liblsan.la
+libtool: install: /usr/bin/install -c .libs/liblsan.a /usr/local/gcc-15/lib/../lib64/liblsan.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/liblsan.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/liblsan.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/lsan'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/lsan'
+Making install in asan
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/asan'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/asan'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libasan_preinit.o '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libasan.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: warning: relinking `libasan.la'
+libtool: install: (cd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/asan; /bin/sh /home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gn
+u/libsanitizer/libtool  --tag CXX --mode=relink /home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/
+CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nost
+dinc++ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.l
+ibs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/b
+in/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -
+isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include -Wall -W -Wno-unused-parameter -Wwrite-strings
+-Wno-long-long -fPIC -fno-builtin -fno-exceptions -fno-rtti -fomit-frame-pointer -funwind-tables -fvisibi
+lity=hidden -Wno-variadic-macros -fno-ipa-icf -I../../libstdc++-v3/include -I../../libstdc++-v3/include/x
+86_64-pc-linux-gnu -I../../../../libsanitizer/../libstdc++-v3/libsupc++ -std=gnu++17 -fcf-protection -msh
+stk -g -O2 -D_GNU_SOURCE -version-info 8:0:0 -lrt -ldl -lrt -lpthread -lm -o libasan.la -rpath /usr/local
+/gcc-15/lib/../lib64 asan_activation.lo asan_allocator.lo asan_debugging.lo asan_descriptions.lo asan_err
+ors.lo asan_fake_stack.lo asan_flags.lo asan_globals.lo asan_interceptors.lo asan_interceptors_memintrins
+ics.lo asan_linux.lo asan_mac.lo asan_malloc_linux.lo asan_malloc_mac.lo asan_malloc_win.lo asan_memory_p
+rofile.lo asan_new_delete.lo asan_poisoning.lo asan_posix.lo asan_premap_shadow.lo asan_report.lo asan_rt
+l.lo asan_shadow_setup.lo asan_stack.lo asan_stats.lo asan_suppressions.lo asan_thread.lo asan_win.lo asa
+n_win_dynamic_runtime_thunk.lo asan_interceptors_vfork.lo ../sanitizer_common/libsanitizer_common.la ../l
+san/libsanitizer_lsan.la ../interception/libinterception.la ../libbacktrace/libsanitizer_libbacktrace.la
+../../libstdc++-v3/src/libstdc++.la )
+libtool: relink:  /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nostdinc++ -L/home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-li
+nux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux
+-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include     -fPIC -DPIC -shared -nostdlib /lib/../lib64/crti.o /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtbegi
+nS.o  .libs/asan_activation.o .libs/asan_allocator.o .libs/asan_debugging.o .libs/asan_descriptions.o .li
+bs/asan_errors.o .libs/asan_fake_stack.o .libs/asan_flags.o .libs/asan_globals.o .libs/asan_interceptors.
+o .libs/asan_interceptors_memintrinsics.o .libs/asan_linux.o .libs/asan_mac.o .libs/asan_malloc_linux.o .
+libs/asan_malloc_mac.o .libs/asan_malloc_win.o .libs/asan_memory_profile.o .libs/asan_new_delete.o .libs/
+asan_poisoning.o .libs/asan_posix.o .libs/asan_premap_shadow.o .libs/asan_report.o .libs/asan_rtl.o .libs
+/asan_shadow_setup.o .libs/asan_stack.o .libs/asan_stats.o .libs/asan_suppressions.o .libs/asan_thread.o
+.libs/asan_win.o .libs/asan_win_dynamic_runtime_thunk.o .libs/asan_interceptors_vfork.o  -Wl,--whole-arch
+ive ../sanitizer_common/.libs/libsanitizer_common.a ../lsan/.libs/libsanitizer_lsan.a ../interception/.li
+bs/libinterception.a ../libbacktrace/.libs/libsanitizer_libbacktrace.a -Wl,--no-whole-archive  -Wl,-rpath
+ -Wl,/usr/local/gcc-15/lib/../lib64 -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211
+/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/D
+esktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_
+64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LA
+BS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -ldl -lrt -l
+pthread -L/usr/local/gcc-15/lib/../lib64 -lstdc++ -lm -L/home/sweya/Desktop/CLASS_CODES/second_year_code/
+semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -L/lib/../lib64 -L/usr/lib/../lib6
+4 -L/lib -L/usr/lib -lc -lgcc_s /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_
+WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtendS.o /lib/../lib64/crtn.o  -mshstk -g -O2   -Wl,-sona
+me -Wl,libasan.so.8 -o .libs/libasan.so.8.0.0
+libtool: install: /usr/bin/install -c .libs/libasan.so.8.0.0T /usr/local/gcc-15/lib/../lib64/libasan.so.8
+.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libasan.so.8.0.0 libasan.so.8 || { rm
+-f libasan.so.8 && ln -s libasan.so.8.0.0 libasan.so.8; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libasan.so.8.0.0 libasan.so || { rm -f
+ libasan.so && ln -s libasan.so.8.0.0 libasan.so; }; })
+libtool: install: /usr/bin/install -c .libs/libasan.lai /usr/local/gcc-15/lib/../lib64/libasan.la
+libtool: install: /usr/bin/install -c .libs/libasan.a /usr/local/gcc-15/lib/../lib64/libasan.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libasan.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libasan.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/asan'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/asan'
+Making install in ubsan
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/ubsan'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/ubsan'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libubsan.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: warning: relinking `libubsan.la'
+libtool: install: (cd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/ubsan; /bin/sh /home/sweya/Desktop/CLASS_
+CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-g
+nu/libsanitizer/libtool  --tag CXX --mode=relink /home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop
+/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nos
+tdinc++ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILE
+R/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_cod
+e/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.
+libs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/g
+cc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/
+bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include
+-isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include -Wall -W -Wno-unused-parameter -Wwrite-strings
+ -Wno-long-long -fPIC -fno-builtin -fno-exceptions -fno-rtti -fomit-frame-pointer -funwind-tables -fvisib
+ility=hidden -Wno-variadic-macros -I../../libstdc++-v3/include -I../../libstdc++-v3/include/x86_64-pc-lin
+ux-gnu -I../../../../libsanitizer/../libstdc++-v3/libsupc++ -std=gnu++17 -fcf-protection -mshstk -g -O2 -
+D_GNU_SOURCE -version-info 1:0:0 -ldl -lrt -lpthread -lm -o libubsan.la -rpath /usr/local/gcc-15/lib/../l
+ib64 ubsan_diag.lo ubsan_flags.lo ubsan_handlers.lo ubsan_handlers_cxx.lo ubsan_init.lo ubsan_monitor.lo
+ubsan_type_hash.lo ubsan_type_hash_itanium.lo ubsan_type_hash_win.lo ubsan_value.lo ../sanitizer_common/l
+ibsanitizer_common.la ../interception/libinterception.la ../libbacktrace/libsanitizer_libbacktrace.la ../
+../libstdc++-v3/src/libstdc++.la )
+libtool: relink:  /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nostdinc++ -L/home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-li
+nux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux
+-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include     -fPIC -DPIC -shared -nostdlib /lib/../lib64/crti.o /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtbegi
+nS.o  .libs/ubsan_diag.o .libs/ubsan_flags.o .libs/ubsan_handlers.o .libs/ubsan_handlers_cxx.o .libs/ubsa
+n_init.o .libs/ubsan_monitor.o .libs/ubsan_type_hash.o .libs/ubsan_type_hash_itanium.o .libs/ubsan_type_h
+ash_win.o .libs/ubsan_value.o  -Wl,--whole-archive ../sanitizer_common/.libs/libsanitizer_common.a ../int
+erception/.libs/libinterception.a ../libbacktrace/.libs/libsanitizer_libbacktrace.a -Wl,--no-whole-archiv
+e  -Wl,-rpath -Wl,/usr/local/gcc-15/lib/../lib64 -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semes
+ter_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L
+/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2
+.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs
+ -ldl -lrt -lpthread -L/usr/local/gcc-15/lib/../lib64 -lstdc++ -lm -L/home/sweya/Desktop/CLASS_CODES/seco
+nd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -L/lib/../lib64 -L/us
+r/lib/../lib64 -L/lib -L/usr/lib -lc -lgcc_s /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtendS.o /lib/../lib64/crtn.o  -mshstk -g -O
+2   -Wl,-soname -Wl,libubsan.so.1 -o .libs/libubsan.so.1.0.0
+libtool: install: /usr/bin/install -c .libs/libubsan.so.1.0.0T /usr/local/gcc-15/lib/../lib64/libubsan.so
+.1.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libubsan.so.1.0.0 libubsan.so.1 || { r
+m -f libubsan.so.1 && ln -s libubsan.so.1.0.0 libubsan.so.1; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libubsan.so.1.0.0 libubsan.so || { rm
+-f libubsan.so && ln -s libubsan.so.1.0.0 libubsan.so; }; })
+libtool: install: /usr/bin/install -c .libs/libubsan.lai /usr/local/gcc-15/lib/../lib64/libubsan.la
+libtool: install: /usr/bin/install -c .libs/libubsan.a /usr/local/gcc-15/lib/../lib64/libubsan.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libubsan.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libubsan.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/ubsan'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/ubsan'
+Making install in tsan
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/tsan'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/tsan'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libtsan_preinit.o '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libtsan.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: warning: relinking `libtsan.la'
+libtool: install: (cd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/tsan; /bin/sh /home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gn
+u/libsanitizer/libtool  --tag CXX --mode=relink /home/sweya/Desktop/CLASS_CODES/second_year_code/semester
+_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/
+CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nost
+dinc++ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code
+/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.l
+ibs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/b
+in/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -
+isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include -Wall -W -Wno-unused-parameter -Wwrite-strings
+-Wno-long-long -fPIC -fno-builtin -fno-exceptions -fno-rtti -fomit-frame-pointer -funwind-tables -fvisibi
+lity=hidden -Wno-variadic-macros -I../../libstdc++-v3/include -I../../libstdc++-v3/include/x86_64-pc-linu
+x-gnu -I../../../../libsanitizer/../libstdc++-v3/libsupc++ -std=gnu++17 -fcf-protection -mshstk -g -O2 -D
+_GNU_SOURCE -version-info 2:0:0 -lrt -ldl -lrt -lpthread -lm -o libtsan.la -rpath /usr/local/gcc-15/lib/.
+./lib64 tsan_debugging.lo tsan_external.lo tsan_fd.lo tsan_flags.lo tsan_ignoreset.lo tsan_interceptors_p
+osix.lo tsan_interceptors_mac.lo tsan_interceptors_memintrinsics.lo tsan_interface_ann.lo tsan_interface_
+atomic.lo tsan_interface.lo tsan_interface_java.lo tsan_malloc_mac.lo tsan_md5.lo tsan_mman.lo tsan_mutex
+set.lo tsan_new_delete.lo tsan_platform_linux.lo tsan_platform_mac.lo tsan_platform_posix.lo tsan_platfor
+m_windows.lo tsan_report.lo tsan_rtl.lo tsan_rtl_access.lo tsan_rtl_mutex.lo tsan_rtl_proc.lo tsan_rtl_re
+port.lo tsan_rtl_thread.lo tsan_stack_trace.lo tsan_suppressions.lo tsan_symbolize.lo tsan_sync.lo tsan_v
+ector_clock.lo ../sanitizer_common/libsanitizer_common.la ../interception/libinterception.la tsan_rtl_amd
+64.lo ../libbacktrace/libsanitizer_libbacktrace.la ../../libstdc++-v3/src/libstdc++.la )
+libtool: relink:  /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nostdinc++ -L/home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-li
+nux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux
+-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include     -fPIC -DPIC -shared -nostdlib /lib/../lib64/crti.o /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtbegi
+nS.o  .libs/tsan_debugging.o .libs/tsan_external.o .libs/tsan_fd.o .libs/tsan_flags.o .libs/tsan_ignorese
+t.o .libs/tsan_interceptors_posix.o .libs/tsan_interceptors_mac.o .libs/tsan_interceptors_memintrinsics.o
+ .libs/tsan_interface_ann.o .libs/tsan_interface_atomic.o .libs/tsan_interface.o .libs/tsan_interface_jav
+a.o .libs/tsan_malloc_mac.o .libs/tsan_md5.o .libs/tsan_mman.o .libs/tsan_mutexset.o .libs/tsan_new_delet
+e.o .libs/tsan_platform_linux.o .libs/tsan_platform_mac.o .libs/tsan_platform_posix.o .libs/tsan_platform
+_windows.o .libs/tsan_report.o .libs/tsan_rtl.o .libs/tsan_rtl_access.o .libs/tsan_rtl_mutex.o .libs/tsan
+_rtl_proc.o .libs/tsan_rtl_report.o .libs/tsan_rtl_thread.o .libs/tsan_stack_trace.o .libs/tsan_suppressi
+ons.o .libs/tsan_symbolize.o .libs/tsan_sync.o .libs/tsan_vector_clock.o .libs/tsan_rtl_amd64.o  -Wl,--wh
+ole-archive ../sanitizer_common/.libs/libsanitizer_common.a ../interception/.libs/libinterception.a ../li
+bbacktrace/.libs/libsanitizer_libbacktrace.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/usr/local/gcc-15/lib
+/../lib64 -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLASS_CODES/second_
+year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-
+v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -ldl -lrt -lpthread -L/usr/local/gcc-1
+5/lib/../lib64 -lstdc++ -lm -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WO
+RK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -lc -l
+gcc_s /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/./gcc/crtendS.o /lib/../lib64/crtn.o  -mshstk -g -O2   -Wl,-soname -Wl,libtsan.so.2 -o .li
+bs/libtsan.so.2.0.0
+libtool: install: /usr/bin/install -c .libs/libtsan.so.2.0.0T /usr/local/gcc-15/lib/../lib64/libtsan.so.2
+.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libtsan.so.2.0.0 libtsan.so.2 || { rm
+-f libtsan.so.2 && ln -s libtsan.so.2.0.0 libtsan.so.2; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libtsan.so.2.0.0 libtsan.so || { rm -f
+ libtsan.so && ln -s libtsan.so.2.0.0 libtsan.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtsan.lai /usr/local/gcc-15/lib/../lib64/libtsan.la
+libtool: install: /usr/bin/install -c .libs/libtsan.a /usr/local/gcc-15/lib/../lib64/libtsan.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libtsan.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libtsan.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/tsan'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/tsan'
+Making install in hwasan
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/hwasan'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/hwasan'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libhwasan_preinit.o '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libhwasan.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: warning: relinking `libhwasan.la'
+libtool: install: (cd /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/hwasan; /bin/sh /home/sweya/Desktop/CLASS
+_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-
+gnu/libsanitizer/libtool  --tag CXX --mode=relink /home/sweya/Desktop/CLASS_CODES/second_year_code/semest
+er_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Deskto
+p/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -no
+stdinc++ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPIL
+ER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/
+.libs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/
+gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu
+/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include
+ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include -Wall -W -Wno-unused-parameter -Wwrite-string
+s -Wno-long-long -fPIC -fno-builtin -fno-exceptions -fno-rtti -funwind-tables -fvisibility=hidden -Wno-va
+riadic-macros -fno-ipa-icf -I../../libstdc++-v3/include -I../../libstdc++-v3/include/x86_64-pc-linux-gnu
+-I../../../../libsanitizer/../libstdc++-v3/libsupc++ -std=gnu++17 -fcf-protection -mshstk -g -O2 -D_GNU_S
+OURCE -version-info 0:0:0 -ldl -lrt -lpthread -lm -o libhwasan.la -rpath /usr/local/gcc-15/lib/../lib64 h
+wasan_allocation_functions.lo hwasan_allocator.lo hwasan.lo hwasan_dynamic_shadow.lo hwasan_exceptions.lo
+ hwasan_fuchsia.lo hwasan_globals.lo hwasan_interceptors.lo hwasan_interceptors_vfork.lo hwasan_linux.lo
+hwasan_memintrinsics.lo hwasan_new_delete.lo hwasan_poisoning.lo hwasan_report.lo hwasan_setjmp_aarch64.l
+o hwasan_setjmp_x86_64.lo hwasan_tag_mismatch_aarch64.lo hwasan_thread.lo hwasan_thread_list.lo hwasan_ty
+pe_test.lo ../sanitizer_common/libsanitizer_common.la ../lsan/libsanitizer_lsan.la ../interception/libint
+erception.la ../libbacktrace/libsanitizer_libbacktrace.la ../../libstdc++-v3/src/libstdc++.la )
+libtool: relink:  /home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/xgcc -shared-libgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -nostdinc++ -L/home/sweya/Desktop/C
+LASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-li
+nux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux
+-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include     -fPIC -DPIC -shared -nostdlib /lib/../lib64/crti.o /home/sweya/Desktop/CL
+ASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtbegi
+nS.o  .libs/hwasan_allocation_functions.o .libs/hwasan_allocator.o .libs/hwasan.o .libs/hwasan_dynamic_sh
+adow.o .libs/hwasan_exceptions.o .libs/hwasan_fuchsia.o .libs/hwasan_globals.o .libs/hwasan_interceptors.
+o .libs/hwasan_interceptors_vfork.o .libs/hwasan_linux.o .libs/hwasan_memintrinsics.o .libs/hwasan_new_de
+lete.o .libs/hwasan_poisoning.o .libs/hwasan_report.o .libs/hwasan_setjmp_aarch64.o .libs/hwasan_setjmp_x
+86_64.o .libs/hwasan_tag_mismatch_aarch64.o .libs/hwasan_thread.o .libs/hwasan_thread_list.o .libs/hwasan
+_type_test.o  -Wl,--whole-archive ../sanitizer_common/.libs/libsanitizer_common.a ../lsan/.libs/libsaniti
+zer_lsan.a ../interception/.libs/libinterception.a ../libbacktrace/.libs/libsanitizer_libbacktrace.a -Wl,
+--no-whole-archive  -Wl,-rpath -Wl,/usr/local/gcc-15/lib/../lib64 -L/home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc+
++-v3/src/.libs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_y
+ear_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v
+3/libsupc++/.libs -ldl -lrt -lpthread -L/usr/local/gcc-15/lib/../lib64 -lstdc++ -lm -L/home/sweya/Desktop
+/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc -L/l
+ib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -lc -lgcc_s /home/sweya/Desktop/CLASS_CODES/second_year
+_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/crtendS.o /lib/../lib64/crtn
+.o  -mshstk -g -O2   -Wl,-soname -Wl,libhwasan.so.0 -o .libs/libhwasan.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libhwasan.so.0.0.0T /usr/local/gcc-15/lib/../lib64/libhwasan.
+so.0.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libhwasan.so.0.0.0 libhwasan.so.0 || {
+ rm -f libhwasan.so.0 && ln -s libhwasan.so.0.0.0 libhwasan.so.0; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libhwasan.so.0.0.0 libhwasan.so || { r
+m -f libhwasan.so && ln -s libhwasan.so.0.0.0 libhwasan.so; }; })
+libtool: install: /usr/bin/install -c .libs/libhwasan.lai /usr/local/gcc-15/lib/../lib64/libhwasan.la
+libtool: install: /usr/bin/install -c .libs/libhwasan.a /usr/local/gcc-15/lib/../lib64/libhwasan.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libhwasan.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libhwasan.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/hwasan'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer/hwasan'
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644"
+ "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "LDFLAGS=" "LIBCF
+LAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLASS_CODES/second_y
+ear_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --split-size=5000000
+ --split-size=5000000  " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS=" "exec_prefix=/u
+sr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-15/lib" "prefix=/usr/local
+/gcc-15" "includedir=/usr/local/gcc-15/include" "AR=ar --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/l
+iblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "LD=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one
+/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "LIBCFLAGS=-g -O2" "NM=/home/sweya
+/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./
+gcc/nm" "PICFLAG=" "RANLIB=ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "DES
+TDIR=" DO=all multi-do # make
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644"
+ "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "LDFLAGS=" "LIBCF
+LAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLASS_CODES/second_y
+ear_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --split-size=5000000
+ --split-size=5000000   " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS=" "exec_prefix=/
+usr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-15/lib" "prefix=/usr/loca
+l/gcc-15" "includedir=/usr/local/gcc-15/include" "AR=ar --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/
+liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "LD=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_on
+e/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "LIBCFLAGS=-g -O2" "NM=/home/swey
+a/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/.
+/gcc/nm" "PICFLAG=" "RANLIB=ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "DE
+STDIR=" DO=install multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libsanitizer.spec '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/sanitizer'
+ /usr/bin/install -c -m 644 ../../../libsanitizer/include/sanitizer/common_interface_defs.h ../../../libs
+anitizer/include/sanitizer/lsan_interface.h ../../../libsanitizer/include/sanitizer/asan_interface.h ../.
+./../libsanitizer/include/sanitizer/tsan_interface.h ../../../libsanitizer/include/sanitizer/hwasan_inter
+face.h '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/sanitizer'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libsanitizer'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make  install-recursive
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+true  DO=all multi-do # make
+make[5]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+true  DO=install multi-do # make
+make[5]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libvtv'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libssp'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/in
+stall -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "
+LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --sp
+lit-size=5000000 --split-size=5000000 " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS="
+"exec_prefix=/usr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-15/lib" "pr
+efix=/usr/local/gcc-15" "includedir=/usr/local/gcc-15/include" "AR=ar --plugin /usr/libexec/gcc/x86_64-re
+dhat-linux/15/liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "CC=/home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -B/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/ -B/usr/l
+ocal/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc
+-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include   " "CXX=/home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/xg++ -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/build/./gcc/ -nostdinc++ -nostdinc++ -I/home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/incl
+ude/x86_64-pc-linux-gnu -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/L
+AB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include -I/home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/libsupc++ -
+I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.
+2.0/libstdc++-v3/include/backward -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/L
+ABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/testsuite/util -L/home/sweya/Desktop/CLASS_CODES/seco
+nd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc
+++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLASS_CODES/second_
+year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-
+v3/libsupc++/.libs -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/
+GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -B/home/sweya/Desktop/CLASS_CODE
+S/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/l
+ibstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-li
+nux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_64-pc-
+linux-gnu/sys-include   " "LD=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WO
+RK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "LIBCFLAGS=-g -O2" "NM=/home/sweya/Desktop/CLASS
+_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/nm" "PICFL
+AG=" "RANLIB=ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "DESTDIR=" DO=all
+multi-do # make
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libssp'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/in
+stall -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "
+LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --sp
+lit-size=5000000 --split-size=5000000  " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS="
+ "exec_prefix=/usr/local/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-15/lib" "p
+refix=/usr/local/gcc-15" "includedir=/usr/local/gcc-15/include" "AR=ar --plugin /usr/libexec/gcc/x86_64-r
+edhat-linux/15/liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "CC=/home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -B/home/sweya/Desktop/CLA
+SS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/ -B/usr/
+local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gc
+c-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include   " "CXX=/hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/b
+uild/./gcc/xg++ -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/ -nostdinc++ -nostdinc++ -I/home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/inc
+lude/x86_64-pc-linux-gnu -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/
+LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include -I/home/sweya/Desktop/CLASS_
+CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/libsupc++
+-I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15
+.2.0/libstdc++-v3/include/backward -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/testsuite/util -L/home/sweya/Desktop/CLASS_CODES/sec
+ond_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstd
+c++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMP
+ILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLASS_CODES/second
+_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++
+-v3/libsupc++/.libs -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2
+/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -B/home/sweya/Desktop/CLASS_COD
+ES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/
+libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-l
+inux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_64-pc
+-linux-gnu/sys-include   " "LD=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_W
+ORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "LIBCFLAGS=-g -O2" "NM=/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/nm" "PICF
+LAG=" "RANLIB=ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "DESTDIR=" DO=ins
+tall multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libssp.la libssp_nonshared.la '/usr/local/gcc-1
+5/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libssp.so.0.0.0 /usr/local/gcc-15/lib/../lib64/libssp.so.0.0.
+0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libssp.so.0.0.0 libssp.so.0 || { rm -f
+ libssp.so.0 && ln -s libssp.so.0.0.0 libssp.so.0; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libssp.so.0.0.0 libssp.so || { rm -f l
+ibssp.so && ln -s libssp.so.0.0.0 libssp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libssp.lai /usr/local/gcc-15/lib/../lib64/libssp.la
+libtool: install: /usr/bin/install -c .libs/libssp_nonshared.lai /usr/local/gcc-15/lib/../lib64/libssp_no
+nshared.la
+libtool: install: /usr/bin/install -c .libs/libssp.a /usr/local/gcc-15/lib/../lib64/libssp.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libssp.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libssp.a
+libtool: install: /usr/bin/install -c .libs/libssp_nonshared.a /usr/local/gcc-15/lib/../lib64/libssp_nons
+hared.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libssp_nonshared.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libssp_nonshared.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/ssp'
+ /usr/bin/install -c -m 644  ssp/ssp.h ../../../libssp/ssp/string.h ../../../libssp/ssp/stdio.h ../../../
+libssp/ssp/unistd.h '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/ssp'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libssp'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libssp'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libquadmath'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/in
+stall -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "
+LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --sp
+lit-size=5000000 --split-size=5000000 -I ../../../libquadmath/../gcc/doc/include" "PICFLAG=" "PICFLAG_FOR
+_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS=" "exec_prefix=/usr/local/gcc-15" "infodir=/usr/local/gcc-15/shar
+e/info" "libdir=/usr/local/gcc-15/lib" "prefix=/usr/local/gcc-15" "includedir=/usr/local/gcc-15/include"
+"AR=ar --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "AS=/home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/as" "CC=/hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/b
+uild/./gcc/xgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC
+_COMPILER/gcc-15.2.0/build/./gcc/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64
+-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_
+64-pc-linux-gnu/sys-include   " "CXX=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/
+LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xg++ -B/home/sweya/Desktop/CLASS_CODES/second_year_co
+de/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/ -nostdinc++ -nostdinc++ -I/hom
+e/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/b
+uild/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-gnu -I/home/sweya/Desktop/CLASS_CODES/secon
+d_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc+
++-v3/include -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_CO
+MPILER/gcc-15.2.0/libstdc++-v3/libsupc++ -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/
+CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/include/backward -I/home/sweya/Desktop/CLASS_C
+ODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/testsuite/u
+til -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sweya/Desktop/CLASS_CODES/second_year_code/se
+mester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs
+ -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-1
+5.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/home/sweya/Desktop/CLASS_CODES/second_yea
+r_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/
+src/.libs -B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPI
+LER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -B/usr/local/gcc-15/x86_64-pc-linux
+-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/inc
+lude -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include   " "LD=/home/sweya/Desktop/CLASS_CODES/s
+econd_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/collect-ld" "LIBCF
+LAGS=-g -O2" "NM=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_
+COMPILER/gcc-15.2.0/build/./gcc/nm" "PICFLAG=" "RANLIB=ranlib --plugin /usr/libexec/gcc/x86_64-redhat-lin
+ux/15/liblto_plugin.so" "DESTDIR=" DO=all multi-do # make
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libquadmath'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-g -O2" "CXXFLAGS=-g -O2 -D_GNU_SOURCE" "CFLAGS_FOR_BUILD=-
+g -O2" "CFLAGS_FOR_TARGET=-g -O2" "EXPECT=expect" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/in
+stall -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "
+LDFLAGS=" "LIBCFLAGS=-g -O2" "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=/home/sweya/Desktop/CLAS
+S_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/missing makeinfo --sp
+lit-size=5000000 --split-size=5000000 -I ../../../libquadmath/../gcc/doc/include -I ../../../libquadmath/
+../gcc/doc/include" "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "RUNTESTFLAGS=" "exec_prefix=/usr/lo
+cal/gcc-15" "infodir=/usr/local/gcc-15/share/info" "libdir=/usr/local/gcc-15/lib" "prefix=/usr/local/gcc-
+15" "includedir=/usr/local/gcc-15/include" "AR=ar --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto
+_plugin.so" "AS=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/build/./gcc/as" "CC=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP21
+1/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xgcc -B/home/sweya/Desktop/CLASS_CODES/second_year_
+code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/ -B/usr/local/gcc-15/x86_64-p
+c-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isystem /usr/local/gcc-15/x86_64-pc-linux-
+gnu/include -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-include   " "CXX=/home/sweya/Desktop/CLASS
+_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/xg++ -B/ho
+me/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/
+build/./gcc/ -nostdinc++ -nostdinc++ -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP21
+1/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include/x86_64-pc-linux-
+gnu -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gc
+c-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/include -I/home/sweya/Desktop/CLASS_CODES/second_year_cod
+e/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/libsupc++ -I/home/sweya/Desktop
+/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/libstdc++-v3/inc
+lude/backward -I/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_C
+OMPILER/gcc-15.2.0/libstdc++-v3/testsuite/util -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semeste
+r_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src -L/home/sw
+eya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build
+/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -L/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_o
+ne/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc++/.libs -
+B/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.
+2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/src/.libs -B/home/sweya/Desktop/CLASS_CODES/second_year_code/s
+emester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libstdc++-v3/libsupc+
++/.libs -B/usr/local/gcc-15/x86_64-pc-linux-gnu/bin/ -B/usr/local/gcc-15/x86_64-pc-linux-gnu/lib/ -isyste
+m /usr/local/gcc-15/x86_64-pc-linux-gnu/include -isystem /usr/local/gcc-15/x86_64-pc-linux-gnu/sys-includ
+e   " "LD=/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILE
+R/gcc-15.2.0/build/./gcc/collect-ld" "LIBCFLAGS=-g -O2" "NM=/home/sweya/Desktop/CLASS_CODES/second_year_c
+ode/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/build/./gcc/nm" "PICFLAG=" "RANLIB=ranlib
+--plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so" "DESTDIR=" DO=install multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libquadmath.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libquadmath.so.0.0.0 /usr/local/gcc-15/lib/../lib64/libquadma
+th.so.0.0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libquadmath.so.0.0.0 libquadmath.so.0
+|| { rm -f libquadmath.so.0 && ln -s libquadmath.so.0.0.0 libquadmath.so.0; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libquadmath.so.0.0.0 libquadmath.so ||
+ { rm -f libquadmath.so && ln -s libquadmath.so.0.0.0 libquadmath.so; }; })
+libtool: install: /usr/bin/install -c .libs/libquadmath.lai /usr/local/gcc-15/lib/../lib64/libquadmath.la
+libtool: install: /usr/bin/install -c .libs/libquadmath.a /usr/local/gcc-15/lib/../lib64/libquadmath.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libquadmath.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libquadmath.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/info'
+ /usr/bin/install -c -m 644 ../../../libquadmath/libquadmath.info '/usr/local/gcc-15/share/info'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include'
+ /usr/bin/install -c -m 644 ../../../libquadmath/quadmath.h ../../../libquadmath/quadmath_weak.h '/usr/lo
+cal/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libquadmath'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libquadmath'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+Making install in testsuite
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp/testsuite'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp/testsuite'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp/testsuite'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp/testsuite'
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+true  DO=all multi-do # make
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+true  DO=install multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libgomp.spec '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libgomp.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libgomp.so.1.0.0 /usr/local/gcc-15/lib/../lib64/libgomp.so.1.
+0.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libgomp.so.1.0.0 libgomp.so.1 || { rm
+-f libgomp.so.1 && ln -s libgomp.so.1.0.0 libgomp.so.1; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libgomp.so.1.0.0 libgomp.so || { rm -f
+ libgomp.so && ln -s libgomp.so.1.0.0 libgomp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgomp.lai /usr/local/gcc-15/lib/../lib64/libgomp.la
+libtool: install: /usr/bin/install -c .libs/libgomp.a /usr/local/gcc-15/lib/../lib64/libgomp.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libgomp.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libgomp.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/info'
+ /usr/bin/install -c -m 644 ../../../libgomp/libgomp.info '/usr/local/gcc-15/share/info'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include'
+ /usr/bin/install -c -m 644 omp.h ../../../libgomp/openacc.h ../../../libgomp/acc_prof.h '/usr/local/gcc-
+15/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libgomp'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+Making install in testsuite
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm/testsuite'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm/testsuite'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm/testsuite'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm/testsuite'
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+true  DO=all multi-do # make
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+true  DO=install multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/install -c -m 644 libitm.spec '/usr/local/gcc-15/lib/../lib64'
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libitm.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libitm.so.1.0.0 /usr/local/gcc-15/lib/../lib64/libitm.so.1.0.
+0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libitm.so.1.0.0 libitm.so.1 || { rm -f
+ libitm.so.1 && ln -s libitm.so.1.0.0 libitm.so.1; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libitm.so.1.0.0 libitm.so || { rm -f l
+ibitm.so && ln -s libitm.so.1.0.0 libitm.so; }; })
+libtool: install: /usr/bin/install -c .libs/libitm.lai /usr/local/gcc-15/lib/../lib64/libitm.la
+libtool: install: /usr/bin/install -c .libs/libitm.a /usr/local/gcc-15/lib/../lib64/libitm.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libitm.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libitm.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/gcc-15/share/info'
+ /usr/bin/install -c -m 644 ../../../libitm/libitm.info '/usr/local/gcc-15/share/info'
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libitm'
+make[2]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+Making install in testsuite
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic/testsuite'
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic/testsuite'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic/testsuite'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic/testsuite'
+make[3]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+true  DO=all multi-do # make
+make[4]: Entering directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WOR
+K/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+true  DO=install multi-do # make
+ /usr/bin/mkdir -p '/usr/local/gcc-15/lib/../lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libatomic.la '/usr/local/gcc-15/lib/../lib64'
+libtool: install: /usr/bin/install -c .libs/libatomic.so.1.2.0 /usr/local/gcc-15/lib/../lib64/libatomic.s
+o.1.2.0
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libatomic.so.1.2.0 libatomic.so.1 || {
+ rm -f libatomic.so.1 && ln -s libatomic.so.1.2.0 libatomic.so.1; }; })
+libtool: install: (cd /usr/local/gcc-15/lib/../lib64 && { ln -s -f libatomic.so.1.2.0 libatomic.so || { r
+m -f libatomic.so && ln -s libatomic.so.1.2.0 libatomic.so; }; })
+libtool: install: /usr/bin/install -c .libs/libatomic.lai /usr/local/gcc-15/lib/../lib64/libatomic.la
+libtool: install: /usr/bin/install -c .libs/libatomic.a /usr/local/gcc-15/lib/../lib64/libatomic.a
+libtool: install: chmod 644 /usr/local/gcc-15/lib/../lib64/libatomic.a
+libtool: install: ranlib --plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so --plugin /home
+/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-15.2.0/bu
+ild/./gcc/liblto_plugin.so /usr/local/gcc-15/lib/../lib64/libatomic.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/b
+in:/sbin" ldconfig -n /usr/local/gcc-15/lib/../lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/gcc-15/lib/../lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+make[3]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+make[2]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build/x86_64-pc-linux-gnu/libatomic'
+make[1]: Leaving directory '/home/sweya/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK
+/LAB_2/GCC_COMPILER/gcc-15.2.0/build'
+sweya@fedora:~/Desktop/CLASS_CODES/second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER/gcc-1
+5.2.0/build$
