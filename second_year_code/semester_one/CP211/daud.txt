@@ -1,0 +1,6 @@
+#! /bin/bash
+echo "user: $(whoami)" > system_info.txt
+echo "directory: $(pwd)" >> system_info.txt
+echo "date & time: $(date)" >> system_info.txt
+cat system_info.txt
+echo " number of lines: $(wc -l < system_info.txt)"

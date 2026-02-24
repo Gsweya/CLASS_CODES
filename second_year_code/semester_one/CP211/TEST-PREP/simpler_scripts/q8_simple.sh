@@ -1,6 +1,9 @@
-#!/bin/bash
+#! /bin/bash
 
-# Q8: Show currently logged-in users and count
+read -p "Enter username: "  username
 
-who | awk '{print $1}' | sort -u
-who | awk '{print $1}' | sort -u | wc -l
+if id | grep -q "$username"; then
+    id "$username"
+else
+    echo "User does not exist."
+fi

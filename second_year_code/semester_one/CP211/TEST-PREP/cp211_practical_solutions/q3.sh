@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ $EUID -ne 0 ]]; then
-  echo "Run this script as root (or with sudo)." >&2
-  exit 1
-fi
 
 read -r -p "Enter group name: " group_name
 read -r -p "Enter username: " username
 
 if ! getent passwd "$username" > /dev/null; then
-  echo "User '$username' does not exist." >&2
+  echo "User '$username' does not exist."
   exit 1
 fi
 

@@ -1,10 +1,7 @@
-#! /bin/bash 
+#! /bin/bash
 
-set -eou pipefail 
+touch secure.txt
 
-file_name="secure.txt"
+chmod 740 secure.txt
 
-: > "$file_name"
-chmod 740 "$file_name"
-ls -l "$file_name"
-
+ls -l secure.txt
