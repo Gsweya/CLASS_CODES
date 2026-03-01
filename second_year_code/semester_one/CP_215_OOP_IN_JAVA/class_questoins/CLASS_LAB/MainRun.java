@@ -11,6 +11,7 @@ abstract class Animal {
 }
 
 interface Flyable {
+    
     public void fly(int altitude);
     public void land();
 

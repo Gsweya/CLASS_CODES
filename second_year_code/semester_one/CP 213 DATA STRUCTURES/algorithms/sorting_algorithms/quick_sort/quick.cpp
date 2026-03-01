@@ -20,7 +20,7 @@ int partition(int arr[], int low, int high) {
 
         if (i <= j) {
             swap(arr[i], arr[j]);
-            i++;
+            i++; 
             j--;
         }
     }

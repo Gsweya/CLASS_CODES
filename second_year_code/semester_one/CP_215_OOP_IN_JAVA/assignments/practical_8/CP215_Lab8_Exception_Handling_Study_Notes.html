@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CP 215 Lab 8 Exception Handling Study Notes</title>
+  <style>
+    body {
+      font-family: "Liberation Serif", "Times New Roman", serif;
+      margin: 1.1in;
+      line-height: 1.4;
+      color: #111;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.25rem;
+    }
+    h1 {
+      font-size: 20pt;
+      border-bottom: 1px solid #666;
+      padding-bottom: 8px;
+    }
+    h2 {
+      font-size: 14pt;
+      margin-top: 1rem;
+      color: #0f2a43;
+    }
+    h3 {
+      font-size: 11.5pt;
+      margin-top: 0.6rem;
+    }
+    p, li {
+      font-size: 11pt;
+    }
+    ul {
+      margin-top: 0.25rem;
+    }
+    .card {
+      border: 1px solid #bbb;
+      padding: 12px 14px;
+      margin: 12px 0 16px;
+      border-radius: 4px;
+      page-break-inside: avoid;
+      background: #fdfdfd;
+    }
+    pre {
+      background: #f5f7fa;
+      border: 1px solid #ccd4de;
+      border-left: 4px solid #2a4f7a;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 10pt;
+      line-height: 1.35;
+      white-space: pre-wrap;
+    }
+    .small {
+      font-size: 10pt;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>CP 215 Lab 8: Java Exception Handling Study Notes</h1>
+  <p class="small">
+    Source used: <strong>CP 215 Lab8 (1).pdf</strong> + code in <strong>QuestionOne</strong> to <strong>QuestionSeven</strong> folders.
+    These notes focus on what each question demonstrates in Java exception handling.
+  </p>
+
+  <div class="card">
+    <h2>1) Catching Subclass Exceptions with a Superclass Catch</h2>
+    <h3>What the question asks</h3>
+    <p>Create <code>ExceptionA</code>, <code>ExceptionB extends ExceptionA</code>, and <code>ExceptionC extends ExceptionB</code>. Show that <code>catch(ExceptionA e)</code> catches both <code>ExceptionB</code> and <code>ExceptionC</code>.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>Polymorphism in exception handling: a superclass catch handles all its subclass exception objects.</li>
+      <li>You can reduce repeated catch blocks when exceptions are related by inheritance.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>try {
+    throw new ExceptionC("This is ExceptionC.");
+} catch (ExceptionA e) {
+    System.out.println(e.getMessage());
+}
+// Output: This is ExceptionC.</code></pre>
+
+    <h3>Exam point</h3>
+    <p>If exception type <code>X</code> extends <code>Y</code>, then <code>catch(Y e)</code> can catch <code>X</code>.</p>
+  </div>
+
+  <div class="card">
+    <h2>2) Catching Different Exceptions with <code>catch (Exception e)</code></h2>
+    <h3>What the question asks</h3>
+    <p>Throw <code>ExceptionA</code>, <code>ExceptionB</code>, <code>NullPointerException</code>, and <code>IOException</code>, then catch all with <code>Exception</code>.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li><code>Exception</code> is a common parent for many checked and unchecked exceptions.</li>
+      <li>A general catch works, but specific catches are better when handling logic differs.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>try {
+    throw new IOException("IOException was thrown.");
+} catch (Exception e) {
+    System.out.println("Caught with Exception: " + e);
+}</code></pre>
+
+    <h3>Exam point</h3>
+    <p><code>catch(Exception e)</code> is broad; use it carefully because it can hide type-specific handling.</p>
+  </div>
+
+  <div class="card">
+    <h2>3) Order of Catch Blocks</h2>
+    <h3>What the question asks</h3>
+    <p>Show that catch block order matters: superclass catch before subclass catch causes compile-time error.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>Correct order: subclass first, superclass later.</li>
+      <li>In your code, <code>catch(NumberFormatException e)</code> appears before <code>catch(Exception e)</code>.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>try {
+    Integer.parseInt("CP215"); // NumberFormatException
+} catch (NumberFormatException e) {
+    System.out.println("Specific catch first");
+} catch (Exception e) {
+    System.out.println("General catch second");
+}</code></pre>
+
+    <h3>Exam point</h3>
+    <p>Write catch blocks from most specific to most general to avoid unreachable-code compile errors.</p>
+  </div>
+
+  <div class="card">
+    <h2>4) Constructor Failure</h2>
+    <h3>What the question asks</h3>
+    <p>Show a constructor throwing an exception and passing failure info to an exception handler.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>Constructors can throw exceptions using <code>throws</code>.</li>
+      <li>Object creation with <code>new</code> should be in a try block when constructor may fail.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>class SomeClass {
+    SomeClass() throws Exception {
+        throw new Exception("Constructor failed.");
+    }
+}
+
+try {
+    new SomeClass();
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+}</code></pre>
+
+    <h3>Exam point</h3>
+    <p>Construction is not guaranteed to succeed; constructor exceptions are handled like method exceptions.</p>
+  </div>
+
+  <div class="card">
+    <h2>5) Rethrowing Exceptions</h2>
+    <h3>What the question asks</h3>
+    <p><code>someMethod2()</code> throws, <code>someMethod()</code> catches and rethrows, <code>main()</code> catches and prints stack trace.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>An exception can be caught for logging and rethrown for higher-level handling.</li>
+      <li>The stack trace still shows where the exception originated.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>static void someMethod() throws Exception {
+    try {
+        someMethod2();
+    } catch (Exception e) {
+        throw e; // rethrow same exception
+    }
+}</code></pre>
+
+    <h3>Exam point</h3>
+    <p>Use rethrowing when a lower method cannot fully recover but should report context upward.</p>
+  </div>
+
+  <div class="card">
+    <h2>6) Exceptions Can Escape to Outer Scope</h2>
+    <h3>What the question asks</h3>
+    <p>Show that a method with its own try block does not need to catch every possible exception.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>Inner method catches only <code>NullPointerException</code>.</li>
+      <li><code>ArithmeticException</code> from division by zero is not caught there and propagates to <code>main</code>.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>void methodWithOwnTry() {
+    try {
+        int x = 10 / 0; // ArithmeticException
+    } catch (NullPointerException e) {
+        // does not handle ArithmeticException
+    }
+}
+
+// Outer scope catches ArithmeticException.</code></pre>
+
+    <h3>Exam point</h3>
+    <p>Exception handling can be split across scopes; unhandled exceptions move up the call stack.</p>
+  </div>
+
+  <div class="card">
+    <h2>7) Exception Propagation</h2>
+    <h3>What the question asks</h3>
+    <p><code>propagator1()</code> throws <code>ArithmeticException</code>, <code>propagator2()</code> catches and rethrows, <code>main()</code> handles and prints stack trace.</p>
+
+    <h3>What your code demonstrates</h3>
+    <ul>
+      <li>Runtime exceptions propagate automatically if not handled.</li>
+      <li>Intermediate methods may catch, log, and rethrow without swallowing the error.</li>
+    </ul>
+
+    <h3>Sample</h3>
+    <pre><code>static void propagator2() {
+    try {
+        propagator1();
+    } catch (ArithmeticException e) {
+        throw e;
+    }
+}</code></pre>
+
+    <h3>Exam point</h3>
+    <p>Stack traces are key for debugging propagation paths across multiple method calls.</p>
+  </div>
+
+  <div class="card">
+    <h2>Quick Revision Summary</h2>
+    <ul>
+      <li>Superclass catches subclass exceptions.</li>
+      <li>General <code>catch(Exception e)</code> catches many types but can be too broad.</li>
+      <li>Catch order must be specific to general.</li>
+      <li>Constructors can throw exceptions.</li>
+      <li>Rethrowing preserves flow to higher-level handlers.</li>
+      <li>Unhandled inner-scope exceptions move to outer scopes.</li>
+      <li>Propagation + stack trace explain where failure started and how it moved.</li>
+    </ul>
+  </div>
+</body>
+</html>

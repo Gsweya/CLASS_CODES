@@ -7,11 +7,11 @@ public class QuestionThree {
             // This line will not run because exception is thrown above.
             System.out.println("Conversion successful.");
 
-        } catch (NumberFormatException e) {
+        } catch (ArithmeticException) e) {
             // Catch subclass first (correct order).
             System.out.println("Caught NumberFormatException first: " + e.getMessage());
 
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             // Catch superclass after subclass.
             System.out.println("Caught by general Exception catch: " + e.getMessage());
         }
