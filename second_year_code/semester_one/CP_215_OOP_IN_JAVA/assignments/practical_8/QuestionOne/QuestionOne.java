@@ -1,12 +1,12 @@
 // Custom parent exception class.
-class ExceptionA extends Exception {
-    public ExceptionA(String message) {
+class RegistrationFail extends Exception {
+    public RegistrationFail(String message) {
         super(message);
     }
 }
 
-// ExceptionB is a child of ExceptionA.
-class ExceptionB extends ExceptionA {
+// ExceptionB is a child of RegistrationFail.
+class ExceptionB extends RegistrationFail {
     public ExceptionB(String message) {
         super(message);
     }
@@ -21,18 +21,18 @@ class ExceptionC extends ExceptionB {
 
 public class QuestionOne {
     public static void main(String[] args) {
-        // First test: throw ExceptionB and catch it using ExceptionA.
+        // First test: throw ExceptionB and catch it using RegistrationFail.
         try {
-            throw new ExceptionB("This is ExceptionB.");
-        } catch (ExceptionA e) {
-            System.out.println("Caught by ExceptionA catch block: " + e.getMessage());
+            throw new ExceptionB("Registration Failed.");
+        } catch (RegistrationFail e) {
+            System.out.println("Caught by RegistrationFail catch block: " + e.getMessage());
         }
 
-        // Second test: throw ExceptionC and catch it using ExceptionA.
+        // Second test: throw ExceptionC and catch it using RegistrationFail.
         try {
             throw new ExceptionC("This is ExceptionC.");
-        } catch (ExceptionA e) {
-            System.out.println("Caught by ExceptionA catch block: " + e.getMessage());
+        } catch (RegistrationFail e) {
+            System.out.println("Caught by RegistrationFail catch block: " + e.getMessage());
         }
     }
 }

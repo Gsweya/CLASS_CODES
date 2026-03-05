@@ -1,24 +1,37 @@
-interface Polygon {
+abstract class GardenDevice {
 
-    final int age = 10;
-
-    public static void getData(){
-        System.out.println("A static method inside an interface.");
-        System.out.println("AGE: " + age);
+    public void turnOn(){
 
     }
+
+    public abstract void adjustFlow();
+
+
+
+}
+
+class BasicSprinkler extends GardenDevice {
+
+    @Override
+    public void adjustFlow(){
+        System.out.println("new Flow");
+    }
+
+    
+}
+
+class SmartSensorSprinkler extends GardenDevice {
+
+    @Override
+    public void adjustFlow(){
+        System.out.println("Old flow");
+    }
+
+    
 }
 
 
-
-class Demo {
-
-    static int year;
-
-    public static void main(String[] args){
-
-        Polygon.getData();
-    }
+public class Demo {
 
 
 }

@@ -84,6 +84,8 @@ public class MainRun {
         System.out.println("===== UPCASTING DEMO =====");
         System.out.print("Animal morphs to a bird: ");
         bird.move();
+        
+        
 
         System.out.print("Animal morphs to a fish: ");
         fish.move();
