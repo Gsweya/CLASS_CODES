@@ -10,7 +10,7 @@ public class QuestionThree {
 
         int product = 1;
         
-        // Using a for loop
+        // Factorial using a for loop.
         for (int i = num; i > 0; i--){
             product = product * i;
         }
@@ -23,6 +23,7 @@ public class QuestionThree {
         int product = 1;        
         int i = num;
 
+        // Factorial using a while loop.
         while (i > 0){
             product = product * i;
             i --;
@@ -34,10 +35,15 @@ public class QuestionThree {
 
     public static int findFactorialdoWhileLoop(int num){
 
-        int product = 1;        
+        // Handle 0 explicitly; 0! = 1.
+        if (num == 0) {
+            return 1;
+        }
+
+        int product = 1;
         int i = num;
 
-
+        // Factorial using a do-while loop.
         do {
             product = product * i;
             i--;
@@ -53,12 +59,17 @@ public class QuestionThree {
         System.out.println("=== PROGRAM TO FIND THE FACTORIAL OF A NUMBER ===");
         System.out.print("Enter the Number: ");
         num = input.nextInt();
+
+        if (num < 0) {
+            System.out.println("Error! Factorial is not defined for negative integers.");
+            input.close();
+            return;
+        }
+
         System.out.println("----------------------------------------");
-        System.out.println("The Factorial of the Number (For Loop) is: "+ findFactorialForLoop(num));
-        System.out.println("The Factorial of the Number (While Loop) is: "+ findFactorialWhileLoop(num));
-        System.out.println("The Factorial of the Number (do-While Loop) is: "+ findFactorialdoWhileLoop(num));
-
-
+        System.out.println("The factorial (For Loop) is: " + findFactorialForLoop(num));
+        System.out.println("The factorial (While Loop) is: " + findFactorialWhileLoop(num));
+        System.out.println("The factorial (Do-While Loop) is: " + findFactorialdoWhileLoop(num));
 
         input.close();
 
