@@ -7,12 +7,14 @@ public class DeleteExample {
     static final String PASS = "-------";
     static final String QUERY1 = "DELETE from employees where id=1";
     static final String QUERY2 = "SELECT * from employees";
+    static String sql = "SELECT * FROM users WHERE id = ?";
 
     public static void main(String[] args) {
         // Open a connection
         try (
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement stmt = conn.createStatement();
+            PreparedStatement ps = conn.prepareStatement(sql);
         ) {
             stmt.executeUpdate(QUERY1);
             ResultSet rs = stmt.executeQuery(QUERY2);
