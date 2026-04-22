@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Profile - CP 221 Mini Project</title>
+</head>
+<body>
+  <header id="top">
+    <h1>Welcome to My Personal Profile Website</h1>
+    <p>
+      Hello! My name is <strong>Alex Student</strong>. I am learning <em>Internet Programming and Application I</em> in CP 221.
+    </p>
+    <hr>
+  </header>
+
+  <nav>
+    <h2>Navigation</h2>
+    <a href="#about">About Me</a> |
+    <a href="#interests">Interests</a> |
+    <a href="#schedule">Weekly Schedule</a> |
+    <a href="#contact">Contact Form</a> |
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Learn HTML on MDN</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I enjoy building websites, solving coding problems, and working on class projects.
+      <br>
+      My short-term goal is to become confident in writing clean and structured HTML.
+    </p>
+
+    <h3>My Favorite Learning Links</h3>
+    <p>
+      <a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a><br>
+      <a href="https://html.spec.whatwg.org/">Official HTML Living Standard</a>
+    </p>
+  </section>
+
+  <section id="interests">
+    <h2>Interests and Hobbies</h2>
+
+    <h3>Hobbies (Unordered List)</h3>
+    <ul>
+      <li>Reading technology blogs</li>
+      <li>Playing football</li>
+      <li>Listening to podcasts</li>
+      <li>Photography</li>
+    </ul>
+
+    <h3>My Learning Routine (Ordered List)</h3>
+    <ol>
+      <li>Review lecture notes</li>
+      <li>Practice coding examples</li>
+      <li>Build a mini project</li>
+      <li>Test and improve the project</li>
+    </ol>
+
+    <h3>Profile Images</h3>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Students collaborating on a web project" width="300">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Laptop with code editor open for web development" width="300">
+  </section>
+
+  <section id="schedule">
+    <h2>Weekly Study Schedule</h2>
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Day</th>
+        <th>8:00 - 10:00</th>
+        <th>10:00 - 12:00</th>
+        <th>14:00 - 16:00</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>CP 221 Lecture</td>
+        <td>Library Study</td>
+        <td>Assignment Practice</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Reading</td>
+        <td>Lab Session</td>
+        <td>Group Discussion</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Self Study</td>
+        <td>Project Work</td>
+        <td>Sports</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>CP 221 Revision</td>
+        <td>Coding Practice</td>
+        <td>Free Time</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Quiz Preparation</td>
+        <td>Class</td>
+        <td>Project Presentation Practice</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Please fill in the form below to send me a message:</p>
+
+    <form action="#" method="post">
+      <p>
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+      </p>
+
+      <p>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </p>
+
+      <p>
+        <strong>Preferred Contact Method:</strong><br>
+        <input type="radio" id="contact-email" name="contact-method" value="Email">
+        <label for="contact-email">Email</label>
+        <input type="radio" id="contact-phone" name="contact-method" value="Phone">
+        <label for="contact-phone">Phone</label>
+      </p>
+
+      <p>
+        <strong>Topics You Are Interested In:</strong><br>
+        <input type="checkbox" id="topic-html" name="topics" value="HTML">
+        <label for="topic-html">HTML Basics</label><br>
+        <input type="checkbox" id="topic-css" name="topics" value="CSS">
+        <label for="topic-css">CSS Styling</label><br>
+        <input type="checkbox" id="topic-js" name="topics" value="JavaScript">
+        <label for="topic-js">JavaScript</label>
+      </p>
+
+      <p>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+      </p>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Alex Student | CP 221 Mini Project</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+</body>
+</html>
