@@ -1,0 +1,9 @@
+so what could cause a fork to fail is my first question...
+
+and second , how does it get to the else block, like when it returns another status as the parent waits for the child ?
+
+so when we call the fork() its like we are repeating the same program like a sort of a recursion, which kind of like calls itself again all over and over ..... till you trigger an end call to kill it ?
+
+so essentially, in the normal flow we'd have to let the program keep executing sequentially but this is sort of how we enable multi taskng so that we enable more processes to run pararelly at the same time ? 
+
+Parent Dies and the process continues.......

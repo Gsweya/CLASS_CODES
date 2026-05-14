@@ -1,0 +1,354 @@
+from pathlib import Path
+
+content = r"""MYSQL TERMINAL COMMANDS & BASIC ADMINISTRATION GUIDE
+
+====================================================
+1. STARTING MYSQL SERVICE
+====================================================
+
+Ubuntu/Debian:
+sudo systemctl start mysql
+sudo systemctl status mysql
+sudo systemctl stop mysql
+sudo systemctl restart mysql
+
+Fedora/RHEL/CentOS:
+sudo systemctl start mysqld
+sudo systemctl status mysqld
+
+Enable on boot:
+sudo systemctl enable mysql
+
+or
+
+sudo systemctl enable mysqld
+
+
+====================================================
+2. CONNECTING TO MYSQL SERVER
+====================================================
+
+Connect as root:
+mysql -u root -p
+
+Explanation:
+-u = username
+-p = ask for password
+
+Example:
+mysql -u john -p
+
+
+Connect without password prompt:
+(Not recommended)
+
+mysql -u root -pmypassword
+
+
+Connect directly to a database:
+mysql -u root -p school_db
+
+
+Connect to remote server:
+mysql -h 192.168.1.10 -u root -p
+
+-h = host/IP
+
+
+Connect using port:
+mysql -h localhost -P 3306 -u root -p
+
+-P = port number
+
+
+====================================================
+3. EXITING MYSQL
+====================================================
+
+Inside MySQL:
+exit;
+
+or
+
+quit;
+
+or press:
+Ctrl + D
+
+
+====================================================
+4. BASIC NAVIGATION COMMANDS
+====================================================
+
+Show databases:
+SHOW DATABASES;
+
+Select database:
+USE school_db;
+
+Show current database:
+SELECT DATABASE();
+
+Show tables:
+SHOW TABLES;
+
+Describe table structure:
+DESCRIBE students;
+
+or
+
+DESC students;
+
+
+====================================================
+5. USER & AUTHENTICATION COMMANDS
+====================================================
+
+Create user:
+CREATE USER 'john'@'localhost' IDENTIFIED BY 'mypassword';
+
+Grant privileges:
+GRANT ALL PRIVILEGES ON school_db.* TO 'john'@'localhost';
+
+Reload privileges:
+FLUSH PRIVILEGES;
+
+Show users:
+SELECT user, host FROM mysql.user;
+
+Remove user:
+DROP USER 'john'@'localhost';
+
+
+====================================================
+6. CHECKING SERVER INFORMATION
+====================================================
+
+Show MySQL version:
+SELECT VERSION();
+
+From terminal:
+mysql --version
+
+Show current user:
+SELECT USER();
+
+Show server status:
+STATUS;
+
+
+====================================================
+7. DATABASE MANAGEMENT COMMANDS
+====================================================
+
+Create database:
+CREATE DATABASE school_db;
+
+Delete database:
+DROP DATABASE school_db;
+
+
+====================================================
+8. IMPORTING & EXPORTING DATABASES
+====================================================
+
+Export database (Backup):
+mysqldump -u root -p school_db > backup.sql
+
+Import database:
+mysql -u root -p school_db < backup.sql
+
+
+====================================================
+9. RUNNING SQL FILES
+====================================================
+
+Inside MySQL:
+SOURCE /path/file.sql;
+
+Example:
+SOURCE /home/user/test.sql;
+
+
+====================================================
+10. USEFUL TERMINAL SHORTCUTS
+====================================================
+
+Clear screen:
+system clear;
+
+or press:
+Ctrl + L
+
+Cancel current query:
+Ctrl + C
+
+Previous commands:
+Arrow Up Key
+
+
+====================================================
+11. VIEWING PROCESSES & CONNECTIONS
+====================================================
+
+Show active connections:
+SHOW PROCESSLIST;
+
+Kill a process:
+KILL 12;
+
+
+====================================================
+12. CHANGING PASSWORD
+====================================================
+
+ALTER USER 'root'@'localhost'
+IDENTIFIED BY 'newpassword';
+
+
+====================================================
+13. SQL MODES
+====================================================
+
+Show SQL mode:
+SELECT @@sql_mode;
+
+
+====================================================
+14. MYSQL HELP
+====================================================
+
+General help:
+HELP;
+
+Specific command help:
+HELP CREATE TABLE;
+
+
+====================================================
+15. COMMON WORKFLOW EXAMPLE
+====================================================
+
+Connect:
+mysql -u root -p
+
+Inside MySQL:
+
+SHOW DATABASES;
+
+CREATE DATABASE company;
+
+USE company;
+
+SHOW TABLES;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    salary DECIMAL(10,2)
+);
+
+DESC employees;
+
+SELECT * FROM employees;
+
+Exit:
+exit;
+
+
+====================================================
+16. TERMINAL VS SQL COMMANDS
+====================================================
+
+Linux terminal command example:
+mysql -u root -p
+
+SQL command example:
+SHOW DATABASES;
+
+Linux shell prompt:
+user@pc:~$
+
+MySQL prompt:
+mysql>
+
+
+====================================================
+17. COMMON MISTAKES
+====================================================
+
+Missing semicolon:
+
+Wrong:
+SHOW DATABASES
+
+Correct:
+SHOW DATABASES;
+
+
+Wrong quotes:
+
+Wrong:
+CREATE DATABASE 'school';
+
+Correct:
+CREATE DATABASE school;
+
+
+No database selected error:
+
+Fix:
+USE school_db;
+
+
+====================================================
+18. USEFUL ADMIN COMMANDS
+====================================================
+
+Show all variables:
+SHOW VARIABLES;
+
+Show engines:
+SHOW ENGINES;
+
+Check current time:
+SELECT NOW();
+
+
+====================================================
+19. MYSQL PROMPT MEANING
+====================================================
+
+mysql>
+Ready for new command.
+
+->
+MySQL thinks previous statement is incomplete.
+
+Usually caused by:
+- missing quote
+- missing semicolon
+
+Cancel with:
+Ctrl + C
+
+
+====================================================
+20. GOLDEN MINIMAL COMMAND SET
+====================================================
+
+mysql -u root -p
+
+SHOW DATABASES;
+USE dbname;
+SHOW TABLES;
+DESC table_name;
+SELECT * FROM table_name;
+exit;
+
+"""
+
+path = Path("/mnt/data/mysql_terminal_commands_guide.txt")
+path.write_text(content)
+
+print(f"Saved to: {path}")

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Feedback Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .container{
+            width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .options{
+            margin-bottom: 15px;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+
+            let name = document.forms["feedbackForm"]["name"].value;
+            let address = document.forms["feedbackForm"]["address"].value;
+            let email = document.forms["feedbackForm"]["email"].value;
+
+            if(name == "" || address == "" || email == ""){
+                alert("All fields are required!");
+                return false;
+            }
+
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if(!email.match(emailPattern)){
+                alert("Invalid email format!");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>City Library Feedback Form</h1>
+
+    <form name="feedbackForm" onsubmit="return validateForm()">
+
+        <label>Visitor Name:</label>
+        <input type="text" name="name">
+
+        <label>Address:</label>
+        <input type="text" name="address">
+
+        <label>Email Address:</label>
+        <input type="text" name="email">
+
+        <label>What did you enjoy most?</label>
+
+        <div class="options">
+            <input type="checkbox" name="enjoy" value="Books"> Book Selection <br>
+
+            <input type="checkbox" name="enjoy" value="Study"> Study Areas <br>
+
+            <input type="checkbox" name="enjoy" value="Events"> Events and Programs <br>
+
+            <input type="checkbox" name="enjoy" value="Atmosphere"> Atmosphere <br>
+
+            <input type="checkbox" name="enjoy" value="Internet"> Internet Access <br>
+
+            <input type="checkbox" name="enjoy" value="Staff"> Staff Assistance
+        </div>
+
+        <label>How did you hear about the library?</label>
+
+        <div class="options">
+            <input type="radio" name="source" value="Friends"> Friends <br>
+
+            <input type="radio" name="source" value="Social Media"> Social Media <br>
+
+            <input type="radio" name="source" value="Website"> Library Website <br>
+
+            <input type="radio" name="source" value="Other"> Other
+        </div>
+
+        <label>Additional Comments:</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Submit</button>
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

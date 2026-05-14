@@ -68,3 +68,6 @@ coverage
 *.zip
 
 second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+
+# Nested git repos
+second_year_code/semester_two/CP 222 - Open Source/portfolio/kiwi/

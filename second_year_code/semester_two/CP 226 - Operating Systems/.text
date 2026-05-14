@@ -1,0 +1,3 @@
+gcc <filename.c> - compiles the text
+
+gcc filename.c -o myprogram

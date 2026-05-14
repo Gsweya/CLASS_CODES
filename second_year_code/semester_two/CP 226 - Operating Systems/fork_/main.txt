@@ -1,0 +1,5 @@
+gcc filename.c
+
+gcc filename.c -o outputname
+
+gcc file1.c file2.c - myprogram
