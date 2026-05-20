@@ -1,0 +1,43 @@
+h1 {
+  
+  font-weight: bold;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.body-messages {
+
+  color: fuchsia;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: px;
+  font-size: 1.5em;
+  border-width: 5px;
+  border-style: solid;
+  margin: 30px;
+
+}
+
+.body-messages h1 {
+
+  font-weight: 100;
+  font-size: 20px;
+
+}
+
+#special-message {
+
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+
+#special-message h2 {
+
+  color: indigo;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+

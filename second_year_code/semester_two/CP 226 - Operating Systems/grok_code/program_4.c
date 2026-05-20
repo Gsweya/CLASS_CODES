@@ -30,14 +30,13 @@ int main() {
     printf("Audio playing in background, PID %d\n", audio_pid);
 
     // Do other work....
-    sleep(10);
 
-    printf("Killing Audio in....");
-    // countdown to ill the process
-    for (int i = 1; i <= 10; i++){
-      printf("%d.... ", i);
-
+    printf("Printing numbe of seconds: ");
+    for (int i = 0; i <= 10; i++){
+        printf("Second: %d\n", i);
     }
+
+    sleep(30);
 
     /*    // Optionally stop it
     kill(audio_pid, SIGTERM);
