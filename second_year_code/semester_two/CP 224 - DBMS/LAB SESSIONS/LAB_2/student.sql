@@ -17,5 +17,37 @@ SET contact = "0713532938"
 WHERE full_name = "Amon Toroto";
 
 UPDATE students
-SET contact = "0713533838"
-WHERE contact IS NULL;
+SET address = "Bombo, Mwanza"
+WHERE address IS NULL;
+DELETE FROM students
+WHERE student_id=14;
+
+
+CREATE TABLE courses (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE enrollment (
+    enrollment_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    course_id INT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+
+);
+
+
+CREATE TABLE COURSES(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    dept_name VARCHAR(20) UNIQUE
+);
+
+
+INSERT INTO courses (course_name)
+VALUES (""),
+("IS"),
+("ICT");
+
+RENAME TABLE deptartment TO departments;

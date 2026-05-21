@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function validateForm() {
+                let fullName = prompt("Enter Full Name: ");
+                let studentID = prompt("Enter Student ID: ");
+                let age = prompt("Enter Age: ");
+
+                if (fullName === "") {
+                    alert("Name required");
+                    return;
+                }
+                if (isNaN(studentID)) {
+                    alert("Student ID must be numberic.");
+                    return;
+                }
+                if (isNaN(age) || age < 18 || age > 35) {
+                    alert("Invalid Input");
+                    return;
+                }
+
+                document.write(
+                    "<h2>Welcome " + fullName +
+                    " (ID: " + studentID + ")</h2"
+                );
+            }
+        </script>
+    </head>
+
+    <body>
+        <button onclick="validateForm()">Register</button>
+    </body>
+</html>

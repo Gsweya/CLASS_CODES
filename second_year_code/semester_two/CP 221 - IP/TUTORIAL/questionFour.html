@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Question 4 - Student Objects</title>
+
+        <script>
+        function Student(name, regNo, marks) {
+
+          this.name = name;
+          this.regNo = regNo;
+          this.marks = marks;
+
+        }
+
+        let students = [
+          new Student("John", "T24-03-10311", 85),
+          new Student("Carah", "T24-03-10511", 85),
+          new Student("John", "T24-03-10611", 85),
+          new Student("Merrakah", "T24-03-10711", 85)
+
+        ];
+
+        function topStudent(students) {
+
+          let top=students[0];
+
+          for (let student of students){
+            if (student.marks>top.marks) {
+              top = student;
+            }
+          }
+
+          return top;
+        }
+
+        for (let student of students) {
+          for (let key in student) {
+            document.write(
+              key+": "+
+              student[key]+"<br>"
+            );
+          }
+
+          document.write("<hr>");
+        }
+
+        let best = topStudent(students);
+
+        document.write(
+          "Top Student: " +
+          best.name +
+          " " +
+          best.marks
+        );
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+</html>

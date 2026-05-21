@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop Price Calculator</title>
+
+        <script>
+
+        function price_calculator() {
+
+          try {
+
+            let item_prices = [];
+            let total = 0;
+
+            for (let i = 0; i < 3; i++) {
+
+              let item = prompt("Enter Item Name: ");
+              let price = prompt(`Enter ${item} Price`);
+
+              if (isNaN(price))
+                throw "InvalidPriceException";
+
+
+              price = Number(price);
+              item_prices.push(price);
+              total += price;
+
+            }
+
+            // checking for the maximum price
+
+            let max = Math.max(...item_prices);
+            let average = total / item_prices.length;
+
+            document.write("Total: " + total + "<br>");
+            document.write("Maximum: " + max + "<br>");
+            document.write("Average: " + average);
+
+
+          } catch (error) {
+                alert(error);
+          }
+        }
+        </script>
+    </head>
+
+    <body>
+
+        <h1>Shop Price Calculator</h1>
+
+        <p>Click to Calculate Shop Price</p>
+        <button
+            onclick="price_calculator()"
+        >
+            Calculate
+        </button>
+    </body>
+
+</html>
