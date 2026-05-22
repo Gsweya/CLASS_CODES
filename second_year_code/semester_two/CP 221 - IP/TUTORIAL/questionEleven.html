@@ -3,6 +3,235 @@
 
     <head>
         <title>Question Eleven</title>
-        <script></script>
+
+        <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        input,textarea {
+            width: 300px;
+            margin: 5px;
+        }
+
+        </style>
+
+        <script>
+        function validateForm() {
+
+          let name = document.getElementById("name").value;
+
+          let address = document.getElementById("address").value;
+
+          let email = document.getElementById("email").value;
+
+          let comments = document.getElementById("comments").value;
+
+          if (name == "") {
+            alert("Enter name");
+            return false;
+          }
+
+          if (address == ""){
+            alert("Enter address");
+            return false;
+          }
+
+          if (email == ""){
+            alert("Enter email");
+            return false;
+          }
+
+
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if(!emailPattern.test(email)) {
+            alert("Invalid email");
+            return false;
+
+          }
+
+          let likes = [];
+
+          let checks = document.getElementsById("likes");
+
+          for (let item of checks) {
+            if (item.checked) {
+              likes.push(item.value);
+            }
+          }
+
+          if(likes.length == 0) {
+            alert("Select campus preference");
+            return false;
+          }
+
+          let interest = "";
+
+          let radios = document.getElementsByName("interest");
+
+          for (let item of radios) {
+            if (item.checked){
+              interest=item.value;
+            }
+          }
+
+          if (interest == "") {
+            alert("Select interest source");
+            return false;
+          }
+
+          alert(
+            "Insert into tbl_feedback\n\n" +
+            "Name: " +name+"\n"+
+            "Address: "+address+"\n"+
+            "Email: "+email+"\n"+
+            "Likes: "+likes+"\n"+
+            "Interest"+interest+"\n"+
+            "Comments: "+comments
+          );
+
+          return true;
+        }
+        </script>
+
+
     </head>
+
+    <body>
+        <h2>Campus Visit Feedback</h2>
+
+        <form onsubmit="validateForm()">
+
+            Name:<br>
+            <input
+                type="text"
+                id="name"
+            >
+            <br>
+            Address:
+            <br>
+
+            <input
+                type="text"
+                id="address"
+            >
+            <br>
+            Email:
+            <br>
+
+            <input
+                type="email"
+                id="email"
+            >
+
+            <br><br>
+
+            Liked Most:
+
+            <br>
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Student"
+            >
+                Student
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Location"
+            >
+                Location
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Campus"
+            >
+                Campus
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Atmosphere"
+            >
+                Atmosphere
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Dorm Rooms"
+            >
+                Dorm Rooms
+
+            <input
+                type="checkbox"
+                name="likes"
+                value="Sports"
+            >
+                Sports
+
+            <br><br>
+
+            Interested Through:
+
+            <br>
+
+            <input
+                type="radio"
+                name="interest"
+                value="Friends"
+            >
+                Friends
+
+            <input
+                type="radio"
+                name="interest"
+                value="Television"
+            >
+                Television
+
+            <input
+                type="radio"
+                name="interst"
+                value="Internet"
+            >
+                Internet
+
+            <input
+                type="radio"
+                name="interest"
+                value="Others"
+            >
+                Others
+
+            <br><br>
+
+            Comments:
+
+            <br>
+
+            <textarea
+                id="comments"
+                rows="5"
+                cols="40"
+            ></textarea>
+
+            <br><br>
+
+            <input
+                type="submit"
+                value="Submit"
+            >
+
+            <input
+                type="reset"
+                value="Reset"
+            >
+        </form>
+    </body>
 </html>
