@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UDOM Feedback Form</title>
+
+    <script>
+
+        function validateForm() {
+
+            // Get text field values
+            let name =
+                document.getElementById("name").value;
+
+            let address =
+                document.getElementById("address").value;
+
+            let email =
+                document.getElementById("email").value;
+
+            let comments =
+                document.getElementById("comments").value;
+
+            // Validate text fields
+            if (name == "" ||
+                address == "" ||
+                email == "" ||
+                comments == "") {
+
+                alert("Please fill all fields.");
+
+                return false;
+            }
+
+            // Validate email
+            if (!email.includes("@")) {
+
+                alert("Invalid email address.");
+
+                return false;
+            }
+
+            // Validate checkboxes
+            let checkboxes =
+                document.getElementsByName("like");
+
+            let likes = [];
+
+            let checked = false;
+
+            for (let i = 0; i < checkboxes.length; i++) {
+
+                if (checkboxes[i].checked) {
+
+                    checked = true;
+
+                    likes.push(checkboxes[i].value);
+                }
+            }
+
+            if (!checked) {
+
+                alert(
+                    "Please select at least one thing you liked."
+                );
+
+                return false;
+            }
+
+            // Validate radio buttons
+            let radios =
+                document.getElementsByName("interest");
+
+            let selected = false;
+
+            let yourInterest = "";
+
+            for (let i = 0; i < radios.length; i++) {
+
+                if (radios[i].checked) {
+
+                    selected = true;
+
+                    yourInterest = radios[i].value;
+                }
+            }
+
+            if (!selected) {
+
+                alert(
+                    "Please select how you became interested."
+                );
+
+                return false;
+            }
+
+            // Convert likes array into text
+            let yourLike = likes.join(", ");
+
+            // Insert data into HTML table
+            let table =
+                document.getElementById("tbl_feedback");
+
+            table.innerHTML +=
+
+                "<tr>" +
+
+                "<td>" + name + "</td>" +
+
+                "<td>" + address + "</td>" +
+
+                "<td>" + email + "</td>" +
+
+                "<td>" + yourLike + "</td>" +
+
+                "<td>" + yourInterest + "</td>" +
+
+                "<td>" + comments + "</td>" +
+
+                "</tr>";
+
+            // Success message
+            alert("Feedback submitted successfully!");
+
+            return false;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>UDOM Feedback Form</h1>
+
+    <form onsubmit="return validateForm()">
+
+        <!-- Name -->
+        Name:<br>
+        <input type="text" id="name">
+        <br><br>
+
+        <!-- Address -->
+        Address:<br>
+        <input type="text" id="address">
+        <br><br>
+
+        <!-- Email -->
+        Email:<br>
+        <input type="text" id="email">
+        <br><br>
+
+        <!-- Checkboxes -->
+        <h3>What did you like most?</h3>
+
+        <input type="checkbox" name="like" value="Students">
+        Students<br>
+
+        <input type="checkbox" name="like" value="Location">
+        Location<br>
+
+        <input type="checkbox" name="like" value="Campus">
+        Campus<br>
+
+        <input type="checkbox" name="like" value="Atmosphere">
+        Atmosphere<br>
+
+        <input type="checkbox" name="like" value="Dorm Rooms">
+        Dorm Rooms<br>
+
+        <input type="checkbox" name="like" value="Sports">
+        Sports<br><br>
+
+        <!-- Radio Buttons -->
+        <h3>
+            How did you become interested in the university?
+        </h3>
+
+        <input type="radio" name="interest" value="Friends">
+        Friends<br>
+
+        <input type="radio" name="interest" value="Television">
+        Television<br>
+
+        <input type="radio" name="interest" value="Internet">
+        Internet<br>
+
+        <input type="radio" name="interest" value="Others">
+        Others<br><br>
+
+        <!-- Comments -->
+        Additional Comments:<br>
+
+        <textarea id="comments" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <!-- HTML Table -->
+    <h2>tbl_feedback Table</h2>
+
+    <table border="1" id="tbl_feedback">
+
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Your Like</th>
+            <th>Your Interest</th>
+            <th>Comments</th>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

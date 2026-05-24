@@ -1,223 +1,265 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>UDOM Feedback Form</title>
+    <head>
+        <title>Question Eleven</title>
 
-    <script>
+        <style>
 
-        function validateForm() {
-
-            // Get text field values
-            let name =
-                document.getElementById("name").value;
-
-            let address =
-                document.getElementById("address").value;
-
-            let email =
-                document.getElementById("email").value;
-
-            let comments =
-                document.getElementById("comments").value;
-
-            // Validate text fields
-            if (name == "" ||
-                address == "" ||
-                email == "" ||
-                comments == "") {
-
-                alert("Please fill all fields.");
-
-                return false;
-            }
-
-            // Validate email
-            if (!email.includes("@")) {
-
-                alert("Invalid email address.");
-
-                return false;
-            }
-
-            // Validate checkboxes
-            let checkboxes =
-                document.getElementsByName("like");
-
-            let likes = [];
-
-            let checked = false;
-
-            for (let i = 0; i < checkboxes.length; i++) {
-
-                if (checkboxes[i].checked) {
-
-                    checked = true;
-
-                    likes.push(checkboxes[i].value);
-                }
-            }
-
-            if (!checked) {
-
-                alert(
-                    "Please select at least one thing you liked."
-                );
-
-                return false;
-            }
-
-            // Validate radio buttons
-            let radios =
-                document.getElementsByName("interest");
-
-            let selected = false;
-
-            let yourInterest = "";
-
-            for (let i = 0; i < radios.length; i++) {
-
-                if (radios[i].checked) {
-
-                    selected = true;
-
-                    yourInterest = radios[i].value;
-                }
-            }
-
-            if (!selected) {
-
-                alert(
-                    "Please select how you became interested."
-                );
-
-                return false;
-            }
-
-            // Convert likes array into text
-            let yourLike = likes.join(", ");
-
-            // Insert data into HTML table
-            let table =
-                document.getElementById("tbl_feedback");
-
-            table.innerHTML +=
-
-                "<tr>" +
-
-                "<td>" + name + "</td>" +
-
-                "<td>" + address + "</td>" +
-
-                "<td>" + email + "</td>" +
-
-                "<td>" + yourLike + "</td>" +
-
-                "<td>" + yourInterest + "</td>" +
-
-                "<td>" + comments + "</td>" +
-
-                "</tr>";
-
-            // Success message
-            alert("Feedback submitted successfully!");
-
-            return false;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
         }
 
-    </script>
+        #personal-details input{
+            width: 300px;
+            margin: 5px;
+        }
 
-</head>
+        #likings input {
+            margin: 5px;
+        }
 
-<body>
+        #likings label {
+            align-items: left;
+        }
 
-    <h1>UDOM Feedback Form</h1>
+        </style>
 
-    <form onsubmit="return validateForm()">
+        <script>
+        function validateForm() {
 
-        <!-- Name -->
-        Name:<br>
-        <input type="text" id="name">
-        <br><br>
+          let name = document.getElementById("name").value;
 
-        <!-- Address -->
-        Address:<br>
-        <input type="text" id="address">
-        <br><br>
+          let address = document.getElementById("address").value;
 
-        <!-- Email -->
-        Email:<br>
-        <input type="text" id="email">
-        <br><br>
+          let email = document.getElementById("email").value;
 
-        <!-- Checkboxes -->
-        <h3>What did you like most?</h3>
+          let comments = document.getElementById("comments").value;
 
-        <input type="checkbox" name="like" value="Students">
-        Students<br>
+          if (name == "") {
+            alert("Enter name");
+            return false;
+          }
 
-        <input type="checkbox" name="like" value="Location">
-        Location<br>
+          if (address == ""){
+            alert("Enter address");
+            return false;
+          }
 
-        <input type="checkbox" name="like" value="Campus">
-        Campus<br>
+          if (email == ""){
+            alert("Enter email");
+            return false;
+          }
 
-        <input type="checkbox" name="like" value="Atmosphere">
-        Atmosphere<br>
 
-        <input type="checkbox" name="like" value="Dorm Rooms">
-        Dorm Rooms<br>
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        <input type="checkbox" name="like" value="Sports">
-        Sports<br><br>
+          if(!emailPattern.test(email)) {
+            alert("Invalid email");
+            return false;
 
-        <!-- Radio Buttons -->
-        <h3>
-            How did you become interested in the university?
-        </h3>
+          }
+          /* alternative is: if (!email.includes("@")) {   // rest of code // } */
 
-        <input type="radio" name="interest" value="Friends">
-        Friends<br>
+          let likes = [];
 
-        <input type="radio" name="interest" value="Television">
-        Television<br>
+          let checks = document.getElementsByName("likes");
 
-        <input type="radio" name="interest" value="Internet">
-        Internet<br>
+          for (let item of checks) {
+            if (item.checked) {
+              likes.push(item.value);
+            }
+          }
 
-        <input type="radio" name="interest" value="Others">
-        Others<br><br>
+          if(likes.length == 0) {
+            alert("Select campus preference");
+            return false;
+          }
 
-        <!-- Comments -->
-        Additional Comments:<br>
+          let interest = "";
 
-        <textarea id="comments" rows="5" cols="40"></textarea>
+          let radios = document.getElementsByName("interest");
 
-        <br><br>
+          for (let item of radios) {
+            if (item.checked){
+              interest=item.value;
+            }
+          }
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
+          if (interest == "") {
+            alert("Select interest source");
+            return false;
+          }
 
-    </form>
+          alert(
+            "Insert into tbl_feedback\n\n" +
+            "Name: " +name+"\n"+
+            "Address: "+address+"\n"+
+            "Email: "+email+"\n"+
+            "Likes: "+likes+"\n"+
+            "Interest"+interest+"\n"+
+            "Comments: "+comments
+          );
 
-    <hr>
+          return true;
+        }
+        </script>
 
-    <!-- HTML Table -->
-    <h2>tbl_feedback Table</h2>
 
-    <table border="1" id="tbl_feedback">
+    </head>
 
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Email</th>
-            <th>Your Like</th>
-            <th>Your Interest</th>
-            <th>Comments</th>
-        </tr>
+    <body>
+        <h2>Campus Visit Feedback</h2>
 
-    </table>
+        <form onsubmit="validateForm()">
 
-</body>
+            <fieldset id="personal-details" style="margin: 20px;">
+                <legend>Personal Details</legend>
 
+                <label>Name: </label>
+                <input
+                    type="text"
+                    id="name"
+                >
+                <br>
+
+                <label>Address: </label>
+                <input
+                    type="text"
+                    id="address"
+                >
+
+                <br>
+                <label>Email: </label>
+                <input
+                    type="email"
+                    id="email"
+                >
+            </fieldset>
+
+            <fieldset id="likings" style="margin: 20px;">
+                <legend>Likings</legend>
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Student"
+                >
+                <label>Student</label>
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Location"
+                >
+                <label>Location</label>
+                <br>
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Campus"
+                >
+                <label>Campus</label>
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Atmosphere"
+                >
+                <label>Atmosphere</label>
+                <br>
+
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Dorm Rooms"
+                >
+                    Dorm Rooms
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Sports"
+                >
+                    Sports
+            </fieldset>
+
+            <fieldset style="margin: 20px;">
+
+                <legend>Interests</legend>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Friends"
+                >
+                <label>Friends</label>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Television"
+                >
+                <label>Television</label>
+                <br>
+
+                <input
+                    type="radio"
+                    name="interst"
+                    value="Internet"
+                >
+                <label>Internet</label>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Others"
+                >
+                <label>Others</label>
+
+                <br><br>
+
+                <label>Comments:</label>
+                <br>
+                <textarea
+                    id="comments"
+                    rows="5"
+                    cols="40"
+                ></textarea>
+            </fieldset>
+
+
+            <input style="margin: 20px;"
+                type="submit"
+                value="Submit"
+            >
+
+            <input
+                type="reset"
+                value="Reset"
+            >
+        </form>
+
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>yourLike</th>
+                <th>yourInterest</th>
+                <th>Comments</th>
+            </tr>
+
+            <tr></tr>
+
+        </table>
+
+    </body>
 </html>
