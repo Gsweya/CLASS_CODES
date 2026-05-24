@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Feedback Forum</title>
+
+        <style>
+
+        </style>
+
+        <script>
+
+            function validateForm() {
+                var name = document.forms["myForm"]["name"].value;
+                var address = document.forms["myForm"]["address"].value;
+                var email = document.forms["myForm"]["email"].value;
+
+
+                if (name == "" || address == "" || email == "") {
+                    alert("All fields are required.");
+                    return false;
+                }
+
+
+                if (email.indexOf("@") == -1) {
+                    alert("Invalid email");
+                    return false;
+                }
+
+                return true;
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <form name="myForm" onsubmit="return validateForm()">
+            
+            Name:
+            <input type="text" name="name"><br><br>
+
+            Address:
+            <input type="text" name="address"><br><br>
+
+            Email:
+            <input type="text" name="email"><br><br>
+
+            <h3>What did you enjoy most ?</h3>
+
+            <input type="checkbox" name="like">Book Selection 
+            <input type="checkbox" name="like">Study Areas <br>
+            <input type="checkbox" name="like">Events and Programs 
+            <input type="checkbox" name="like">Atmosphere <br>
+            <input type="checkbox" name="like">Internet Access 
+            <input type="checkbox" name="like">Staff Assistance
+
+            <h3> How did you hear about us ?</h3>
+
+            <input type="radio" name="source">Friends
+            <input type="radio" name="source">Social Media 
+            <input type="radio" name="source">Website
+            <input type="radio" name="source">Other
+
+            <br><br>
+
+            Comments:<br>
+            <textarea rows="5" cols="40"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+        </form>
+
+
+    </body>
+</html>

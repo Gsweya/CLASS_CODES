@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-in-Canvas Simulation</title>
+  <style>
+    body { margin: 0; background: #111; color: white; font-family: sans-serif; }
+    canvas { width: 100vw; height: 100vh; display: block; }
+    
+    /* Style the HTML element that will live inside the Canvas */
+    .canvas-overlay-card {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The canvas layer handling high-performance rendering (WebGL/WebGPU) -->
+  <canvas id="gfxCanvas"></canvas>
+
+  <script type="module">
+    const canvas = document.getElementById('gfxCanvas');
+    
+    // 1. Initialize the modern HTML-in-Canvas rendering context
+    const ctx = canvas.getContext('html-in-canvas') || canvas.getContext('2d'); 
+
+    // 2. Create a standard DOM element programmatically
+    const div = document.createElement('div');
+    div.className = 'canvas-overlay-card';
+    div.innerHTML = `
+      <h3>Dynamic Engine Stat</h3>
+      <p>This text is fully <strong>selectable</strong>, searchable, and translatable even though it exists inside a high-fidelity graphics layer.</p>
+      <button id="actionBtn">Interact</button>
+    `;
+
+    // 3. Append the element to the canvas layout tree instead of the main document body
+    if (ctx.supportsHtmlPlacement) {
+      // Direct placement into the canvas layout space
+      ctx.appendHtmlElement(div, { x: 100, y: 150, depth: 0.5 });
+    } else {
+      // Fallback behavior for older browser baselines
+      document.body.appendChild(div);
+    }
+
+    // Interactive logic still hooks up natively
+    div.querySelector('#actionBtn').addEventListener('click', () => {
+      alert('Interactivity works smoothly inside the canvas!');
+    });
+  </script>
+</body>
+</html>

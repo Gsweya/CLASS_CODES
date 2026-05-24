@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+            function process_form(event) {
+                // Prevent he form from submitting and reloading the page
+
+                event.preventDefault();
+
+                // Get country value
+                let country = document.forms["myForm"]["country"].value;
+
+                // Get the standard radio button value using form elements.
+                let year = document.forms["myForm"]["yos"].value;
+
+                // Alternative to get a selcted radion button using querySelector 
+                let selectedRadio = document.querySelector('input[name="yos"]:checked');
+                let year_alt = selectedRadio ? selectedRadio.value : "None selected";
+
+                //4. Ouptu the results to a div instad of erasing the page 
+                document.getElementById("result").innerHTML = 
+                "<h2>Chosen: " + country + "</h2>" + "<br>"
+                + "<h3>Year of Study (normal): " + year + "</h3>"
+                + "<h3>Year of Study Alternative: " + year_alt + "</h3>";       
+
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myForm" onsubmit="process_form(event)">
+
+            <fieldset>
+                <legend>
+                    Pick the Country:
+                </legend>
+
+                <label style="padding-right: 20px;">Select a country option:</label>
+
+                <select name="country">
+                        <option>-- Select Country --- </option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="US">United States</option>
+                        <option value="KE">Kenya</option>
+                </select>
+
+            </fieldset>          
+
+            <br><br>
+
+            <fieldset>
+                <legend>Campus Options</legend>
+                <label style="padding-right: 20px;">Year of Study</label><br>
+                
+                <label>First Year</label>
+                <input
+                    type="radio"
+                    name="yos"
+                    value="1"
+                >
+
+                <label>Second Year</label>
+                <input 
+                    type="radio"
+                    name="yos"
+                    value="2"
+                >
+
+                <label>Third Yead</label>
+                <input
+                    type="radio"
+                    name="yos"
+                    value="3"
+                >
+            </fieldset>
+
+            <br><br>
+            <button
+                type="submit""
+            >Submit</button>
+            <br>
+            <div id="result"></div>
+        </form>
+    </body>
+
+</html>

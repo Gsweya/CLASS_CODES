@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        h2 {
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+
+        #card {
+            background-color: grey;
+            border-radius: 20;
+            margin: 30;
+            padding: 20;
+            align-content: center;
+            width: 50%;
+
+        }
+
+        #card-2 {
+            background-color: red;
+            border-radius: 20;
+            align-content: center;
+            width: 50%;
+            padding-top: 40px;
+            margin-top: 50px;
+
+        }
+
+        legend {
+            color: white;
+        }
+
+        </style>
+
+        <meta lang="en">
+
+        <script>
+
+
+        let name = prompt("What is your name ?");
+
+
+        document.write(
+        "This is JavaScript... Showing This !"
+        );
+
+        console.log("This is a message written in the console log.");
+
+        document.write(
+          "<h2>" + "This is Second Heading h2" + "</h2>"
+        );
+
+        document.write(
+          "<p><strong>" + "Hello, " + name + "</strong></p>"
+        );
+
+        function validateForm(){
+          let a = Number(document.getElementById("numberOne").value);
+          let b = Number(document.getElementById("numberTwo").value);
+
+          let result = a + b;
+
+          alert(result);
+
+        }
+
+
+
+        </script>
+    </head>
+
+
+    <body>
+
+        <div  id="card">
+            <h1>This is the Head of the Card</h1>
+            <p>This is the paragraph of the Card !</p>
+        </div>
+
+        <div id="card-2">
+
+            <form id="RegistrationForm" style="padding: 40px;">
+
+                <legend>User Fill Form</legend>
+                name:
+                <input
+                    type="number"
+                    id="numberOne"
+                >
+                <br>
+
+                last name:
+                <input
+                    type="number"
+                    id="numberTwo"
+                >
+                <br>
+                <button
+                    onclick="validateForm()"
+                >Click Me !! </button>
+            </form>
+
+        </div>
+
+
+    </body>
+</html>
