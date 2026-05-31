@@ -9,7 +9,7 @@
                 event.preventDefault();
 
                 // Get country value
-                let country = document.forms["myForm"]["country"].value;
+                let country = document.querySelector('select[name="country"]').value;
 
                 // Get the standard radio button value using form elements.
                 let year = document.forms["myForm"]["yos"].value;
@@ -39,9 +39,9 @@
 
                 <select name="country">
                         <option>-- Select Country --- </option>
-                        <option value="TZ">Tanzania</option>
-                        <option value="US">United States</option>
-                        <option value="KE">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="United States">United States</option>
+                        <option value="Kenya">Kenya</option>
                 </select>
 
             </fieldset>          
@@ -76,7 +76,7 @@
 
             <br><br>
             <button
-                type="submit""
+                type="submit"
             >Submit</button>
             <br>
             <div id="result"></div>
