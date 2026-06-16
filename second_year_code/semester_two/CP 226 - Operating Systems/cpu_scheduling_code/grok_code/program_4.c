@@ -34,9 +34,10 @@ int main() {
     printf("Printing numbe of seconds: ");
     for (int i = 0; i <= 10; i++){
         printf("Second: %d\n", i);
+
     }
 
-    sleep(30);
+    sleep(10);
 
     /*    // Optionally stop it
     kill(audio_pid, SIGTERM);
