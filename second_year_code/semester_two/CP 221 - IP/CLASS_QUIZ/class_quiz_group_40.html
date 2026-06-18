@@ -10,7 +10,7 @@
         :root {
             --page-bg: linear-gradient(135deg, #f6efe7 0%, #eef6f8 100%);
             --card-border: #d9e2e8;
-            --hover-row: #f8fbfc;
+            --hover-row: #e8f4f1;
             --selected-row: #d8efe9;
         }
 
@@ -34,11 +34,21 @@
             transition: background-color 0.18s ease;
         }
 
+        #studentTable.table-striped tbody tr:hover,
         #studentTable tbody tr:hover {
             background-color: var(--hover-row);
         }
 
+        #studentTable.table-striped tbody tr:hover > * ,
+        #studentTable tbody tr:hover > * {
+            background-color: var(--hover-row) !important;
+        }
+
         .row-selected {
+            background-color: var(--selected-row) !important;
+        }
+
+        .row-selected > * {
             background-color: var(--selected-row) !important;
         }
     </style>
@@ -58,6 +68,10 @@
                 <input id="studentGrade" type="number" class="form-control" placeholder="Grade" min="0" max="100" style="max-width: 140px;">
                 <button id="addRowBtn" class="btn btn-success">Add New Row</button>
                 <button id="deleteRowBtn" class="btn btn-danger">Delete Selected Row</button>
+                <select id="sortOrder" class="form-select" style="max-width: 180px;">
+                    <option value="asc">Sort Grade: Ascending</option>
+                    <option value="desc">Sort Grade: Descending</option>
+                </select>
                 <button id="sortGradeBtn" class="btn btn-primary">Sort by Grade</button>
                 <button id="clearTableBtn" class="btn btn-secondary">Clear Table</button>
             </div>
@@ -123,23 +137,11 @@
             function updateSummary() {
                 const rowCount = $tbody.children('tr').length;
                 const selectedCount = $tbody.find('.row-checkbox').filter(':checked').length;
-                const grades = [];
-
-                $tbody.children('tr').each(function () {
-                    grades.push(Number($(this).find('td').eq(3).text()));
-                });
-
-                const average = grades.length
-                    ? (grades.reduce(function (total, grade) {
-                        return total + grade;
-                    }, 0) / grades.length).toFixed(1)
-                    : '0.0';
 
                 $('#gradeOutput').html(
                     '<div class="alert alert-info mb-0">' +
                     '<strong>Total rows:</strong> ' + rowCount +
                     ' | <strong>Selected:</strong> ' + selectedCount +
-                    ' | <strong>Average grade:</strong> ' + average +
                     '</div>'
                 );
             }
@@ -219,12 +221,13 @@
             });
 
             $('#sortGradeBtn').on('click', function () {
+                const sortOrder = $('#sortOrder').val();
                 const rows = $tbody.children('tr').get();
 
                 rows.sort(function (a, b) {
                     const gradeA = parseFloat($(a).find('td').eq(3).text());
                     const gradeB = parseFloat($(b).find('td').eq(3).text());
-                    return gradeA - gradeB;
+                    return sortOrder === 'asc' ? gradeA - gradeB : gradeB - gradeA;
                 });
 
                 $.each(rows, function (_, row) {
