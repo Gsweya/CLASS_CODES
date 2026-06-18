@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        :root {
+            --page-bg: linear-gradient(135deg, #f6efe7 0%, #eef6f8 100%);
+            --card-border: #d9e2e8;
+            --hover-row: #f8fbfc;
+            --selected-row: #d8efe9;
+        }
+
+        body {
+            background: var(--page-bg);
+            min-height: 100vh;
+        }
+
+        .hero-copy {
+            max-width: 720px;
+        }
+
+        .control-card,
+        .table-shell {
+            border: 1px solid var(--card-border);
+            box-shadow: 0 14px 36px rgba(20, 54, 66, 0.08);
+        }
+
+        #studentTable tbody tr {
+            cursor: pointer;
+            transition: background-color 0.18s ease;
+        }
+
+        #studentTable tbody tr:hover {
+            background-color: var(--hover-row);
+        }
+
+        .row-selected {
+            background-color: var(--selected-row) !important;
+        }
+
+        #gradeOutput {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="hero-copy mb-4">
+            <h1 class="mb-2">Dynamic Table Manager</h1>
+            <p class="text-secondary mb-0">A Bootstrap and jQuery page for adding, deleting, sorting, clearing, and highlighting student records.</p>
+        </div>
+
+        <div class="card control-card mb-3">
+            <div class="card-body d-flex gap-2 flex-wrap">
+                <input id="studentName" type="text" class="form-control" placeholder="Student name" style="max-width: 220px;">
+                <input id="studentCourse" type="text" class="form-control" placeholder="Course" style="max-width: 220px;">
+                <input id="studentGrade" type="number" class="form-control" placeholder="Grade" min="0" max="100" style="max-width: 140px;">
+                <button id="addRowBtn" class="btn btn-success">Add New Row</button>
+                <button id="deleteRowBtn" class="btn btn-danger">Delete Selected Row</button>
+                <button id="clearTableBtn" class="btn btn-secondary">Clear Table</button>
+                <div class="ms-auto d-flex gap-2 align-items-center">
+                    <label class="form-label mb-0 text-nowrap">Sort by:</label>
+                    <select id="sortColumn" class="form-select form-select-sm" style="width:auto">
+                        <option value="1">Name</option>
+                        <option value="2">Course</option>
+                        <option value="3" selected>Grade</option>
+                    </select>
+                    <select id="sortOrder" class="form-select form-select-sm" style="width:auto">
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                    <button id="sortBtn" class="btn btn-primary btn-sm">Sort</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card table-shell">
+            <div class="card-body p-0">
+                <table id="studentTable" class="table table-striped mb-0 align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 40px;"><input type="checkbox" id="selectAll"></th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>Alice Mushi</td>
+                            <td>Computer Science</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>Bob Joseph</td>
+                            <td>Data Science</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>Chanila Joseph</td>
+                            <td>Internet Programming</td>
+                            <td>91</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>Diana Kim</td>
+                            <td>Cybersecurity</td>
+                            <td>66</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="row-checkbox"></td>
+                            <td>Eliud Mwangi</td>
+                            <td>Software Engineering</td>
+                            <td>78</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="gradeOutput"></div>
+
+    </div>
+
+    <script>
+        $(function () {
+            const $tbody = $('#studentTable tbody');
+            const $nameInput = $('#studentName');
+            const $courseInput = $('#studentCourse');
+            const $gradeInput = $('#studentGrade');
+
+            function updateSummary() {
+                const rowCount = $tbody.children('tr').length;
+                const selectedCount = $tbody.find('.row-checkbox').filter(':checked').length;
+                const grades = [];
+
+                $tbody.children('tr').each(function () {
+                    grades.push(Number($(this).find('td').eq(3).text()));
+                });
+
+                const average = grades.length
+                    ? (grades.reduce(function (total, grade) {
+                        return total + grade;
+                    }, 0) / grades.length).toFixed(1)
+                    : '0.0';
+
+                $('#gradeOutput').html(
+                    '<div class="alert alert-info mb-0">' +
+                    '<strong>Total rows:</strong> ' + rowCount +
+                    ' | <strong>Selected:</strong> ' + selectedCount +
+                    ' | <strong>Average grade:</strong> ' + average +
+                    '</div>'
+                );
+            }
+
+            function highlightSelected() {
+                $tbody.children('tr').each(function () {
+                    const $checkbox = $(this).find('.row-checkbox');
+                    $(this).toggleClass('row-selected', $checkbox.prop('checked'));
+                });
+                updateSummary();
+            }
+
+            $tbody.on('change', '.row-checkbox', function () {
+                const total = $tbody.find('.row-checkbox').length;
+                const checked = $tbody.find('.row-checkbox').filter(':checked').length;
+                $('#selectAll').prop('checked', total > 0 && total === checked);
+                highlightSelected();
+            });
+
+            $tbody.on('click', 'tr', function (event) {
+                if ($(event.target).is('input')) {
+                    return;
+                }
+
+                const $checkbox = $(this).find('.row-checkbox');
+                $checkbox.prop('checked', !$checkbox.prop('checked')).trigger('change');
+            });
+
+            $('#selectAll').on('change', function () {
+                const checked = $(this).prop('checked');
+                $tbody.find('.row-checkbox').each(function () {
+                    $(this).prop('checked', checked);
+                });
+                highlightSelected();
+            });
+
+            $('#addRowBtn').on('click', function () {
+                const name = $.trim($nameInput.val());
+                const course = $.trim($courseInput.val());
+                const grade = $.trim($gradeInput.val());
+
+                if (!name || !course || grade === '') {
+                    alert('Enter a name, course, and grade before adding a row.');
+                    return;
+                }
+
+                const newRow =
+                    '<tr>' +
+                    '<td><input type="checkbox" class="row-checkbox"></td>' +
+                    '<td>' + name + '</td>' +
+                    '<td>' + course + '</td>' +
+                    '<td>' + grade + '</td>' +
+                    '</tr>';
+
+                $tbody.append(newRow);
+                $nameInput.val('');
+                $courseInput.val('');
+                $gradeInput.val('');
+                $('#selectAll').prop('checked', false);
+                updateSummary();
+            });
+
+            $('#deleteRowBtn').on('click', function () {
+                const selected = $tbody.find('.row-checkbox').filter(':checked');
+
+                if (selected.length === 0) {
+                    alert('No rows selected.');
+                    return;
+                }
+
+                selected.each(function () {
+                    $(this).closest('tr').remove();
+                });
+
+                $('#selectAll').prop('checked', false);
+                updateSummary();
+            });
+
+            $('#sortBtn').on('click', function () {
+                const col = parseInt($('#sortColumn').val());
+                const order = $('#sortOrder').val();
+                const rows = $tbody.children('tr').get();
+
+                rows.sort(function (a, b) {
+                    let valA = $(a).find('td').eq(col).text();
+                    let valB = $(b).find('td').eq(col).text();
+
+                    if (col === 3) {
+                        valA = parseFloat(valA);
+                        valB = parseFloat(valB);
+                    } else {
+                        valA = valA.toLowerCase();
+                        valB = valB.toLowerCase();
+                    }
+
+                    if (valA < valB) return order === 'asc' ? -1 : 1;
+                    if (valA > valB) return order === 'asc' ? 1 : -1;
+                    return 0;
+                });
+
+                $.each(rows, function (_, row) {
+                    $tbody.append(row);
+                });
+
+                updateSummary();
+            });
+
+            $('#clearTableBtn').on('click', function () {
+                if (confirm('Clear all rows?')) {
+                    $tbody.empty();
+                    $('#selectAll').prop('checked', false);
+                    updateSummary();
+                }
+            });
+
+            updateSummary();
+        });
+    </script>
+</body>
+</html>
