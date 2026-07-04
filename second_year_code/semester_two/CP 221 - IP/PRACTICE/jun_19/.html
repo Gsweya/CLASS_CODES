@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <p id="hardwork">
+you gotta work hard  if u don't wanna be lazy
+     </p>
+
+     <button id="work">
+press here to start working hard
+     </button>
+
+     <script>
+       // let btn = document.getElementById("work");
+       let btn = $("#work");
+
+       //let hard = document.getElementById("hardwork");
+       let hard = $("#hardwork");
+        // btn.addEventListener() ... rest of the code
+       btn.on("click", function(){
+            // hard.innerText = `hard`;
+            hard.text(`hard ok`);
+            // hard.style.color=`red`;
+            hard.css("color", "red");
+       })
+     </script>
+</body>
+</html>

@@ -23,7 +23,7 @@ void Thread1()
             {
 
                 thread1WantsToEnter =  false;
-                
+
                 while (favouredThread == 2)
                 {
                     // busy waiting
@@ -37,18 +37,18 @@ void Thread1()
 
         std::cout << "Thread 1 is running\n";
         std::cout << "Thread 1 is in the critical section.\n";
-        
-        // Exit Section 
+
+        // Exit Section
         favouredThread = 2;
         thread1WantsToEnter = false;
 
     } while (!completed);
-    
+
 }
 
 void Thread2()
 {
-    do 
+    do
     {
 
         // Entry section
@@ -65,8 +65,8 @@ void Thread2()
 
 
                 thread2WantsToEnter = true;
-            }           
-            
+            }
+
         }
 
         // Critical Section
@@ -75,11 +75,11 @@ void Thread2()
 
         favouredThread = 1;
         thread2WantsToEnter = false;
-        
+
     } while (!completed);
 }
 
-int main() 
+int main()
 {
     std::thread t1(Thread1);
     std::thread t2(Thread2);
@@ -88,8 +88,8 @@ int main()
 
     completed = true;
 
-    t1.join();
     t2.join();
+    t1.join();
 
 
     return 0;

@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <!-- Import JQuery from local -->
+        <script src="./jquery.js">// JQuery v4.0.0</script>
+
+        <!-- Import Bootsrap v4.0.0 -->
+        <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <h1>Mwanga Academy</h1>
+        <h2>Students Performance Dashboard</h2>
+
+        <h3>Search Student:</h3>
+        <input id="searchInput" class="form-control" placeholder="Search Student">
+
+        <p id="noResults"></p>
+
+        <table  class="table" id="resultsTable" border="2" style="margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+
+                    <th>Reg No</th>
+
+                    <th>Math</th>
+
+                    <th>English</th>
+
+                    <th>Science</th>
+
+                    <th>Average</th>
+
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+
+        <script>
+         $(document).ready(() => {
+
+            // catch the search element
+            let search = $("#searchInput");
+
+            // add event listener
+            search.on("input", function() {
+
+                let value = $(this).val().toLowerCase();
+
+                // If the input is empty, restore everything 
+                if (value === "") {
+                    $("#resultsTable tbody tr").show();
+                    $("#noResults").hide(); 
+                    return;
+                }
+
+                
+
+
+                $("#tableBody tr").each(function() {
+
+                    let col1 = $(this).find("td:eq(0)").text().toLowerCase();
+                    let col2 = $(this).find("td:eq(1)").text().toLowerCase();
+
+                    let found = col1.includes(value) || col2.includes(value);
+
+                
+                    $(this).toggle(found);
+
+                                                   
+
+                });
+            });
+
+            // pull the table body object (DOM)
+            let tableBody = $("#tableBody");
+
+            // student result objects 
+            var results = [
+                { name: "Zawadi Kimani", regNo: "S001", math:78, english:85,
+                    science:90 },
+                { name: "Brian Ochieng", regNo: "S002", math:45, english:52,
+                    science:60 },
+                { name: "Nadia Salum", regNo: "S003", math:92, english:88,
+                    science:95 },
+                { name: "Peter Luwasa", regNo: "S004", math:33, english: 41,
+                    science:38 },
+                { name: "Sylvia Mhando", regNo: "S005", math:67, english: 71, 
+                    science:74
+                }             
+            ];
+
+            // compute average of each student
+            
+            for (let i = 0; i < results.length ; i++){
+
+                let total = results[i].math + 
+                            results[i].english + 
+                            results[i].science;
+                            
+
+                let average = Math.round((total / 3) * 10) / 10;
+                results[i].average = average;   
+                
+               
+            }
+
+
+            function compute_grade() {
+
+                // asingn the grade and flag it
+                for (let i = 0; i < results.length; i++) {
+
+                let average = results[i].average;
+
+                if(average >= 70) {
+                    results[i].grade = 'A';
+                    results[i].status = "success";
+                } else if (average >= 50 && average <= 69.9) {
+                    results[i].grade = 'B';
+                    results[i].status = "warning";
+                } else if (average < 50) {
+                    results[i].grade = 'C';
+                    results[i].status = "danger";
+                } else {
+                    results[i].grade = "Invalid";
+                }                
+                    
+            }
+        }           
+
+            // compute the grade of each person
+            compute_grade();
+
+            // render the table on start with the inital scores and students
+            renderTable();
+
+            
+            function renderTable() {
+
+                for (let i = 0; i < results.length ; i++){
+
+                    let result_row = results[i];
+
+                    if (result_row.status == "success"){
+                        var element = $(`<tr class="table-success"></tr>`).html(`
+                        <td>${results[i].name}</td>
+                        <td>${results[i].regNo}</td>
+                        <td>${results[i].math}</td>
+                        <td>${results[i].english}</td>
+                        <td>${results[i].science}</td>
+                        <td>${results[i].average}</td>
+                        <td>${results[i].grade}</td>
+                    `); 
+                    
+                    }
+                    else if (result_row.status == "warning") {
+                        var element = $(`<tr class="table-warning"></tr>`).html(`
+                        <td>${results[i].name}</td>
+                        <td>${results[i].regNo}</td>
+                        <td>${results[i].math}</td>
+                        <td>${results[i].english}</td>
+                        <td>${results[i].science}</td>
+                        <td>${results[i].average}</td>
+                        <td>${results[i].grade}</td>
+                    `);
+                    }
+                    else if (result_row.status == "danger") {
+                        var element = $(`<tr class="table-danger"></tr>`).html(`
+                        <td>${results[i].name}</td>
+                        <td>${results[i].regNo}</td>
+                        <td>${results[i].math}</td>
+                        <td>${results[i].english}</td>
+                        <td>${results[i].science}</td>
+                        <td>${results[i].average}</td>
+                        <td>${results[i].grade}</td>
+                    `);
+                    }
+
+                    else {
+                        var element = $("<tr></tr>").html(`
+                        <td>${results[i].name}</td>
+                        <td>${results[i].regNo}</td>
+                        <td>${results[i].math}</td>
+                        <td>${results[i].english}</td>
+                        <td>${results[i].science}</td>
+                        <td>${results[i].average}</td>
+                        <td>${results[i].grade}</td>
+                    `);
+                    }                
+
+                    tableBody.append(element);
+                }
+
+            }
+
+
+            // create elements for each element ( a row inside the main table body)
+         })
+        </script>
+    </body>
+</html>

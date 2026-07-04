@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+
+        <style>
+            body {
+                font-family: Arial;
+                padding: 30px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 400px;
+            }
+            td, th {
+                border: 1px solid gray;
+                padding: 10px;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <h1>Student Registration</h1>
+        <input type="text" id="studentName">
+        <button id="addBtn">
+            Add Student
+        </button>
+
+        <br><br>
+
+        <input type="text" id="search" placeholder="Search...">
+        
+        <h3>
+            Total Students:
+            <span id="count">0</span>
+        </h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table> 
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                function updateCount(){
+                    $("#count").text(
+                        $("#tableBody tr").length
+                    );
+                }
+
+                $("#addBtn").on("click", function(){
+
+                    let name = $("#studentName").val();
+
+                    if (name === ""){
+                        alert("Enter name");
+                        return;
+                    }
+
+                    $("#tableBody").append(
+
+                    `
+                    <tr>
+                        <td>
+                            ${name}
+                        </td>
+
+                        <td>
+                            <button class="delete">
+                                Delete
+                            </button>
+                        </td>
+                    
+                    </tr>
+
+                    `
+                    );
+
+                    $("#studentName").val("");
+                    updateCount();
+                });
+
+                $("#tableBody").on(
+                    "click",
+                    ".delete",
+                    function(){
+
+                        $(this)
+                        .closest("tr")
+                        .remove();
+
+                        updateCount();
+
+                    });
+
+                
+                    $("#search").on("keyup", function(){
+
+                        let term = $(this)
+                        .val()
+                        .toLowerCase();
+
+                        $("#tableBody tr")
+                        .filter(function(){
+
+                            $(this).toggle(
+                                $(this)
+                                .text()
+                                .toLowerCase()
+                                .indexOf(term)>-1
+                            );
+                        });
+                    });
+            });
+        
+        </script>
+    </body>    
+</html>

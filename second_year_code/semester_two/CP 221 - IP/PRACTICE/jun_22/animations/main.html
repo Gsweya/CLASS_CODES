@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+           /* Keep slides hidden, show only the active one */
+            .slide { 
+                display: none; 
+                padding: 20px;
+                background: #ddd; }
+            
+                .slide.active { 
+                display: block;
+            }
+
+            /* Simple Hover Effect: Grow slightly when hovering over the slideshow */
+            .slideshow-container { transition: transform 0.3s; }
+            .slideshow-container:hover { 
+                transform: scale(1.02); 
+                cursor: pointer; 
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div id="slider" class="slideshow-container">
+            <div class="slide active">Slide 1: Apple</div>
+            <div class="slide"><img src=""> 2: Banana</div>
+            <div class="slide">Slide 3: Melon</div>
+        </div>
+        <button id="playPauseBtn">Pause</button>
+
+        <script>
+            let slides = document.querySelectorAll('.slide');
+            let btn = document.getElementById('playPauseBtn');
+            let slider = document.getElementById('slider');
+
+            let currentIndex = 0;
+            let slideInterval;
+            let isPlaying = true; // Automatically starts on loading
+
+            function showNextSlide() {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length; // Loop back to 0 at the end
+                slides[currentIndex].classList.add('active');
+            }
+
+            // Functions to start and stop the timer
+            function startSlider() {
+                slideInterval = setInterval(showNextSlide, 5000); // 5 seconds
+            }
+            function pauseSlider() {
+                clearInterval(slideInterval);
+            }
+
+            // 1. Automatically start on load
+            startSlider();
+
+            // 2. Play/Pause Button toggle
+            btn.addEventListener('click', () => {
+                if (isPlaying) {
+                    pauseSlider();
+                    btn.innerText = "Play";
+                } else {
+                    startSlider();
+                    btn.innerText = "Pause";
+                }
+                isPlaying = !isPlaying;
+            });
+
+            // 3. Pause on Hover, Resume on Leave
+            slider.addEventListener('mouseenter', () => { if(isPlaying) pauseSlider(); });
+            slider.addEventListener('mouseleave', () => { if(isPlaying) startSlider(); });
+        </script>
+    </body>
+</html>

@@ -14,8 +14,9 @@ void Thread1 () {
     do {
 
         while(thread2 == true);
+        thread1 = true;
         // Busy waiting
-        
+
         // Thread One critical section
 
         std::cout << "Thread 1 is running\n";
@@ -33,7 +34,8 @@ void Thread2() {
 
     do {
         while (thread1 == true);
-        // Busy waiting 
+        thread2 = true;
+        // Busy waiting
 
         std::cout << "Thread 2 is running\n";
 
@@ -44,7 +46,7 @@ void Thread2() {
 
 
 
-int main() 
+int main()
 {
 
     std::thread t1(Thread1);

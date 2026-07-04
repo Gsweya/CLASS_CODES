@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>This is paragraph.</p>
+
+    <ol>
+        <li>Apples - 10,000</li>
+        <li>Banana - 20,000</li>
+        <li>Melons - 40,000</li>
+        <li>Grapes - 50,000</li>
+    </ol>
+
+    <input name="fruit" type="radio" value="10000">Apples
+    <input name="fruit" type="radio" value="20000">Bananas
+    <input name="fruit" type="radio" value="50000">Grapes
+    <input name="fruit" type="radio" value="40000">Melons
+    <br>
+
+    Number : <input id="quantity" type="number" value="1">
+    <br>
+    <br>
+    <p>Total Cost:</p>
+    <span id="price-selected">0.00</span>
+
+    <button id="Buy">Buy</button>
+    
+
+    <script>
+        let btn = document.getElementById("Buy");
+
+        btn.addEventListener("click", function(){
+            let choice = document.querySelector('input[name="fruit"]:checked');
+            let qty = document.getElementById("quantity").value;
+
+            // FIX 2: Fixed typo from getElementsById to getElementById
+            let total = document.getElementById("price-selected");
+
+            // Safety check: ensure a user has actually picked a fruit before calculation
+            if (choice) {
+                // FIX 3: Multiply choice.value (the price) instead of the raw DOM object
+                let finalPrice = parseFloat(choice.value) * parseInt(qty || 0);
+                
+                total.innerText = `${finalPrice.toLocaleString()} /=`;
+            } else {
+                alert("Please pick a fruit first!");
+            }
+        });
+    </script>
+    
+</body>
+</html>
