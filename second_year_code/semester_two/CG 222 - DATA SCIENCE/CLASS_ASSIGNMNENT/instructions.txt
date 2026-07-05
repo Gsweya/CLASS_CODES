@@ -7,3 +7,12 @@ eg Mean absolute square etc, also tunatumia input za python kawaida
 
 
 Kazi inafanyika in groups of 5. na itakuwa presented mwalimu ataita group moja moja ofisini
+
+error checkers to use:
+
+r square 
+mean absolute error (MAE)
+mean square error 
+rmse (root mean square error)
+mape error 
+
