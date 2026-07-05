@@ -1,0 +1,9 @@
+Instructions: 
+
+Tengeneza column ya age, then age inakuwa rings+ 1.5, 
+alafu  target yetu ni kuja kupreditc age.. we are using 
+njia za regression atleast 3. 
+eg Mean absolute square etc, also tunatumia input za python kawaida
+
+
+Kazi inafanyika in groups of 5. na itakuwa presented mwalimu ataita group moja moja ofisini
