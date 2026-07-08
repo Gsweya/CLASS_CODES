@@ -16,6 +16,11 @@
         <h3>Search Student:</h3>
         <input id="searchInput" class="form-control" placeholder="Search Student">
 
+        <button
+            id="btnSort"
+            class="btn btn-secondary"
+        >Sort By Average</button>
+
         <p id="noResults"></p>
 
         <table  class="table" id="resultsTable" border="2" style="margin-top: 20px;">
@@ -47,6 +52,22 @@
             // catch the search element
             let search = $("#searchInput");
 
+            // Sorting the Table
+            $("#btnSort").on("click", function(){
+
+                // Sorting by Average
+                results.sort(function (a,b){
+                    return b.average - a.average;
+                });
+
+                // clear the current table
+                tableBody.empty();
+
+
+                // Rendering the table afresh...
+                render_table();
+            });
+
             // add event listener
             search.on("input", function() {
 
@@ -57,9 +78,7 @@
                     $("#resultsTable tbody tr").show();
                     $("#noResults").hide(); 
                     return;
-                }
-
-                
+                }              
 
 
                 $("#tableBody tr").each(function() {
