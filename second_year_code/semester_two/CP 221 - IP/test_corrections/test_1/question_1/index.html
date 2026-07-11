@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Interactive Web Technologies Lesson</title>
+    <link rel="stylesheet" type="text/css" href="presentation.css" />
+    <script type="text/javascript" src="presentation.js"></script>
+</head>
+<body onload="initializePresentation()">
+
+    <h1>Interactive Web Technologies Lesson</h1>
+    
+    <div id="presentation">
+        <div class="slide" style="display:block;">Slide 1</div>
+        <div class="slide" style="display:none;">Slide 2</div>
+        <div class="slide" style="display:none;">Slide 3</div>
+        <div class="slide" style="display:none;">Slide 4</div>
+        <div class="slide" style="display:none;">Slide 5</div>
+    </div>
+
+    <div id="controls">
+        <button onclick="changeSlide(-1)">Previous</button>
+        <button onclick="changeSlide(1)">Next</button>
+        <button onclick="startAutoPlay()">Play</button>
+        <button onclick="stopAutoPlay()">Pause</button>
+    </div>
+
+    <div id="indicators">
+        <button onclick="goToSlide(0)">1</button>
+        <button onclick="goToSlide(1)">2</button>
+        <button onclick="goToSlide(2)">3</button>
+        <button onclick="goToSlide(3)">4</button>
+        <button onclick="goToSlide(4)">5</button>
+    </div>
+
+    <div id="status"></div>
+
+</body>
+</html>
