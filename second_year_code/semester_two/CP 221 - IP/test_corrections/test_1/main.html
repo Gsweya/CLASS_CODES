@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #submit:hover {
+            color: blue;
+            scale: 1.5px;
+            box-shadow: 3px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-image: url('./background.jpeg');
+            /* find definitions of this */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top left;
+
+        }
+
+        body {
+            color: blue;
+            font-size: 200%;
+            
+        }
+
+        div {
+            margin: 30px;
+            padding: 0px;
+        }
+
+    
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Tanzania Railway Company</h1>
+    </header>
+
+    <div>
+        <form id="details-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name: </label>
+                <input 
+                    type="text"
+                    id="firstName"
+                    placeholder="Enter Name"
+                
+                ><br><br>
+
+                <label>Middle Name: </label>
+                <input 
+                    type="text"
+                    id="middleName"
+                    placeholder="Enter Name"
+                
+                ><br><br>
+
+                <label>Surname: </label>
+                <input 
+                    type="text"
+                    id="surname"
+                    placeholder="Enter Name"
+                
+                ><br><br>
+
+                <label>Age: </label>
+                <input 
+                    type="number"
+                    id="age"
+                    placeholder="Enter Age"
+                
+                ><br><br>
+
+                <label>Gender: </label>
+                <input
+                    type="radio"
+                    value="male"
+                    name="gender"
+                
+                >Male
+
+                <input
+                    type="radio"
+                    value="female"
+                    name="gender"
+                > Female
+
+                <br><br>
+
+                <label>National Identification Number</label>
+                <input  
+                    type="text"
+                    name="nationalID"
+                ><br><br>
+
+                <label>Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                > <br><br>
+
+                <label>Phone Number</label>
+                <input 
+                    type="phone-no"
+                    name="phone-no"
+                >
+            </fieldset>
+
+            <fieldset>
+                <legend>Ticket Details</legend>
+
+                <select id="tickets">
+                    <option 
+                    value="0"                   
+                    >-- Select Ticket Category -- </option>
+
+                    <option 
+                    value="40000"
+                    name="economy"
+                    >Economy Class - 40,000/- </option>
+
+                    <option
+                    value="80000"
+                    id="business"
+                    >Business Class - 80,000 /- </option>
+
+                    <option
+                    value="120000"
+                    name="royal"
+                    >Royal - 120,000/- </option>
+                </select>
+            </fieldset>
+
+            <button class="submit" type="submit">Submit Form</button>
+        </form>
+
+        <div>
+            <p>Selected Options: </p><br>
+            <p id="price"></p>
+        </div>
+    </div>
+
+    <script>
+
+        const ticket_selector = document.getElementById('tickets');
+        const price_show = document.getElementById('price');
+        const form_ = document.getElementById('details-form');
+
+
+        form_.addEventListener("submit", function(e){
+            e.preventDefault();
+
+            alert("Booking has been completed successfully.");
+
+            form_.reset();
+            price_show.innerText = "Ticket Fare: Tshs 0";
+        });
+
+        ticket_selector.addEventListener("change", function() {
+
+            let price = ticket_selector.value;
+
+            if (price){
+                price_show.innerText = `Fare Price: Tsh ${price}`;
+
+            } else {
+                price_show.innerText = `Fare Price: Tsh 0`;
+            }
+        });  
+
+    
+    </script>
+    <footer>
+        <p>&copy;2026, All Rights Reserved</p>
+    </footer>    
+</body>
+</html>
