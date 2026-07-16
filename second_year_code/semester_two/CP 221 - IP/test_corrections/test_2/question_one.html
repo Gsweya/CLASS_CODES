@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List Manager</title>
+    <script src="../jquery.js"></script>
+</head>
+<body>
+
+    <form id="studentForm">
+        <input
+            type="text"
+            id="studentName"
+            name="studentName"
+            placeholder="Enter student name"
+        >
+
+        <button type="submit" id="addStudentBtn">
+            Add Student
+        </button>
+    </form>
+
+    <ul id="studentList"></ul>
+
+    <p id="message"></p>
+ <script> 
+        $("document").ready(function () {
+            let form = $("#studentForm");
+            let list = $("#studentList");
+
+            // Form Event Listener (listens to the form Submission)
+            form.on("submit", function (e){
+                e.preventDefault();
+                let name = $("#studentName");                
+                let message = $("#message"); 
+
+                if (name.length === 0 || name === "" || name === " " ) {
+                    message.html ( `<strong> Student name is required</strong>`).css({
+                        "color": "red"
+                    }); 
+                    // message.css("color: red ; ");
+                    return; 
+            
+                } else {
+                    let item = $(`<li> ${name.val()} </li>` );
+                    list.append(item);
+
+                    message.html ( `<strong> Student name  added successfully.</strong>`).css({
+                        "color": "green"
+                    }); 
+                    name.val(" ");
+                    return;
+                }
+            });
+            
+            // List Item Remover
+            list.on("click", "li", function(){
+                $(this).remove();
+            });
+        });
+
+</script>
+</body>
+</html>
