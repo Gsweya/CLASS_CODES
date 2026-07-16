@@ -1,26 +1,16 @@
-public class test {
-
-    public static void main(String[] args) {
-        int arr[] = new int[5];
-        
-
-    try {
+try {
     
-        System.out.println(arr[10]);
+    // Code that may throw an exception
     
-    } catch (ClassCastException e) {
+} catch (ArithmeticException e) {
     
     // Code to handle the exception
     
-    } catch(RuntimeException e){
+} catch(ArrayIndexOutOfBoundsException e){
     
-        System.out.println("Error handled by RunTime Exception.");
+    // Code to handle the another exception
     
-    }catch(Exception e){
-        
-        System.out.println("Errror handled by Exception.");
+}catch(NumberFormatException e){
+    
      // Code to handle the another exception
-    }
-
-    }
 }
