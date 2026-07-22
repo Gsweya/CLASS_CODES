@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./jquery.js"></script>
+<title>Hospital MS</title>
+<style>
+    /* Optional: Style your error messages to make them stand out */
+    .error-msg {
+        color: red;
+        display: block;
+        font-size: 0.9em;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+        <form id="patientForm">
+            <fieldset>
+                <legend>Personal info</legend>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName"><br>
+                    <label for="dob">DOB</label>
+                    <input type="text" id="dob"><br>
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone"><br>
+                    <label for="ward">Ward</label>
+                    <input type="number" id="ward"><br>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>    
+        <div id="summary" style="border:2px solid blue; margin-top: 20px; padding: 10px;">
+            <p><strong>Info Summary</strong></p>
+            <p id="nameSumm"></p>
+            <p id="wardSumm"></p>
+        </div>
+
+<script>
+        $(document).ready(function(){
+            let sub=$('#patientForm');
+            let name=$('#fullName');
+            let ward=$('#ward');
+
+            sub.on('submit',function(e){
+                e.preventDefault();
+                
+                // 1. Clear ALL existing error messages before validating again
+                $('.error-msg').remove();
+                
+                let dob=$('#dob');
+                let phone=$('#phone');
+                let isValid=true;
+
+                // 2. Validate Full Name
+                if(name.val().length <= 3){
+                    name.after(`<strong class="error-msg">Full Name should be at least 3 characters</strong>`);
+                    isValid=false;
+                }
+
+                // 3. Validate Date of Birth
+                if(dob.val().length === 0){
+                    dob.after(`<strong class="error-msg">Date of Birth is Required</strong>`);
+                    isValid=false;
+                }
+
+                // 4. Validate Phone Number
+                if(phone.val().length === 0){
+                    phone.after(`<strong class="error-msg">Phone Number is Required</strong>`);
+                    isValid=false;
+                }
+                else if(phone.val().length !== 10){
+                    phone.after(`<strong class="error-msg">Phone Number should be 10 characters only</strong>`);
+                    isValid=false;
+                }
+
+                // 5. Validate Ward
+                if(ward.val().length === 0){
+                    ward.after(`<strong class="error-msg">Ward Number is required</strong>`);
+                    isValid=false;
+                }
+
+                // 6. Final check
+                if(isValid){
+                    alert("Form is successfully submitted!");
+                    // Optional: form.submit() or your API call here
+                }
+            });
+
+            // Summary update for Name
+            name.on('input',function(){
+                let nameval=$(this).val();
+                if(nameval.length > 0){
+                    $('#nameSumm').text("Patient Name: "+ nameval);
+                } else {
+                    $('#nameSumm').text("");
+                }
+            });
+
+            // Summary update for Ward
+            ward.on('input',function(){
+                 let wardval=$(this).val();
+                 if(wardval.length > 0) {
+                     $('#wardSumm').text("Ward Number: "+ wardval);
+                 } else {
+                     $('#wardSumm').text("");
+                 }
+            });
+        });
+</script>
+</body>    
+</html>
