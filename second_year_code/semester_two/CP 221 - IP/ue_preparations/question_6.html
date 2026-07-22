@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Question Six - 6</title>
+        <script src="./jquery.js"></script>
+        <style>
+            .error-msg {
+                color: red;
+                margin-left: 10px;
+            }
+
+            form {
+                width: 400px;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            input {
+                border: 2px solid black;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Local Event Organiser</h1>
+
+        <form id="eventForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Full Name: </label>
+                <input id="fullName" type="text"><br><br>
+
+                <label>Email Address: </label>
+                <input id="email" type="email"><br><br>
+
+                <label>Preferred Session: </label>
+                <select id="preference">
+                    <option value="0"> -- Pick Session Choice -- </option>
+                    <option value="1"> Morning</option>
+                    <option value="2"> Afternoon</option>
+                </select>                
+            </fieldset><br>
+
+            <button id="submit" type="submit">Submit Form</button>
+        </form>
+
+        <div style="box-shadow: 0px 4px 10px black; padding: 15px; display: none;" id="message-box"></div>
+
+        <script>
+            $(document).ready(function(){
+
+                const form = $("#eventForm");
+
+                form.on("submit", function(e){
+                    e.preventDefault();
+
+                    // 1. Clear any previous error messages on submit
+                    $(".error-msg").remove();
+
+                    // 2. Get live values INSIDE the submit event
+                    const fullName = $("#fullName").val().trim();
+                    const email = $("#email").val().trim();
+                    const preference = $("#preference").val().trim();
+
+                    const emailPattern = /^\S+@\S+\.\S+$/;
+                    let message = "";
+                    let isValid = true;
+
+                    // 3. Validation checks with properly styled error spans
+                    if (fullName === ""){
+                        isValid = false;
+                        $('#fullName').after('<span class="error-msg">Enter Full Name.</span>');
+                    }
+
+                    if (!emailPattern.test(email)){
+                        isValid = false;
+                        $('#email').after('<span class="error-msg">Enter Valid Email.</span>');
+                    }
+
+                    // Compare against strings ("0", "1") instead of numbers
+                    if (preference === "0"){
+                        isValid = false;
+                        $('#preference').after('<span class="error-msg">Pick a preference.</span>');
+                    } else if (preference === "1"){
+                        message = "Morning";
+                    } else if (preference === "2"){
+                        message = "Afternoon";
+                    }
+
+                    // Stop execution if form is invalid
+                    if (!isValid){                        
+                        return;
+                    }
+
+                    // 4. Hide form and reveal the message box
+                    form.hide();
+                    $('#message-box').html(`
+                        <p>Thank you, ${fullName}.</p>
+                        <p>Selected Session: ${message}</p>              
+                    `).show().fadeIn(1000);
+
+                }); 
+
+            });
+        </script>
+    </body>
+</html>

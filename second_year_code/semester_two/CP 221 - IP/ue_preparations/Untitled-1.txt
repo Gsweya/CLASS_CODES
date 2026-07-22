@@ -1,2 +1,11 @@
 question five:
-You have been tasked with creating a web application designed to collect information about participants interested in joining a community gardening initiative. This application will gather essential details for each gardener, including their first name, surname, email address, and phone number. During the development process, the client requested an additional feature to capture information about the gardener’s plot. Specifically, the application should determine if the plot is for a single type of plant or for multiple types. If the plot is for a single type of plant, the application must capture the type of plant and the expected yield. Conversely, if the plot is for multiple types of plants, the application should allow the user to specify the number of different plants and, for each type, record the type of plant and the expected yield. You are required to use HTML and jQuery to design a dynamic form that adjusts based on the user’s input regarding the number of different plants. For example, if the number of plants is three, the form should display three sets of input fields for the type of plant and expected yield. (20 Marks)
+You have been tasked with creating a web application designed to collect information about participants interested in joining a community gardening initiative. This application will gather essential details for each gardener, including their first name, surname, email address, and phone number. During the development process, the client requested an additional feature to capture information about the gardener’s plot. Specifically, the application should determine if the plot is for a single type of plant or for multiple types. If the plot is for a single type of plant, the application must capture the type of plant and the expected yield.
+
+ Conversely, if the plot is for multiple types of plants, the application should allow the user to specify the number of different plants and, for each type, record the type of plant and the expected yield. You are required to use HTML and jQuery to design a dynamic form that adjusts based on the user’s input regarding the number of different plants. For example, if the number of plants is three, the form should display three sets of input fields for the type of plant and expected yield. (20 Marks)
+
+
+data:
+- first name
+- surname
+- email address
+- phone number
