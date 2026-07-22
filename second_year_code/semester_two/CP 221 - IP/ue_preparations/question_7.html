@@ -1,5 +1,79 @@
 <!DOCTYPE html>
 <html>
+    <head>Question 7</head>
+    <script src="./jquery.js"></script>
+
+    <style>
+        .addtocart:hover {
+            background-color: blue;
+            color:white;
+        }
+
+        ul li:hover {
+            color: red;
+        }
+
+        ul {
+            border: 2px solid lightblue;
+            border-radius: 20px;
+            margin: auto;
+            width: 400px;
+            padding: 20px;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+    </style>
+
+
+    <body>
+
+        <div>
+            <h1>Book List and Prices</h1>
+
+            <ul id="bookList">
+                <li>Physics Book - Tsh. 40,000 - <button class="addtocart" id="addPhy" value=40000>Add to Cart</button></li>
+                <li>Mathematics Book - Tsh.50,000 - <button class="addtocart" id="addMath" value=50000>Add to Cart</button></li>
+                <li>Biology Book - Tsh.60,000 - <button class="addtocart" id="addBio" value=60000>Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Summary of Purchase: </h2>
+            <p id="totalCount"></p>
+            <p id="totalPrice"></p>
+        </div>
+
+
+        <script>
+
+            $(document).ready(function(){
+                
+                let btn = $('.addtocart');
+                var count = 0;
+                var total = 0;
+
+                btn.on("click", function(){
+                    count += 1;
+                    total += parseInt($(this).val(), 10 || 0);
+
+                    $('#totalCount').text(`Book Count: ${count}`);
+                    $('#totalPrice').text(`Total Price: ${total}`);                   
+
+                });
+                
+                
+
+
+
+
+
+            });
+
+        </script>
+    </body>
 
 
 
