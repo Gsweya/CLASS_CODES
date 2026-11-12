@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE students [
+
+  <!-- Root element: one or more student elements -->
+  <!ELEMENT students (student+)>
+  <!ATTLIST students
+      college       CDATA #REQUIRED
+      academicYear  CDATA #REQUIRED>
+
+  <!-- A student: child elements MUST appear in exactly this order -->
+  <!ELEMENT student (firstName, lastName, programme, yearOfStudy, email, phone, courses)>
+  <!ATTLIST student
+      regNo   ID              #REQUIRED
+      gender  (Male | Female) #REQUIRED>
+
+  <!-- Simple text elements -->
+  <!ELEMENT firstName   (#PCDATA)>
+  <!ELEMENT lastName    (#PCDATA)>
+  <!ELEMENT programme   (#PCDATA)>
+  <!ELEMENT yearOfStudy (#PCDATA)>
+  <!ELEMENT email       (#PCDATA)>
+  <!ELEMENT phone       (#PCDATA)>
+
+  <!-- Courses: at least three course elements per student -->
+  <!ELEMENT courses (course, course, course, course*)>
+  <!ELEMENT course  (#PCDATA)>
+  <!ATTLIST course
+      code     CDATA #REQUIRED
+      credits  CDATA #IMPLIED>
+]>
+
+<!-- ===================== XML DATA (Task 1) ===================== -->
+<students college="College of Informatics and Virtual Education" academicYear="2026/2027">
+
+  <student regNo="T23-03-00112" gender="Male">
+    <firstName>Juma</firstName>
+    <lastName>Mwakalinga</lastName>
+    <programme>BSc in Computer Science</programme>
+    <yearOfStudy>3</yearOfStudy>
+    <email>juma.mwakalinga@student.college.ac.tz</email>
+    <phone>+255 712 000 101</phone>
+    <courses>
+      <course code="CP 311" credits="10">Internet Programming and Applications II</course>
+      <course code="CP 312" credits="10">Object Oriented Systems Design</course>
+      <course code="CP 313" credits="10">Mobile Applications Development</course>
+    </courses>
+  </student>
+
+  <student regNo="T23-03-00245" gender="Female">
+    <firstName>Neema</firstName>
+    <lastName>Kileo</lastName>
+    <programme>BSc in Software Engineering</programme>
+    <yearOfStudy>3</yearOfStudy>
+    <email>neema.kileo@student.college.ac.tz</email>
+    <phone>+255 713 000 102</phone>
+    <courses>
+      <course code="CP 311" credits="10">Internet Programming and Applications II</course>
+      <course code="CS 314" credits="10">Software Testing and Quality Assurance</course>
+      <course code="CS 315" credits="10">Software Project Management</course>
+      <course code="CP 313" credits="10">Mobile Applications Development</course>
+    </courses>
+  </student>
+
+  <student regNo="T23-03-00318" gender="Male">
+    <firstName>Baraka</firstName>
+    <lastName>Mollel</lastName>
+    <programme>BSc in Information Systems</programme>
+    <yearOfStudy>3</yearOfStudy>
+    <email>baraka.mollel@student.college.ac.tz</email>
+    <phone>+255 714 000 103</phone>
+    <courses>
+      <course code="CP 311" credits="10">Internet Programming and Applications II</course>
+      <course code="IS 321" credits="10">Database Administration</course>
+      <course code="IS 322" credits="10">Enterprise Systems</course>
+    </courses>
+  </student>
+
+  <student regNo="T24-03-00427" gender="Female">
+    <firstName>Rehema</firstName>
+    <lastName>Shayo</lastName>
+    <programme>BSc in Computer Science</programme>
+    <yearOfStudy>2</yearOfStudy>
+    <email>rehema.shayo@student.college.ac.tz</email>
+    <phone>+255 715 000 104</phone>
+    <courses>
+      <course code="CP 211" credits="10">Internet Programming and Applications I</course>
+      <course code="CP 212" credits="10">Data Structures and Algorithms</course>
+      <course code="CP 213" credits="10">Database Systems</course>
+    </courses>
+  </student>
+
+  <student regNo="T24-03-00533" gender="Male">
+    <firstName>Emmanuel</firstName>
+    <lastName>Massawe</lastName>
+    <programme>BSc in Cyber Security and Digital Forensics</programme>
+    <yearOfStudy>2</yearOfStudy>
+    <email>emmanuel.massawe@student.college.ac.tz</email>
+    <phone>+255 716 000 105</phone>
+    <courses>
+      <course code="IA 221" credits="10">Network Security</course>
+      <course code="IA 222" credits="10">Operating Systems Security</course>
+      <course code="CP 212" credits="10">Data Structures and Algorithms</course>
+      <course code="CP 213" credits="10">Database Systems</course>
+    </courses>
+  </student>
+
+  <student regNo="T24-03-00641" gender="Female">
+    <firstName>Zawadi</firstName>
+    <lastName>Mrisho</lastName>
+    <programme>BSc in Telecommunications Engineering</programme>
+    <yearOfStudy>2</yearOfStudy>
+    <email>zawadi.mrisho@student.college.ac.tz</email>
+    <phone>+255 717 000 106</phone>
+    <courses>
+      <course code="TN 221" credits="10">Signals and Systems</course>
+      <course code="TN 222" credits="10">Digital Communication</course>
+      <course code="CP 211" credits="10">Internet Programming and Applications I</course>
+    </courses>
+  </student>
+
+  <student regNo="T25-03-00756" gender="Male">
+    <firstName>Hamisi</firstName>
+    <lastName>Abdallah</lastName>
+    <programme>BSc in Software Engineering</programme>
+    <yearOfStudy>1</yearOfStudy>
+    <email>hamisi.abdallah@student.college.ac.tz</email>
+    <phone>+255 718 000 107</phone>
+    <courses>
+      <course code="CP 111" credits="10">Principles of Programming Languages</course>
+      <course code="CP 112" credits="10">Introduction to Computer Systems</course>
+      <course code="MT 113" credits="10">Discrete Mathematics</course>
+    </courses>
+  </student>
+
+  <student regNo="T25-03-00862" gender="Female">
+    <firstName>Upendo</firstName>
+    <lastName>Lyimo</lastName>
+    <programme>BSc in Information Systems</programme>
+    <yearOfStudy>1</yearOfStudy>
+    <email>upendo.lyimo@student.college.ac.tz</email>
+    <phone>+255 719 000 108</phone>
+    <courses>
+      <course code="CP 111" credits="10">Principles of Programming Languages</course>
+      <course code="IS 121" credits="10">Fundamentals of Information Systems</course>
+      <course code="MT 113" credits="10">Discrete Mathematics</course>
+      <course code="DS 102" credits="8">Development Perspectives</course>
+    </courses>
+  </student>
+
+  <student regNo="T22-03-00974" gender="Male">
+    <firstName>Daudi</firstName>
+    <lastName>Mwansasu</lastName>
+    <programme>BSc in Computer Engineering</programme>
+    <yearOfStudy>4</yearOfStudy>
+    <email>daudi.mwansasu@student.college.ac.tz</email>
+    <phone>+255 620 000 109</phone>
+    <courses>
+      <course code="CE 411" credits="10">Embedded Systems</course>
+      <course code="CE 412" credits="10">Computer Architecture</course>
+      <course code="CE 499" credits="20">Final Year Project</course>
+    </courses>
+  </student>
+
+  <student regNo="T22-03-01085" gender="Female">
+    <firstName>Amina</firstName>
+    <lastName>Salum</lastName>
+    <programme>BSc in Cyber Security and Digital Forensics</programme>
+    <yearOfStudy>4</yearOfStudy>
+    <email>amina.salum@student.college.ac.tz</email>
+    <phone>+255 621 000 110</phone>
+    <courses>
+      <course code="IA 421" credits="10">Digital Forensics</course>
+      <course code="IA 422" credits="10">Ethical Hacking and Penetration Testing</course>
+      <course code="IA 499" credits="20">Final Year Project</course>
+    </courses>
+  </student>
+
+</students>
