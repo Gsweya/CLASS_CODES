@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".MainActivity">
+
+
+    <!-- Android Title -->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/homeTitle"
+        android:textSize="100px"
+        android:gravity="center"
+        />
+
+    <!-- First Name -->
+
+    <TextView
+        android:id="@+id/fName"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fName"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your first name"
+        android:layout_toEndOf="@+id/fName"
+        android:layout_alignBaseline="@+id/fName"
+        android:layout_marginStart="30dp"
+        />
+
+    <!-- Last Name -->
+
+    <TextView
+        android:id="@+id/lName"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lName"
+        android:layout_below="@+id/fName"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your last name"
+        android:layout_toEndOf="@+id/lName"
+        android:layout_alignBaseline="@+id/lName"
+        android:layout_marginStart="30dp"
+        />
+
+    <!-- Surname -->
+
+    <TextView
+        android:id="@+id/sName"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sName"
+        android:layout_below="@+id/lName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your second name"
+        android:layout_toEndOf="@+id/sName"
+        android:layout_alignBaseline="@+id/sName"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:layout_below="@+id/sName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/gender"
+        android:layout_alignTop="@+id/gender"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/courses"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/courses"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/coursesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/courses"
+        android:layout_alignTop="@id/courses"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CP 313" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IA 313" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EME 314" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BT 314" />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="Submit"
+            android:textSize="16sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

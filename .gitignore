@@ -68,3 +68,22 @@ coverage
 *.zip
 
 second_year_code/semester_one/CP211/LABS_WORK/LAB_2/GCC_COMPILER
+
+# Android / Gradle (third year: CP 313 Mobile Application Development)
+.gradle/
+.kotlin/
+local.properties
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.keystore
+*.jks
+google-services.json
+
+# PHP
+vendor/

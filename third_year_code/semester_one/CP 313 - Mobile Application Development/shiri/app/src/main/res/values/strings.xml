@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">shiri</string>
+    <string name="homeTitle">Welcome to Android</string>
+    <string name="fName">First Name: </string>
+    <string name="lName">Last Name: </string>
+    <string name="sName">Second Name: </string>
+    <string name="gender">Gender: </string>
+    <string name="courses">Courses: </string>
+</resources>

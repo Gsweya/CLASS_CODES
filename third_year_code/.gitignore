@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------
+# Third year .gitignore (applies to everything in third_year_code/)
+# The repo-root .gitignore still applies on top of this one.
+# ---------------------------------------------------------------
+
+# ---- Android Studio / Gradle (CP 313 Mobile Application Development)
+.gradle/
+.kotlin/
+build/
+**/app/build/
+# machine-specific SDK path, never commit
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+*.hprof
+
+# Build artifacts and signing material
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.keystore
+*.jks
+output-metadata.json
+
+# Firebase / API secrets
+google-services.json
+secrets.properties
+
+# Keep the Gradle wrapper so the project builds without a global Gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---- PHP / XAMPP (CP 311 Internet Programming and Applications II)
+vendor/
+composer.phar
+.phpunit.result.cache
+
+# ---- Python (labs / scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- Editors and OS
+.vscode/
+.zed/
+*.swp
+.DS_Store
+Thumbs.db
