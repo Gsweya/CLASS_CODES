@@ -1,0 +1,129 @@
+=====================================================================
+  HOW TO REUSE GRADLE IN ANOTHER ANDROID PROJECT
+  (using the "shiri" project as the source)
+=====================================================================
+
+GOOD TO KNOW FIRST
+------------------
+Gradle is downloaded ONCE and shared by all projects on this computer.
+
+  Gradle versions are stored in:   ~/.gradle/wrapper/dists/
+  Libraries are stored in:         ~/.gradle/caches/
+
+Versions already downloaded on this machine:
+  8.9, 8.14.3, 9.3.0, 9.4.1, 9.6.0, 9.6.1, 9.8.1
+
+The "shiri" project uses Gradle 9.6.0.
+
+A new project downloads Gradle again ONLY if it asks for a version
+that is not in that list. The options below make the new project use
+a version you already have.
+
+
+---------------------------------------------------------------------
+OPTION 1 (RECOMMENDED): COPY THE WRAPPER FROM "shiri"
+---------------------------------------------------------------------
+Copy these files from the "shiri" folder into the ROOT folder of the
+new project (replace the files that are already there):
+
+    gradlew
+    gradlew.bat
+    gradle/wrapper/gradle-wrapper.jar
+    gradle/wrapper/gradle-wrapper.properties
+
+Terminal example (run from the "CP 313 - Mobile Application
+Development" folder, change NEW_PROJECT to your project's folder name):
+
+    cp shiri/gradlew shiri/gradlew.bat NEW_PROJECT/
+    cp shiri/gradle/wrapper/gradle-wrapper.jar NEW_PROJECT/gradle/wrapper/
+    cp shiri/gradle/wrapper/gradle-wrapper.properties NEW_PROJECT/gradle/wrapper/
+
+The new project now uses Gradle 9.6.0, which is already downloaded,
+so it starts immediately and works offline.
+
+This option is also the best one for projects you push to GitHub,
+because anyone who clones the project gets the same Gradle version.
+
+
+---------------------------------------------------------------------
+OPTION 2: EDIT THE GRADLE VERSION IN THE NEW PROJECT
+---------------------------------------------------------------------
+1. Open this file in the new project:
+       gradle/wrapper/gradle-wrapper.properties
+
+2. Change the version in the "distributionUrl" line to one you
+   already have, for example:
+
+       distributionUrl=https\://services.gradle.org/distributions/gradle-9.6.0-bin.zip
+
+3. IMPORTANT: the Android Gradle Plugin (AGP) version must support
+   that Gradle version. The easiest way to avoid a mismatch:
+     - open shiri/gradle/libs.versions.toml
+     - copy the line that starts with   agp = "..."
+     - paste it over the same line in the new project's
+       gradle/libs.versions.toml
+
+4. In Android Studio: File -> Sync Project with Gradle Files
+
+
+---------------------------------------------------------------------
+OPTION 3: POINT ANDROID STUDIO AT A DOWNLOADED GRADLE
+---------------------------------------------------------------------
+1. In Android Studio open:
+       File -> Settings -> Build, Execution, Deployment
+            -> Build Tools -> Gradle
+
+2. Set "Distribution" to: Local installation
+
+3. Choose the Gradle folder, for example:
+       ~/.gradle/wrapper/dists/gradle-9.6.0-bin/<random-folder>/gradle-9.6.0
+
+4. Click Apply / OK, then File -> Sync Project with Gradle Files
+
+NOTE: This setting only changes your Android Studio setup. Classmates
+who clone the project won't get it, so use Option 1 for anything you
+push to GitHub.
+
+
+---------------------------------------------------------------------
+BONUS: REUSE THE SAME LIBRARY VERSIONS (NOTHING NEW TO DOWNLOAD)
+---------------------------------------------------------------------
+Copy these from "shiri" into the new project as well:
+
+    gradle/libs.versions.toml      (all library + plugin versions)
+    settings.gradle.kts
+
+After copying, CHANGE these so the new app has its own name/identity:
+
+    settings.gradle.kts
+        rootProject.name = "YourNewAppName"
+
+    app/build.gradle.kts
+        namespace     = "com.example.yournewapp"
+        applicationId = "com.example.yournewapp"
+
+The package name in your Java files (package com.example.....) must
+match the namespace.
+
+
+---------------------------------------------------------------------
+TROUBLESHOOTING
+---------------------------------------------------------------------
+Error: "The specified initialization script '/tmp/ijMapper1.gradle'
+        does not exist"
+  -> An old Gradle background process (daemon) started from another
+     terminal or tool is being reused. Fix:
+         ./gradlew --stop
+     then run the app again in Android Studio.
+
+Error: "Minimum supported Gradle version is X.Y"
+  -> AGP and Gradle versions don't match. Use Option 1, or copy the
+     "agp" line from shiri's libs.versions.toml (see Option 2, step 3).
+
+Build is very slow / tries to download a lot
+  -> The new project is asking for a Gradle or library version that
+     isn't downloaded yet. Use Option 1 and the BONUS section.
+
+Anything else odd after copying files:
+  -> File -> Sync Project with Gradle Files
+  -> If still broken: File -> Invalidate Caches... -> Invalidate and Restart
