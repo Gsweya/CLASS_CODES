@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -8,180 +7,215 @@
     android:background="@color/lightblue"
     tools:context=".MainActivity">
 
-
-    <!-- Android Title -->
-    <TextView
-        android:id="@+id/Title"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/homeTitle"
-        android:textSize="100px"
-        android:gravity="center"
-        />
+        android:padding="16dp">
 
-    <!-- First Name -->
-
-    <TextView
-        android:id="@+id/fName"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="@string/fName"
-        android:layout_below="@+id/Title"
-        android:layout_marginTop="90dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your first name"
-        android:layout_toEndOf="@+id/fName"
-        android:layout_alignBaseline="@+id/fName"
-        android:layout_marginStart="30dp"
-        />
-
-    <!-- Last Name -->
-
-    <TextView
-        android:id="@+id/lName"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="@string/lName"
-        android:layout_below="@+id/fName"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your last name"
-        android:layout_toEndOf="@+id/lName"
-        android:layout_alignBaseline="@+id/lName"
-        android:layout_marginStart="30dp"
-        />
-
-    <!-- Surname -->
-
-    <TextView
-        android:id="@+id/sName"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="@string/sName"
-        android:layout_below="@+id/lName"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your second name"
-        android:layout_toEndOf="@+id/sName"
-        android:layout_alignBaseline="@+id/sName"
-        android:layout_marginStart="30dp"
-        />
-
-    <TextView
-        android:id="@+id/gender"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="@string/gender"
-        android:layout_below="@+id/sName"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        />
-
-    <RadioGroup
-        android:id="@+id/radioGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/gender"
-        android:layout_alignTop="@+id/gender"
-        android:layout_marginStart="30dp"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/male"
-            android:layout_width="wrap_content"
+        <!-- Title -->
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Male"/>
+            android:text="@string/homeTitle"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center" />
 
-        <RadioButton
-            android:id="@+id/female"
-            android:layout_width="wrap_content"
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/fName"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Female"/>
-    </RadioGroup>
+            android:text="@string/fName"
+            android:layout_below="@id/Title"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/courses"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:text="@string/courses"
-        android:layout_below="@+id/gender"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        />
-
-    <LinearLayout
-        android:id="@+id/coursesContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/courses"
-        android:layout_alignTop="@id/courses"
-        android:orientation="vertical"
-        android:layout_marginStart="30dp">
-
-
-        <CheckBox
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etFName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CP 313" />
+            android:hint="Enter your first name"
+            android:inputType="textPersonName"
+            android:layout_toEndOf="@id/fName"
+            android:layout_alignBaseline="@id/fName"
+            android:layout_marginStart="16dp" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/lName"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="IA 313" />
+            android:text="@string/lName"
+            android:layout_below="@id/fName"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etLName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EME 314" />
+            android:hint="Enter your last name"
+            android:inputType="textPersonName"
+            android:layout_toEndOf="@id/lName"
+            android:layout_alignBaseline="@id/lName"
+            android:layout_marginStart="16dp" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
+        <!-- Surname -->
+        <TextView
+            android:id="@+id/sName"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="BT 314" />
+            android:text="@string/sName"
+            android:layout_below="@id/lName"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
 
+        <EditText
+            android:id="@+id/etSName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your surname"
+            android:inputType="textPersonName"
+            android:layout_toEndOf="@id/sName"
+            android:layout_alignBaseline="@id/sName"
+            android:layout_marginStart="16dp" />
 
+        <!-- Age -->
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:layout_below="@id/sName"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:maxLength="3"
+            android:layout_toEndOf="@id/age"
+            android:layout_alignBaseline="@id/age"
+            android:layout_marginStart="16dp" />
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:layout_below="@id/age"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/gender"
+            android:layout_alignBaseline="@id/gender"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Courses -->
+        <TextView
+            android:id="@+id/courses"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/courses"
+            android:layout_below="@id/radioGender"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/coursesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/courses"
+            android:layout_alignTop="@id/courses"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbCp311"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP 311" />
+
+            <CheckBox
+                android:id="@+id/cbCp313"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP 313" />
+
+            <CheckBox
+                android:id="@+id/cbIa313"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IA 313" />
+
+            <CheckBox
+                android:id="@+id/cbEme314"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EME 314" />
+
+            <CheckBox
+                android:id="@+id/cbBt314"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BT 314" />
+        </LinearLayout>
+
+        <!-- College (drop down) -->
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/college"
+            android:layout_below="@id/coursesContainer"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCollege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/udom_colleges"
+            android:layout_toEndOf="@id/college"
+            android:layout_alignTop="@id/college"
+            android:layout_marginStart="16dp" />
+
+        <!-- Submit -->
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/college"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:paddingStart="32dp"
             android:paddingEnd="32dp"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textSize="16sp" />
 
-
-
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</RelativeLayout>
-
-
+    </RelativeLayout>
+</ScrollView>

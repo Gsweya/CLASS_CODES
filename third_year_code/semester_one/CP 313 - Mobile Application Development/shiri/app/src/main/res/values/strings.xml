@@ -3,7 +3,16 @@
     <string name="homeTitle">Welcome to Android</string>
     <string name="fName">First Name: </string>
     <string name="lName">Last Name: </string>
-    <string name="sName">Second Name: </string>
+    <string name="sName">Surname: </string>
+    <string name="age">Age: </string>
     <string name="gender">Gender: </string>
     <string name="courses">Courses: </string>
+    <string name="college">College: </string>
+    <string name="submit">Submit</string>
+
+    <string-array name="udom_colleges">
+        <item>CIVE</item>
+        <item>COESE</item>
+        <item>CNMS</item>
+    </string-array>
 </resources>
