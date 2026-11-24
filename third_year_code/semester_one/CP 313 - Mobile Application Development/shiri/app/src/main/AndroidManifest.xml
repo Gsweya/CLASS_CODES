@@ -21,6 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+            second_screen can be started two ways:
+            * EXPLICIT intent: new Intent(this, second_screen.class) - needs no intent-filter.
+            * IMPLICIT intent: new Intent("com.example.shiri.ACTION_SHOW_DETAILS") - Android
+              finds this activity ONLY because of the intent-filter below.
+            exported="true" is required: on Android 14+ implicit intents are only delivered
+            to exported activities.
+        -->
+        <activity
+            android:name=".second_screen"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <!-- Must match second_screen.ACTION_SHOW_DETAILS exactly -->
+                <action android:name="com.example.shiri.ACTION_SHOW_DETAILS" />
+                <!-- startActivity() always adds CATEGORY_DEFAULT, so the filter must list it -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

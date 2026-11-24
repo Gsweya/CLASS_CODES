@@ -8,7 +8,11 @@
     <string name="gender">Gender: </string>
     <string name="courses">Courses: </string>
     <string name="college">College: </string>
-    <string name="submit">Submit</string>
+    <string name="submit">Submit (Explicit Intent)</string>
+    <string name="submitImplicit">Submit (Implicit Intent)</string>
+    <string name="secondTitle">Registration Details</string>
+    <string name="share">Share Details</string>
+    <string name="back">Back to Form</string>
 
     <string-array name="udom_colleges">
         <item>CIVE</item>

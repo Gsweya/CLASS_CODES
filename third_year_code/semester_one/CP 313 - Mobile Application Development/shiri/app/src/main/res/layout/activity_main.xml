@@ -204,7 +204,7 @@
             android:layout_alignTop="@id/college"
             android:layout_marginStart="16dp" />
 
-        <!-- Submit -->
+        <!-- Submit: opens second_screen with an EXPLICIT intent -->
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
@@ -215,6 +215,19 @@
             android:paddingStart="32dp"
             android:paddingEnd="32dp"
             android:text="@string/submit"
+            android:textSize="16sp" />
+
+        <!-- Submit: opens second_screen with an IMPLICIT intent -->
+        <Button
+            android:id="@+id/btnSubmitImplicit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="@string/submitImplicit"
             android:textSize="16sp" />
 
     </RelativeLayout>
