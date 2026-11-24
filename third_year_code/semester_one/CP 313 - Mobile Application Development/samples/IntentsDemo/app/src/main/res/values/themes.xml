@@ -1,0 +1,4 @@
+<resources>
+    <!-- DayNight theme WITH an action bar: it shows each screen's title (android:label) and the Up arrow -->
+    <style name="Theme.App" parent="Theme.Material3.DayNight" />
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+
+        <!-- 1. The MAIN (launcher) activity: the intent-filter puts it on the home screen.
+             singleTop: pressing Up (the arrow) returns to this same screen instead of making a new copy. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Intents Demo"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Every other activity MUST be listed here too, or startActivity() crashes.
+             parentActivityName = where the Up arrow goes. -->
+        <activity
+            android:name=".SecondActivity"
+            android:label="Second Screen"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile (data received)"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".CollegeActivity"
+            android:label="Choose a College"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

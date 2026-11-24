@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+
+        <!-- Screen 1 (launcher): list of matches with live scores and seats -->
+        <activity
+            android:name=".MatchListActivity"
+            android:exported="true"
+            android:label="Soccer Tickets"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Screen 2: fill in the ticket form (Up arrow -> match list) -->
+        <activity
+            android:name=".BuyTicketActivity"
+            android:label="Buy Ticket"
+            android:parentActivityName=".MatchListActivity" />
+
+        <!-- Screen 3: confirm and pay (answers back to screen 2 with a result) -->
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="Confirm Purchase" />
+
+        <!-- Screen 4: all tickets bought so far -->
+        <activity
+            android:name=".MyTicketsActivity"
+            android:label="My Tickets"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MatchListActivity" />
+
+        <!-- Screen 5: one ticket: pick it up at the gate, or share it -->
+        <activity
+            android:name=".TicketDetailActivity"
+            android:label="Ticket"
+            android:parentActivityName=".MyTicketsActivity" />
+    </application>
+
+</manifest>
