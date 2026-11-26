@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+  <order id="ORD2611260815101" customer="Asha" date="2026-11-26 08:15">
+    <line item="d2" type="drink" qty="1" price="4500">Cappuccino</line>
+    <line item="f1" type="food" qty="2" price="500">Mandazi</line>
+    <total>5500</total>
+  </order>
+  <order id="ORD2611260942372" customer="Juma" date="2026-11-26 09:42">
+    <line item="d1" type="drink" qty="2" price="3000">Espresso</line>
+    <line item="f3" type="food" qty="1" price="1500">Beef Samosa</line>
+    <total>7500</total>
+  </order>
+</orders>

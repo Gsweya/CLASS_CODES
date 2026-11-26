@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl"?>
+<!--
+  The coffee shop menu.
+  - Read by:      classes/MenuRepository.php (SimpleXML + XPath)
+  - Written by:   admin.php (DOMDocument)
+  - Rules:        menu.xsd (XML Schema)
+  - Pretty view:  menu.xsl (XSLT). Open data/menu.xml in the browser to see it.
+-->
+<menu shop="Kahawa Corner" currency="TZS">
+  <item id="d1" type="drink" category="coffee">
+    <name>Espresso</name>
+    <price>3000</price>
+    <description>A short, strong shot of Arabica coffee.</description>
+    <hot>true</hot>
+  </item>
+  <item id="d2" type="drink" category="coffee">
+    <name>Cappuccino</name>
+    <price>4500</price>
+    <description>Espresso with steamed milk and thick foam.</description>
+    <hot>true</hot>
+  </item>
+  <item id="d3" type="drink" category="coffee">
+    <name>Iced Latte</name>
+    <price>5500</price>
+    <description>Espresso and cold milk over ice.</description>
+    <hot>false</hot>
+  </item>
+  <item id="d4" type="drink" category="tea">
+    <name>Ginger Spiced Tea</name>
+    <price>2000</price>
+    <description>Chai ya tangawizi with cardamom and milk.</description>
+    <hot>true</hot>
+  </item>
+  <item id="d5" type="drink" category="juice">
+    <name>Passion Juice</name>
+    <price>3000</price>
+    <description>Fresh passion fruit, lightly sweetened.</description>
+    <hot>false</hot>
+  </item>
+  <item id="f1" type="food" category="pastry">
+    <name>Mandazi</name>
+    <price>500</price>
+    <description>Soft, sweet fried dough with coconut.</description>
+    <vegetarian>true</vegetarian>
+  </item>
+  <item id="f2" type="food" category="pastry">
+    <name>Chocolate Muffin</name>
+    <price>2500</price>
+    <description>Baked every morning.</description>
+    <vegetarian>true</vegetarian>
+  </item>
+  <item id="f3" type="food" category="snack">
+    <name>Beef Samosa</name>
+    <price>1500</price>
+    <description>Crispy pastry with spiced minced beef.</description>
+    <vegetarian>false</vegetarian>
+  </item>
+  <item id="f4" type="food" category="snack">
+    <name>Chapati</name>
+    <price>1000</price>
+    <description>Soft layered flatbread.</description>
+    <vegetarian>true</vegetarian>
+  </item>
+</menu>

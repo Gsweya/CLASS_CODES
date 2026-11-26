@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  XML SCHEMA (XSD) for menu.xml
+
+  Why XSD and not a DTD (like ASSIGNMENT_1)?
+  A DTD can only say "this element contains text".
+  An XSD can also say WHAT KIND of text:
+    - price must be a number bigger than 0
+    - hot / vegetarian must be true or false
+    - category must be one of a fixed list
+    - every id must be unique
+
+  admin.php checks the file against this schema BEFORE saving it.
+  To check from the terminal, see "Validate the XML" in README.md.
+  (Note: an XML comment may never contain two dashes in a row.)
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- The root element -->
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="item" type="itemType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="shop" type="xs:string" use="required"/>
+      <xs:attribute name="currency" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <!-- No two items may share the same id -->
+    <xs:unique name="uniqueItemId">
+      <xs:selector xpath="item"/>
+      <xs:field xpath="@id"/>
+    </xs:unique>
+  </xs:element>
+
+  <!-- One menu item -->
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element name="name" type="nameType"/>
+      <xs:element name="price" type="priceType"/>
+      <xs:element name="description" type="xs:string"/>
+      <!-- a drink has <hot>, a food has <vegetarian> -->
+      <xs:choice>
+        <xs:element name="hot" type="xs:boolean"/>
+        <xs:element name="vegetarian" type="xs:boolean"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="id" type="idType" use="required"/>
+    <xs:attribute name="type" type="itemKind" use="required"/>
+    <xs:attribute name="category" type="categoryType" use="required"/>
+  </xs:complexType>
+
+  <!-- Simple types: rules for single values -->
+  <xs:simpleType name="idType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[df][0-9]+"/>   <!-- d1, d2 ... for drinks, f1, f2 ... for food -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="nameType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="2"/>
+      <xs:maxLength value="40"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="priceType">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0"/>
+      <xs:maxInclusive value="100000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="itemKind">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="drink"/>
+      <xs:enumeration value="food"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="categoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="coffee"/>
+      <xs:enumeration value="tea"/>
+      <xs:enumeration value="juice"/>
+      <xs:enumeration value="pastry"/>
+      <xs:enumeration value="snack"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
