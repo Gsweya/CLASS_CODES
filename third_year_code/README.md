@@ -8,11 +8,13 @@ third_year_code/
 ├── README.md
 └── semester_one/
     ├── CP 311 - Internet Programming and Applications II/
-    │   ├── students.xml            # student records + internal DTD
-    │   ├── students.php            # SimpleXML program that displays the records
-    │   ├── students_output.html    # saved output of students.php
-    │   ├── README.md               # Task 4: XML data exchange explanation
-    │   └── GUIDELINE.md            # full assignment guide (running, validating, presenting)
+    │   ├── ASSIGNMENT_1/               # XML Student Information System (group assignment)
+    │   │   ├── students.xml            # student records + internal DTD
+    │   │   ├── students.php            # SimpleXML program that displays the records
+    │   │   ├── students_output.html    # saved output of students.php
+    │   │   ├── README.md               # Task 4: XML data exchange explanation
+    │   │   └── GUIDELINE.md            # full assignment guide (running, validating, presenting)
+    │   └── class_session/              # OOP in PHP lessons (01-07) + CLAUDE_SUMMARIES study guide
     └── CP 313 - Mobile Application Development/
         ├── README.md               # course index
         └── shiri/                  # Android Studio project (Java)
@@ -22,7 +24,8 @@ third_year_code/
 
 | Course | Title | Work | Stack | Start here |
 |--------|-------|------|-------|------------|
-| CP 311 | Internet Programming and Applications II | XML Student Information System (group assignment) | XML, DTD, PHP (SimpleXML) | [GUIDELINE.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/GUIDELINE.md) |
+| CP 311 | Internet Programming and Applications II | XML Student Information System (group assignment) | XML, DTD, PHP (SimpleXML) | [ASSIGNMENT_1/GUIDELINE.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/ASSIGNMENT_1/GUIDELINE.md) |
+| CP 311 | Internet Programming and Applications II | OOP in PHP class session | PHP 8 | [class_session/README.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/class_session/README.md) |
 | CP 313 | Mobile Application Development | `shiri`: student registration form app | Android, Java, Gradle (Kotlin DSL) | [shiri/README.md](semester_one/CP%20313%20-%20Mobile%20Application%20Development/shiri/README.md) |
 
 ## Quick start
@@ -30,7 +33,7 @@ third_year_code/
 ### CP 311 (PHP + XML)
 
 ```bash
-cd "third_year_code/semester_one/CP 311 - Internet Programming and Applications II"
+cd "third_year_code/semester_one/CP 311 - Internet Programming and Applications II/ASSIGNMENT_1"
 php -S localhost:8000
 # open http://localhost:8000/students.php
 ```
@@ -41,7 +44,9 @@ Validate the XML against its DTD:
 xmllint --noout --valid students.xml
 ```
 
-XAMPP instructions are in `GUIDELINE.md`.
+XAMPP instructions are in `ASSIGNMENT_1/GUIDELINE.md`.
+
+OOP lessons: `cd class_session && php 01_objects.php` (see `class_session/README.md`).
 
 ### CP 313 (Android)
 
