@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="../import.js"></script>
 </head>
 <body>
 
@@ -16,13 +18,13 @@
         <li>Grapes - 50,000</li>
     </ol>
 
-    <input name="fruit" type="radio" value="10000">Apples
-    <input name="fruit" type="radio" value="20000">Bananas
-    <input name="fruit" type="radio" value="50000">Grapes
-    <input name="fruit" type="radio" value="40000">Melons
+    <input name="fruit" type="radio">Apples
+    <input name="fruit" type="radio">Bananas
+    <input name="fruit" type="radio">Grapes
+    <input name="fruit" type="radio">Melons
     <br>
 
-    Number : <input id="quantity" type="number" value="1">
+    Number : <input id="quantity" type="number">
     <br>
     <br>
     <p>Total Cost:</p>
@@ -32,25 +34,29 @@
     
 
     <script>
+
         let btn = document.getElementById("Buy");
 
         btn.addEventListener("click", function(){
+
             let choice = document.querySelector('input[name="fruit"]:checked');
-            let qty = document.getElementById("quantity").value;
+            let qty = document.querySelector("#quantity").value;
 
-            // FIX 2: Fixed typo from getElementsById to getElementById
+
             let total = document.getElementById("price-selected");
+            total.innerText = `${choice * qty} /=`;
 
-            // Safety check: ensure a user has actually picked a fruit before calculation
-            if (choice) {
-                // FIX 3: Multiply choice.value (the price) instead of the raw DOM object
-                let finalPrice = parseFloat(choice.value) * parseInt(qty || 0);
-                
-                total.innerText = `${finalPrice.toLocaleString()} /=`;
-            } else {
-                alert("Please pick a fruit first!");
-            }
-        });
+            
+
+        })
+
+        $(document).ready(function(){
+
+            let btn = $('input[name="fruit"]:checked');
+
+
+
+        })
     </script>
     
 </body>
