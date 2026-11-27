@@ -80,6 +80,7 @@ class Lecturer extends Member
     public function role(): string
     {
         return "Lecturer";
+
     }
 }
 

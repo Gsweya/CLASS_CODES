@@ -14,6 +14,7 @@ third_year_code/
     │   │   ├── students_output.html    # saved output of students.php
     │   │   ├── README.md               # Task 4: XML data exchange explanation
     │   │   └── GUIDELINE.md            # full assignment guide (running, validating, presenting)
+    │   ├── ASSIGNMENT_2/               # Lab Work (Week 5): Student Management System in PHP OOP (question_a-f)
     │   ├── class_session/              # OOP in PHP lessons (01-07) + CLAUDE_SUMMARIES study guide
     │   └── PRACTICE/coffee_shop/       # practice web app: OOP + XML (SimpleXML, DOM, XPath, XSD, XSLT, XMLWriter)
     └── CP 313 - Mobile Application Development/
@@ -26,6 +27,7 @@ third_year_code/
 | Course | Title | Work | Stack | Start here |
 |--------|-------|------|-------|------------|
 | CP 311 | Internet Programming and Applications II | XML Student Information System (group assignment) | XML, DTD, PHP (SimpleXML) | [ASSIGNMENT_1/GUIDELINE.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/ASSIGNMENT_1/GUIDELINE.md) |
+| CP 311 | Internet Programming and Applications II | Lab Work (Week 5): Student Management System | PHP 8 OOP | [ASSIGNMENT_2/question_f.php](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/ASSIGNMENT_2/question_f.php) |
 | CP 311 | Internet Programming and Applications II | OOP in PHP class session | PHP 8 | [class_session/README.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/class_session/README.md) |
 | CP 311 | Internet Programming and Applications II | Coffee shop practice app + exercises | PHP 8 OOP, XML, XSD, XSLT | [PRACTICE/coffee_shop/README.md](semester_one/CP%20311%20-%20Internet%20Programming%20and%20Applications%20II/PRACTICE/coffee_shop/README.md) |
 | CP 313 | Mobile Application Development | `shiri`: student registration form app | Android, Java, Gradle (Kotlin DSL) | [shiri/README.md](semester_one/CP%20313%20-%20Mobile%20Application%20Development/shiri/README.md) |
