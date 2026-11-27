@@ -1,0 +1,2 @@
+# Local MySQL password (see config/db.php)
+config/db.local.php

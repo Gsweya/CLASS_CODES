@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <p id="para-text">This is text in the body.</p>
+    <button id="press">Press Me !</button>
+
+    <p id="lazy">lazy people die broke or poor. </p>
+    <button id="lazy-btn">A button for lazy people</button>
+
+    <script>
+        //let para = document.getElementById("para-text"); -- Vanilla JS
+        let para = $("#para-text"); // JQuery
+        let btn = document.getElementById("press");
+
+        let lazy_btn = document.getElementById("lazy-btn")
+        let lazy_p = document.getElementById("lazy");
+        btn.addEventListener("click", function(){
+            // para.innerText = `You pressed it bbb`;
+            // para.style.color = `red`;
+            para.text(`You pressed it @$$`);
+            para.css("color", "blue");
+        });
+
+        document.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            lazy_p.innerText = `I will stop being lazy ! `;
+            lazy_p.style.color = `blue`;
+            }
+        });
+
+
+        
+        
+    </script>
+    
+</body>
+</html>

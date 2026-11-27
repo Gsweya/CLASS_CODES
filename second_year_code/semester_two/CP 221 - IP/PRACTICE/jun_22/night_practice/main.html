@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../import.js"></script>
+</head>
+<body>
+
+    <p>This is paragraph.</p>
+
+    <ol>
+        <li>Apples - 10,000</li>
+        <li>Banana - 20,000</li>
+        <li>Melons - 40,000</li>
+        <li>Grapes - 50,000</li>
+    </ol>
+
+    <input name="fruit" type="radio">Apples
+    <input name="fruit" type="radio">Bananas
+    <input name="fruit" type="radio">Grapes
+    <input name="fruit" type="radio">Melons
+    <br>
+
+    Number : <input id="quantity" type="number">
+    <br>
+    <br>
+    <p>Total Cost:</p>
+    <span id="price-selected">0.00</span>
+
+    <button id="Buy">Buy</button>
+    
+
+    <script>
+
+        let btn = document.getElementById("Buy");
+
+        btn.addEventListener("click", function(){
+
+            let choice = document.querySelector('input[name="fruit"]:checked');
+            let qty = document.querySelector("#quantity").value;
+
+
+            let total = document.getElementById("price-selected");
+            total.innerText = `${choice * qty} /=`;
+
+            
+
+        })
+
+        $(document).ready(function(){
+
+            let btn = $('input[name="fruit"]:checked');
+
+
+
+        })
+    </script>
+    
+</body>
+</html>

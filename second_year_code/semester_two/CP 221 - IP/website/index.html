@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Modern Website</title>
+
+      <!-- LINKING CSS -->
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+
+    <nav>
+        <h1>My Site</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home">
+        <div class="hero-text">
+            <h2>Learn Web Development</h2>
+
+            <p>
+                HTML strucutres the web, CSS styles it, 
+                JavaScript makes it alive.
+            </p>
+
+            <button id="heroBtn">
+                Learn More
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="images/coding.jpg" alt="Coding">
+
+                <div class="card-content">
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Creating modern responsive websites.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="images/design.jpg" alt="Design">
+
+                <div class="card-content">
+                    <h3>UI Design</h3>
+
+                    <p>
+                        Designing interfaces humans tolerate using.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/teamwork.jpg" alt="Teamwork">
+
+                <div class="card-content">
+                    <h3>Collaboration</h3>
+
+                    <p>
+                        Meetings, coffee, deadlines, and collective suffering.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2> Contact Form</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <input 
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Enter message"
+            ></textarea>
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>  
+        
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- FOOTER -->
+        <footer>
+            <p>
+                &copy; 2026 MyWebsite | All Rights Reserved
+            </p>
+        </footer>
+
+        <!-- linking JS -->
+        <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

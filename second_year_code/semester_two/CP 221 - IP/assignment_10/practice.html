@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+
+    <!-- Import JQuery from local -->
+    <script src="./jquery.js">// JQuery v4.0.0</script>
+
+    <!-- Import Bootsrap v4.0.0 -->
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1>Student Results Dashboard</h1>
+
+    <span>Search For Students: </span>
+    <input type="text" id="searchInput">
+
+    <p id="noResults"></p> <!-- If no results, show message -->
+
+    <table id="resultsTable" class="table" border="2">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Reg No.</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Science</td>
+                <td>Average</td>
+                <td>Grade</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+
+        </tbody>
+    </table>
+
+    <button
+        id="btnSort"
+        class="btn-primary"
+    >Sort by Average</button>
+
+    <script>
+        $(document).ready(function() {
+
+            let tableBody = $("#tableBody");
+            let table = $("#resultsTable");
+            let searchInput = $("#searchInput");
+
+            var results = [
+                { name: "Zawadi Kimani", regNo:"S001", math:78, english:85, science:90},
+                { name: "Brian Ochieng", regNo:"S002", math:45, english:52, science:60},
+                { name: "Nadia Salum", regNo:"S003", math:92, english:88, science:95}, 
+                { name: "Peter Luwasa", regNo:"S004", math:33, english:41, science:38},
+                { name: "Sylvia Mhando", regNo:"S005", math:67, english:71, science:74 }
+            ];
+            // missing status (warning, danger, or success)
+            // missing average 
+            // missing grade
+
+            // Compute Average
+            function computeAverage() {
+
+                for (let i = 0; i < results.length; i++){
+                    // Compute the total marks
+                    let total = results[i].math + results[i].english + 
+                        results[i].science;
+
+                    // Compute Average
+                    let average = total / 3;
+                    average = Number(average.toFixed(1)); // Convert to One Decimal Place
+
+                    // Add it to the student's object
+                    results[i].average = average;
+
+                    // Compute the grade and assign status                
+
+                    if (average >= 70) {
+                        results[i].grade = 'A';
+                        results[i].status = "success";
+                    }
+                    else if (average >= 50 && average <= 69.9) {
+                        results[i].grade = 'B';
+                        results[i].status = "warning";
+                    }
+                    else if (average < 50) {
+                        results[i].grade = 'C';
+                        results[i].status = "danger";                        
+                    }                    
+                }
+
+            }
+
+            function renderTable() {               
+
+                for (let i = 0; i < results.length; i++){                    
+
+                    if (results[i].status === "success"){
+                        var element = $(`<tr class="table-success"> </tr>`);
+                        
+                    }
+                    else if (results[i].status === "warning"){
+                        var element = $(`<tr class="table-warning"> </tr>`);
+
+                    }
+                    else if (results[i].status === "danger"){
+                        var element = $(`<tr class="table-danger"> </tr>`);
+
+                    }
+
+                    element.html(`
+                            <td>${results[i].name}</td>
+                            <td>${results[i].regNo}</td>
+                            <td>${results[i].math}</td>
+                            <td>${results[i].english}</td>
+                            <td>${results[i].science}</td>
+                            <td>${results[i].average}</td>
+                            <td>${results[i].grade}</td>
+                    `);
+
+                    tableBody.append(element);
+                }
+                
+            }
+            // Main Program
+            computeAverage();
+            renderTable();
+
+
+            // Searching the input of user in Real Time
+            searchInput.on("input", function(){
+                
+                let value = $(this).val().toLowerCase();
+                
+                // if the value input is empty, redraw or return the whole table
+                if (value === ""){
+                    $("#resultsTable tbody tr").show();
+                    $("#noResults").hide();
+                    return;
+                }
+
+                // for each row search for the one matching the search item
+                $("#tableBody tr").each(function(){
+
+                    let col1 = $(this).find("td:eq(0)").text().toLowerCase();
+                    let col2 = $(this).find("td:eq(1)").text().toLowerCase();
+
+                    let found = col1.includes(value) || col2.includes(value);
+
+                    $(this).toggle(found);
+
+                    if (!found) {
+                        $("#noResults").text(`Student Not Found.`);
+                        $("#noResults").show();
+                    }
+
+                });
+            });
+
+            // Sort By Average
+            let btnSort = $("#btnSort");
+
+            btnSort.on("click", () => {
+
+                results.sort(function (a, b){
+                    return b.average - a.average;
+                });
+
+                // Clear the table
+                tableBody.empty();
+
+                // Render the Table again
+                renderTable();
+            });
+            
+
+        });
+
+
+    </script>
+    
+</body>
+</html>

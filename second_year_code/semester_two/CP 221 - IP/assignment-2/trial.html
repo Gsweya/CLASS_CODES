@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Community Health Information System | CHIS</title>
+    <style>
+        /* ========== GLOBAL STYLES & RESET ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #eef5f0;
+            color: hsl(0, 5%, 4%);
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        /* ========== MAIN GRID LAYOUT (PART 4: GRID-TEMPLATE-AREAS) ========== */
+        .grid-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "main sidebar"
+                "footer footer";
+            grid-template-columns: 3fr 1fr;
+            gap: 0;
+        }
+
+        /* responsive grid adjustment (part 5 media queries) */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 12px;
+            }
+        }
+
+        /* ========== HEADER STYLES ========== */
+        .header {
+            grid-area: header;
+            background: linear-gradient(135deg, #0b3b3a 0%, #1a6d5e 100%);
+            color: white;
+            padding: 2rem 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+            font-weight: 600;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+        }
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* ========== NAVIGATION (FLEXBOX + HOVER) ========== */
+        .nav-bar {
+            grid-area: nav;
+            background: #fef9e8;
+            border-bottom: 2px solid #d0e2d0;
+            border-top: 1px solid #e6f0e6;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 2rem;
+            padding: 0.9rem 1.5rem;
+            margin: 0;
+        }
+        .nav-menu li a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1f5e55;
+            padding: 0.5rem 0.2rem;
+            transition: all 0.25s ease-in-out;
+            position: relative;
+            letter-spacing: 0.3px;
+        }
+        /* advanced pseudo-element ::before for hover underline animation */
+        .nav-menu li a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background: #e07c3c;
+            transition: width 0.3s ease;
+        }
+        .nav-menu li a:hover::before {
+            width: 100%;
+        }
+        .nav-menu li a:hover {
+            color: #c95f1d;
+            transform: translateY(-1px);
+        }
+
+        /* ========== MAIN & SIDEBAR LAYOUT (FLEX for articles inside MAIN) ========== */
+        .main-content {
+            grid-area: main;
+            background: #ffffff;
+            padding: 2rem 1.8rem;
+        }
+        /* section styling */
+        .section-card {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #0a4942;
+            border-left: 6px solid #e07c3c;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        /* articles side-by-side using flexbox (Part 3) */
+        .articles-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            justify-content: space-between;
+        }
+        /* article card style (borders, shadows, background, transitions) */
+        .article-card {
+            flex: 1 1 280px;
+            background: #fefcf5;
+            border-radius: 24px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2efe2;
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+        }
+        .article-card:hover {
+              transform: translateY(-6px);
+            box-shadow: 0 18px 28px -8px rgba(0, 0, 0, 0.15);
+            border-color: #c1dfc1;
+        }
+        .article-card h3 {
+            color: #1f6b5e;
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .article-card h3::before {
+            content: "🩺";
+            font-size: 1.3rem;
+            transition: transform 0.2s;
+        }
+        .article-card:nth-child(2) h3::before {
+            content: "📊";
+        }
+        .article-card p {
+            color: #2c423f;
+            margin-bottom: 1rem;
+        }
+        .read-more {
+            display: inline-block;
+            font-weight: 600;
+            color: #e07c3c;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border 0.2s, color 0.2s;
+        }
+        .read-more::after {
+            content: " →";
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .read-more:hover::after {
+            transform: translateX(5px);
+        }
+        .read-more:hover {
+            color: #b4591f;
+            border-bottom-color: #e07c3c;
+        }
+
+        /* second section articles variations */
+        .article-card.secondary h3::before {
+            content: "❤️";
+        }
+        .article-card.third h3::before {
+            content: "🧠";
+        }
+
+        /* ========== SIDEBAR (Quick links & announcements) ========== */
+        .sidebar {
+            grid-area: sidebar;
+            background: #f8faf2;
+            padding: 2rem 1.5rem;
+            border-left: 1px solid #ddebe0;
+            box-shadow: -3px 0 10px rgba(0, 0, 0, 0.02);
+        }
+        .sidebar-widget {
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 22px;
+            padding: 1.3rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e0eddf;
+        }
+        .sidebar-widget h3 {
+            font-size: 1.4rem;
+            color: #1f5e55;
+            border-bottom: 2px dashed #cfe3cf;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .quick-links {
+            list-style: none;
+        }
+        .quick-links li {
+            margin: 0.8rem 0;
+        }
+        .quick-links li a {
+            text-decoration: none;
+            color: #2f6b5f;
+            font-weight: 500;
+            display: block;
+            padding: 0.4rem 0.6rem;
+            border-radius: 40px;
+            transition: background 0.2s, padding-left 0.2s;
+        }
+        .quick-links li a:hover {
+            background: #e6f0e6;
+            color: #c95f1d;
+            padding-left: 1rem;
+        }
+        .announcement-item {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2efdf;
+        }
+        .announcement-item strong {
+            color: #bf6f2c;
+            display: block;
+        }
+        .announcement-item p {
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+        /* keyframes animation example (pulse on announcements) */
+        .pulse-badge {
+            background: #e07c3c20;
+            border-radius: 30px;
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #b4591f;
+            margin-left: 8px;
+            animation: gentlePulse 1.5s infinite;
+        }
+        @keyframes gentlePulse {
+            0% { opacity: 0.6; background-color: #e07c3c30; }
+            50% { opacity: 1; background-color: #e07c3c70; color: white; }
+            100% { opacity: 0.6; background-color: #e07c3c30; }
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            grid-area: footer;
+            background: #0f2d2a;
+            color: #cfe6e2;
+            text-align: center;
+            padding: 1.6rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #2b645b;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #f7bd7a;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+            color: #ffcf91;
+        }
+
+        /* additional responsive improvements (media queries) */
+        @media (max-width: 550px) {
+            .main-content, .sidebar {
+                padding: 1.2rem;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            .nav-menu {
+                gap: 1rem;
+            }
+            .nav-menu li a {
+                font-size: 0.9rem;
+            }
+        }
+        /* Added :nth-child example for custom card styling */
+        .articles-flex .article-card:nth-child(odd) {
+            background: linear-gradient(145deg, #ffffff 0%, #fefaf2 100%);
+        }
+        .articles-flex .article-card:nth-child(even) {
+            border-left: 4px solid #e07c3c;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <!-- Header with system name -->
+    <header class="header">
+        <h1>🌿 Community Health Information System</h1>
+        <p>Empowering healthier neighborhoods — real-time insights, local care, preventive wellness</p>
+    </header>
+
+    <!-- Navigation menu (horizontal flex) -->
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="#">📖 About</a></li>
+            <li><a href="#">⚕️ Services</a></li>
+            <li><a href="#">📞 Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content region with two sections, each containing article flex row -->
+    <main class="main-content">
+        <!-- Section 1: Health News & Updates -->
+        <section class="section-card">
+            <h2 class="section-title">📰 Health News & Preventive Updates</h2>
+            <div class="articles-flex">
+                <article class="article-card">
+                    <h3>Flu Season Preparedness</h3>
+                    <p>Stay ahead with updated vaccines and hygiene practices. Local clinics offer free flu shots for vulnerable groups. Learn how to recognize early symptoms and protect your family.</p>
+                    <a href="#" class="read-more">Read full guide</a>
+                </article>
+                <article class="article-card">
+                    <h3>Nutrition & Heart Health</h3>
+                    <p>Discover community-driven meal planning workshops. Reduce hypertension with simple dietary shifts. Our new “Healthy Pantry” initiative serves low-income families.</p>
+                    <a href="#" class="read-more">Join program</a>
+                </article>
+                <article class="article-card">
+                    <h3>Mental Wellbeing Hub</h3>
+                    <p>Free counseling sessions & peer support groups now available every Thursday. Break the stigma — virtual and in-person options offered across the region.</p>
+                    <a href="#" class="read-more">Schedule appointment</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: Community Programs & Data Insights -->
+        <section class="section-card">
+            <h2 class="section-title">📊 Community Programs & Data Insights</h2>
+            <div class="articles-flex">
+                <article class="article-card secondary">
+                    <h3>Mobile Health Units</h3>
+                    <p>Our traveling clinics visit rural zones every month. Basic screenings, vaccinations, and health education — no insurance required. Next stop: Westside this Friday.</p>
+                    <a href="#" class="read-more">View schedule</a>
+                </article>
+                <article class="article-card third">
+                    <h3>Chronic Care Dashboard</h3>
+                    <p>Interactive tools to track diabetes and hypertension metrics. Local reports show 24% improvement in medication adherence after system adoption.</p>
+                    <a href="#" class="read-more">Explore dashboard →</a>
+                </article>
+                <article class="article-card secondary">
+                    <h3>Youth Wellness Ambassadors</h3>
+                    <p>Leadership training for teens. Promote mental health and physical activity in schools. Earn volunteer hours & certification.</p>
+                    <a href="#" class="read-more">Become ambassador</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar with quick links or announcements (Part 2 & 3) -->
+    <aside class="sidebar">
+        <div class="sidebar-widget">
+            <h3>🔗 Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="#">📋 Find a Community Clinic</a></li>
+                <li><a href="#">📆 Upcoming Health Fairs</a></li>
+                <li><a href="#">💬 Ask a Nurse (Live Chat)</a></li>
+                <li><a href="#">📘 Health Resource Library</a></li>
+                <li><a href="#">📞 Emergency & Crisis Support</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-widget">
+            <h3>📢 Announcements <span class="pulse-badge">NEW</span></h3>
+            <div class="announcement-item">
+                <strong>🆕 Free Vaccination Drive</strong>
+                <p>Sat, May 20th, 9am–3pm @ Central Community Center. Flu and COVID boosters available.</p>
+            </div>
+            <div class="announcement-item">
+                <strong>🏆 CHIS App Launch</strong>
+                <p>Track personal health goals & book appointments via our new mobile app. Download now for early access.</p>
+            </div>
+            <div class="announcement-item">
+                <strong>🧘 Weekly Wellness Webinar</strong>
+                <p>"Stress Management for Caregivers" – register online. Certificate of participation included.</p>
+            </div>
+        </div>
+        <div class="sidebar-widget">
+            <h3>📞 Contact Health Desk</h3>
+            <p>📧 support@chis.health<br>📞 (555) 224-7890<br>🕒 Mon-Fri 8AM – 6PM</p>
+        </div>
+    </aside>
+
+    <!-- Footer with copyright info -->
+    <footer class="footer">
+        <p>© 2025 Community Health Information System — Bridging gaps for healthier communities.</p>
+        <p>🌍 All information is for educational purposes. <a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+        <p>📍 Serving Springfield & neighboring districts | Built with 💚 for public health</p>
+    </footer>
+</div>
+<!-- Extra note: All requirements: semantic tags (header,nav,main,section,article,aside,footer); flex for nav & article side-by-side; grid layout with grid-template-areas; transitions, hover effects, keyframes, media queries, pseudo-elements (::before, ::after) and nth-child. -->
+</body>
+</html>

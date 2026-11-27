@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Question Eleven</title>
+
+        <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        #personal-details input{
+            width: 300px;
+            margin: 5px;
+        }
+
+        #likings input {
+            margin: 5px;
+        }
+
+        #likings label {
+            align-items: left;
+        }
+
+        </style>
+
+        <script>
+        function validateForm() {
+
+          let name = document.getElementById("name").value;
+
+          let address = document.getElementById("address").value;
+
+          let email = document.getElementById("email").value;
+
+          let comments = document.getElementById("comments").value;
+
+          if (name == "") {
+            alert("Enter name");
+            return false;
+          }
+
+          if (address == ""){
+            alert("Enter address");
+            return false;
+          }
+
+          if (email == ""){
+            alert("Enter email");
+            return false;
+          }
+
+
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if(!emailPattern.test(email)) {
+            alert("Invalid email");
+            return false;
+
+          }
+          /* alternative is: if (!email.includes("@")) {   // rest of code // } */
+
+          let likes = [];
+
+          let checks = document.getElementsByName("likes");
+
+          for (let item of checks) {
+            if (item.checked) {
+              likes.push(item.value);
+            }
+          }
+
+          if(likes.length == 0) {
+            alert("Select campus preference");
+            return false;
+          }
+
+          let interest = "";
+
+          let radios = document.getElementsByName("interest");
+
+          for (let item of radios) {
+            if (item.checked){
+              interest=item.value;
+            }
+          }
+
+          if (interest == "") {
+            alert("Select interest source");
+            return false;
+          }
+
+          alert(
+            "Insert into tbl_feedback\n\n" +
+            "Name: " +name+"\n"+
+            "Address: "+address+"\n"+
+            "Email: "+email+"\n"+
+            "Likes: "+likes+"\n"+
+            "Interest"+interest+"\n"+
+            "Comments: "+comments
+          );
+
+          return true;
+        }
+        </script>
+
+
+    </head>
+
+    <body>
+        <h2>Campus Visit Feedback</h2>
+
+        <form onsubmit="validateForm()">
+
+            <fieldset id="personal-details" style="margin: 20px;">
+                <legend>Personal Details</legend>
+
+                <label>Name: </label>
+                <input
+                    type="text"
+                    id="name"
+                >
+                <br>
+
+                <label>Address: </label>
+                <input
+                    type="text"
+                    id="address"
+                >
+
+                <br>
+                <label>Email: </label>
+                <input
+                    type="email"
+                    id="email"
+                >
+            </fieldset>
+
+            <fieldset id="likings" style="margin: 20px;">
+                <legend>Likings</legend>
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Student"
+                >
+                <label>Student</label>
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Location"
+                >
+                <label>Location</label>
+                <br>
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Campus"
+                >
+                <label>Campus</label>
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Atmosphere"
+                >
+                <label>Atmosphere</label>
+                <br>
+
+
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Dorm Rooms"
+                >
+                    Dorm Rooms
+
+                <input
+                    type="checkbox"
+                    name="likes"
+                    value="Sports"
+                >
+                    Sports
+            </fieldset>
+
+            <fieldset style="margin: 20px;">
+
+                <legend>Interests</legend>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Friends"
+                >
+                <label>Friends</label>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Television"
+                >
+                <label>Television</label>
+                <br>
+
+                <input
+                    type="radio"
+                    name="interst"
+                    value="Internet"
+                >
+                <label>Internet</label>
+
+                <input
+                    type="radio"
+                    name="interest"
+                    value="Others"
+                >
+                <label>Others</label>
+
+                <br><br>
+
+                <label>Comments:</label>
+                <br>
+                <textarea
+                    id="comments"
+                    rows="5"
+                    cols="40"
+                ></textarea>
+            </fieldset>
+
+
+            <input style="margin: 20px;"
+                type="submit"
+                value="Submit"
+            >
+
+            <input
+                type="reset"
+                value="Reset"
+            >
+        </form>
+
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>yourLike</th>
+                <th>yourInterest</th>
+                <th>Comments</th>
+            </tr>
+
+            <tr></tr>
+
+        </table>
+
+    </body>
+</html>

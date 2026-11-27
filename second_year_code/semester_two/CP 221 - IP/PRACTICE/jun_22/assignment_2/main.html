@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../import.js"></script>
+
+    </head>
+
+    <body>
+        
+        <ul>
+            <li id="_1" class="odd">Physics</li> <!-- 1 -->
+            <li id="_2" class="even">Biology</li>    <!-- 2 -->
+            <li id="_3" class="odd">Mathematics</li>    <!-- 3 -->
+            <li id="_4" class="even">Commerce</li>   <!-- 4 -->
+            <li id="_5" class="odd">General Studies</li>    <!-- 5 -->
+            <li id="_6" class="even">Conputer Science</li>   <!-- 6 -->
+        </ul>
+
+        <button id="highlight-even">
+            Highlight Even
+        </button>
+
+        <button id="highlight-odd">
+            Highlight Odd
+        </button>
+
+        <button id="show-three">
+            Show First Three
+        </button>
+
+        <button id="hide-last">
+            Hide Last Subject
+        </button>
+
+        <button id="clone-first">
+            Clone Subject
+        </button>
+
+        <script>
+
+            $(document).ready(function(){
+                let high_even = $("#highlight-even");
+                let high_odd = $("#highlight-odd");
+                let show_three = $("#show-three");
+                let hide_last = $("#hide-last");
+                let clone = $("#clone-first");
+                let four_to_five = [];
+                
+                for (let i = 4; i <= 6; i++){
+
+                    let x = $(`_${i}`);
+                    x.append(four_to_five);
+
+                }
+                
+                // list class imports 
+
+                let _even_no = $(".even");
+                let _odd_no = $(".odd");
+                
+                high_even.on("click", () =>  {
+                    _even_no.css("color", "blue");
+                    _odd_no.css("color", "red");
+                });
+
+                
+
+                // show first three and hide the rest.. 
+                show_three.on("click", () => {  
+                   
+                    // show the first three items only
+                
+                    for (x of four_to_five){
+                        x.hide();
+                    }              
+                });
+            });
+
+            
+
+
+        </script>
+    </body>
+</html>

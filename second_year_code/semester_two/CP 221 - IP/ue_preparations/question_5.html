@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information Form</title>
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <h1>Information Form</h1>
+
+    <form id="formPass">
+
+        <fieldset>
+            <legend>Personal Details: </legend>
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName"><br><br>
+
+            <label for="surname">Surname: </label>
+            <input type="text" id="surname"><br><br>
+
+            <label for="email">Email Address: </label>
+            <input type="email" id="email"><br><br>
+
+            <label for="number">Phone No: </label>
+            <input type="tel" id="number"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Garden Plot Details: </legend>
+
+            <p>Plot Type: </p>
+            <select id="plotType">
+                <option value=""> --- Select the Plot Type --- </option>
+                <option value="1">Single Plant Type</option>
+                <option value="2">Multiple Plant Type</option>
+            </select>
+
+            <!-- Single Plant Container -->
+            <div id="single" style="display: none;">
+                <p>Type of Plant: </p>
+                <input type="text" id="single-type-of-plant"><br><br>
+
+                <p>Expected Yield of the Plant</p>
+                <input type="number" id="single-yield-of-plant"><br><br>
+            </div>
+
+            <!-- Multiple Plant Container -->
+            <div id="multiple" style="display: none;">
+                <p>Number of different Plants</p>
+                <input type="number" id="num-plants"><br><br>
+
+                <div id="list-option"> <!-- Changed duplicate IDs inside to dynamic targets if needed -->
+
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="submit" name="submit">Submit Form</button>
+
+    </form>
+
+    <script>
+       $(document).ready(function(){
+
+            const plotOption = $("#plotType");
+            const singlePlantDisplay = $("#single");
+            const multiplePlantDisplay = $("#multiple");
+            const number_of_plants = $("#num-plants");
+
+            // Toggle single vs multiple section
+            plotOption.on("change", function(){
+                const selectedVal = $(this).val();
+
+                if (selectedVal === "1") {
+                    singlePlantDisplay.show();
+                    multiplePlantDisplay.hide();
+                } else if (selectedVal === "2") {
+                    multiplePlantDisplay.show();
+                    singlePlantDisplay.hide();
+                } else {
+                    singlePlantDisplay.hide();
+                    multiplePlantDisplay.hide();
+                }
+            });
+
+            // Generate input fields dynamically
+            number_of_plants.on("input", function(){
+                const count = parseInt($(this).val(), 10) || 0; 
+                const list = $("#list-option");
+
+                // Clear previous entries ONCE before generating new ones
+                list.empty();
+
+                if (count < 1) return;
+
+                // Build all inputs in one loop
+                for (let i = 1; i <= count; i++){
+                    let plant_item = $(`
+                        <div class="plant-entry" style="margin-bottom: 15px;">
+                            <label>Type of Plant ${i}: </label>
+                            <input type="text" name="plant_type_${i}" class="plant-type"><br><br>
+
+                            <label>Expected Yield of Plant ${i}: </label>
+                            <input type="number" name="plant_yield_${i}" class="plant-yield">
+                        </div>
+                    `);
+
+                    list.append(plant_item);
+                }
+            });
+
+    });
+    </script>
+</body>
+
+</html>

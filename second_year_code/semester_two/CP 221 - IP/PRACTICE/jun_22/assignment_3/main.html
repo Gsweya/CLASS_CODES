@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        body{
+            background:#f5f5f5;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+            transition:0.5s;
+        }
+
+        .carousel img{
+            height:400px;
+            object-fit:cover;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<a class="navbar-brand" href="#">CP221</a>
+
+<button class="navbar-toggler"
+data-toggle="collapse"
+data-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Courses</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+
+<!-- CAROUSEL -->
+
+
+<div id="slider" class="carousel slide" data-ride="carousel">
+
+<ul class="carousel-indicators">
+
+<li data-target="#slider" data-slide-to="0" class="active"></li>
+
+<li data-target="#slider" data-slide-to="1"></li>
+
+<li data-target="#slider" data-slide-to="2"></li>
+
+</ul>
+
+
+<div class="carousel-inner">
+
+
+<div class="carousel-item active">
+
+<img src="https://picsum.photos/1200/400?1"
+class="d-block w-100">
+
+<div class="carousel-caption">
+
+    <div class="carousel-item active">
+
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+
+    class="d-block w-100">
+
+    <div class="carousel-caption">
+
+        <h2>Internet Programming</h2>
+
+        <p>Learn HTML, CSS, JavaScript and jQuery</p>
+
+    </div>
+
+</div>
+
+<h2>Internet Programming</h2>
+
+</div>
+
+</div>
+
+
+
+<div class="carousel-item">
+
+<img src="https://picsum.photos/1200/400?2"
+class="d-block w-100">
+
+<div class="carousel-caption">
+
+<h2>Database Systems</h2>
+
+</div>
+
+</div>
+
+
+
+<div class="carousel-item">
+
+<img src="https://picsum.photos/1200/400?3"
+class="d-block w-100">
+
+<div class="carousel-caption">
+
+<h2>Computer Networks</h2>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<a class="carousel-control-prev"
+href="#slider"
+data-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</a>
+
+
+
+<a class="carousel-control-next"
+href="#slider"
+data-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</a>
+
+
+</div>
+
+
+
+<!-- COURSE CARDS -->
+
+
+<div class="container mt-5">
+
+<div class="row">
+
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h3 class="card-title">
+
+Internet Programming
+
+</h3>
+
+<p>
+
+Learn HTML, CSS, JavaScript and jQuery.
+
+</p>
+
+<button class="btn btn-primary">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h3 class="card-title">
+
+Database
+
+</h3>
+
+<p>
+
+Learn SQL and Database Design.
+
+</p>
+
+<button class="btn btn-success">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h3 class="card-title">
+
+Networking
+
+</h3>
+
+<p>
+
+Study network protocols and security.
+
+</p>
+
+<button class="btn btn-danger">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<!-- REGISTRATION FORM -->
+
+<div class="container mt-5">
+
+<h2>Course Registration</h2>
+
+
+<form>
+
+
+<div class="form-group">
+
+<label>Name</label>
+
+<input type="text"
+class="form-control">
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>Email</label>
+
+<input type="email"
+class="form-control">
+
+</div>
+
+
+
+<div class="form-group">
+
+<label>Course</label>
+
+<select class="form-control">
+
+<option>Internet Programming</option>
+
+<option>Database</option>
+
+<option>Networking</option>
+
+</select>
+
+</div>
+
+
+
+<button
+type="button"
+class="btn btn-primary"
+
+data-toggle="modal"
+data-target="#myModal">
+
+Submit
+
+</button>
+
+
+</form>
+
+</div>
+
+
+
+
+<!-- MODAL -->
+
+<div class="modal fade"
+id="myModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+
+
+<div class="modal-header">
+
+<h4>
+
+Registration Successful
+
+</h4>
+
+<button class="close"
+data-dismiss="modal">
+
+&times;
+
+</button>
+
+</div>
+
+
+
+<div class="modal-body">
+
+Thank you for registering.
+
+</div>
+
+
+
+<div class="modal-footer">
+
+<button
+class="btn btn-danger"
+
+data-dismiss="modal">
+
+Close
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

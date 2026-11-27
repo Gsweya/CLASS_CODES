@@ -35,7 +35,8 @@ int main() {
         front = front->next;
 
         temp->next = nullptr;
-        delete temp;
+        delete t
+        emp;
     }
 
     return 0;

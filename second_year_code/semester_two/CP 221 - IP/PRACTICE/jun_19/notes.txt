@@ -1,0 +1,17 @@
+- if the element is unique use an id to identify identify
+- if you want to target a group of elements for example, cards or images or 
+many paragraphs at the same time or many divs, use a class label.
+
+-   if asked to add a button to respond to a change triggered by a user 
+use the addEventListener or add an event listener in your code.. 
+
+- if you have been asked to change an element for example upate the 
+text inside the rendered html , make user to use innerText 
+
+- if you are to add or append a html item, make sure to use create element for table or a list 
+or you can use innerHTML to easily add the element like  a bolded text... 
+
+-  for styles if hover is mentioned, add a style with a hover... 
+
+- for moving things like a fade in , or fade out or opacity tricks...
+make sure to use animations..

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+</head>
+<body>
+
+    <form id="patientForm">
+
+        <label>Full Name: </label>
+        <input
+            type="text"
+            id="fullName"
+        >
+        <span id="nameError" style="margin-left: 10px;"></span>
+        <br><br>
+
+        <label>Date Of Birth: </label>
+        <input
+            type="date"
+            id="dob"
+        >
+        <span id="dobError" style="margin-left: 10px;"></span>
+        <br><br>
+
+        <label>Phone Number: </label>
+        <input
+            type="number"
+            id="phone"
+        >
+        <span id="numberError" style="margin-left: 10px;"></span>
+        <br><br>
+
+        <label>Ward Selection</label>
+        <input
+            type="number"
+            id="ward"
+        >
+        <span id="wardError" style="margin-left: 10px;"></span>
+        <br><br>
+
+
+        <button
+        id="submit"
+        type="submit"
+        >Submit</button>
+
+    </form>
+
+    <div style="background-color: lightblue; color: red;" id="summary">
+        <p>Name: </p>
+        <span id="fullname-sum"></span>
+
+        <p>Ward: </p>
+        <span id="ward-sum"></span>
+
+        <p></p>
+    </div>
+
+    <script>
+
+        $(document).ready(function() {
+            let subform = $("#patientForm");
+            let name = $("#fullName");
+            let dob = $("#dob");
+            let phone = $("#phone");
+            let ward = $("#ward");
+
+            // div elements
+            name_live = $("#fullname-sum");
+            ward_live = $("#ward-sum");
+
+
+            // Form Validation
+
+            name.on("input", function(e){
+                name_live.text($(this).val());
+            });
+
+            ward.on("input", function(e){
+                ward_live.text($(this).val());
+            });
+
+
+            subform.on("submit", function(e) {
+                e.preventDefault();
+
+                if (name.val() === "" || name.val().length < 3){
+                    $("#nameError").html(`<strong> Name Must be filled.</strong>`);
+                    isValid = false;
+                };
+
+                if (!dob){
+                    $("#dateError").html(`<strong> Date Must be filled.</strong>`);
+                    isValid = false;
+                };
+
+
+                if (phone.length !== 10){
+                    $("#phoneError").html(`<strong> Phone Must be filled and with 10 digits.</strong>`);
+                    isValid = false;
+                }
+
+                if (ward === ""){
+                    $("#wardError").html(`<strong> Ward Must be filled.</strong>`);
+                    isValid = false;
+                }
+
+                // Prevents continued form flow if not valid !
+                if (!isValid){
+                    return;
+                }
+
+                alert("The Form is Submitted Successfully");
+
+            });
+        });
+    </script>
+</body>
+</html>

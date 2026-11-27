@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">User Registration</h2>
+    
+    <form>
+        <div class="form-group">
+            <label for="userEmail">Email Address</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="userPassword">Password</label>
+            <input type="password" class="form-control" id="userPassword" placeholder="Enter password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="favoriteFruit">Select Your Favorite Fruit</label>
+            <select class="form-control" id="favoriteFruit">
+                <option>Apples</option>
+                <option>Bananas</option>
+                <option>Melons</option>
+                <option>Grapes</option>
+            </select>
+        </div>
+
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="termsCheck">
+            <label class="form-check-label" for="termsCheck">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

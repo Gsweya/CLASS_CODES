@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script>
+
+        let questions = [
+          "Capital of Tanzania ?",
+          "2+2",
+          "JS stands for?",
+          "HTML means",
+          "CSS used for?"
+        ];
+
+        let answers = [
+          "dodoma",
+          "4",
+          "javascript",
+          "hypertext markup language",
+          "styling"
+        ];
+
+        function gradeStudent(score) {
+
+          switch(score){
+
+            case score === 5:
+              return "Excellent";
+
+            case score>=3:
+              return "Good";
+
+              default:
+              return "Keep Practicing";
+
+          }
+        }
+
+        let score = 0;
+
+        for (let i=0; i < 5; i++) {
+
+          let user =
+            prompt(questions[i].toLowerCase());
+
+          if (user === answers[i]){
+            score++;
+          }
+
+
+        }
+
+        document.writeln(
+          "Score: " + score + "<br>"
+        );
+
+        document.writeln(
+          gradeStudent(score)
+        );
+
+
+        </script>
+
+    </head>
+
+</html>

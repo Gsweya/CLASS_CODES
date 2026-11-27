@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Question Nine</title>
+
+        <script>
+
+          alert("Addition of two numbers\n Enter two Numbers as prompted");
+          let firstNumber = prompt("Enter Frist Number");
+
+          let secondNumber = prompt("Enter Second Number");
+
+          function division(a,b){
+
+            if (isNaN(a) || isNaN(b)) {
+              throw "InvalidInputException";
+
+            } else if (!isFinite(a/b)) {
+              throw "Zero error on Division over 0";
+            } else {
+              return (a/b);
+            }
+
+          }
+
+          try {
+            let result = division(firstNumber, secondNumber);
+            alert(`${firstNumber} / ${secondNumber} = ${result}`);
+
+          } catch (error) {
+            alert(error);
+          }
+
+        </script>
+    </head>
+
+
+
+</html>

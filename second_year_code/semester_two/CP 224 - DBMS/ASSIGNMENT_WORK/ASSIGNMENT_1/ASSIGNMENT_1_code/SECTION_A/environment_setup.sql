@@ -1,0 +1,3 @@
+-- Section A
+CREATE DATABASE db_Bsc_CS_group01;
+SHOW DATABASES;

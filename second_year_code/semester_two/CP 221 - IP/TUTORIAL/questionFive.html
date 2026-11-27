@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+
+        try {
+
+          document.write(
+            "Browser Name: " +
+            navigator.appName +
+            "<br>"
+          );
+
+          document.write(
+            "Platform Name: " +
+            navigator.platform +
+            "<br>"
+          );
+
+          let temp = Number(prompt("Celsius: "));
+
+          let choice = prompt("1 Fahrenheit\n2 Kelvin");
+
+          let result;
+
+          switch (choice) {
+            case "1":
+              result = (temp*9/5) + 32;
+              break;
+
+            case "2":
+              result = temp+273;
+              break;
+
+            default:
+              throw "InvalidChoiceException";
+          }
+
+          document.write(result);
+
+          } catch (error) {
+            alert(error);
+          } finally {
+            confirm (
+              "Convert another ?"
+            );
+          }
+
+        </script>
+
+    </head>
+</html>

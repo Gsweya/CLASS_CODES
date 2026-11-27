@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age Submitter</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            /* Add styles here if needed */
+        </style>
+    </head>
+
+    <body>
+        <p>Enter age: </p>
+        <input id="age-input" type="number" placeholder="enter your age, e.g., 10">
+        <button id="age-button">Submit</button>
+
+        <span id="text-output"></span>
+
+        <script>
+            // 1. Select the actual HTML elements first          
+            
+            // let ageInput = $("#age-input");
+            let ageInput = $("#age-input");
+
+            //let button = document.getElementById("age-button"); // Fixed the typo here
+            let button = $("#age-button");
+            // let textOutput = document.getElementById("text-output");
+            let textOutput = $("#text-output");
+            
+            // 2. Wait for the user to click the button
+            
+            //button.addEventListener("click", function(){ // code })
+            button.on("click", function(){
+                // 3. Grab the value inside the event listener so it's current
+                let age = ageInput.val();                      
+
+                textOutput.text(`Your age is ${age}`);
+
+                // 4. Clear the input field after submission
+                ageInput.val("");
+            });
+        </script>
+    </body>
+</html>

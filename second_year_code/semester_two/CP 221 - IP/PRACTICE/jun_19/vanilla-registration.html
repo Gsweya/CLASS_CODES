@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+        <style>
+            body {
+                font-family: Arial;
+                padding: 30px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 400px;
+            }
+            td, th {
+                border: 1px solid gray;
+                padding: 10px;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <h1>Student Registration</h1>
+        <a href="www.google.com">Click Link</a>
+        <input type="text" id="studentName">
+        <button id="addBtn">
+            Add Student
+        </button>
+
+        <br><br>
+
+        <input type="text" id="search" placeholder="Search...">
+        
+        <h3>
+            Total Students:
+            <span id="count">0</span>
+        </h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                             
+            </tbody>
+        </table>  
+        
+        <script defer>
+            // These will now find the elements successfully
+            const addBtn = document.getElementById("addBtn");
+            const studentName = document.getElementById("studentName");
+            const tableBody = document.getElementById("tableBody");
+            const count = document.getElementById("count");
+            const search = document.getElementById("search");
+            let x = 0;
+            function updateCount() {
+                x++;                
+                count.innerText = x;
+            }
+
+            addBtn.addEventListener("click", function(){
+                let name = studentName.value;
+
+                if(name === ""){
+                    alert("Enter Name");
+                    return;
+                }
+
+                let row = document.createElement("tr");
+
+                row.innerHTML =  `
+                <td>${name}</td>
+                <td>
+                    <button class="delete">
+                        Delete
+                    </button>
+                </td>             
+                `;
+                tableBody.appendChild(row);
+
+                studentName.value="";
+                updateCount();
+            });
+
+
+            tableBody.addEventListener("click", function(e){
+                if(e.target.classList.contains("delete")) {
+                    // Fixed: Changed 'parentelement' to 'parentElement'
+                    e.target.parentElement.parentElement.remove();
+                    updateCount();
+                }
+            });
+
+            search.addEventListener("keyup", function(){
+                let term = search.value.toLowerCase();
+                let rows = tableBody.querySelectorAll("tr");
+
+                rows.forEach(function(row){
+                    let text = row.innerText.toLowerCase();
+
+                    if(text.includes(term)){
+                        row.style.display="";
+                    }
+                    else {
+                        row.style.display="none";
+                    }
+                });
+            });
+        </script>
+    </body>    
+</html>

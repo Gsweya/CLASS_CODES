@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Quiz Group 40 Report</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 1in;
+            color: #111111;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 0.25in;
+        }
+
+        p {
+            text-align: justify;
+            margin: 0 0 12pt 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14pt 0;
+        }
+
+        th, td {
+            border: 1px solid #333333;
+            padding: 8pt;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eaeaea;
+        }
+
+        .meta {
+            text-align: center;
+            margin-bottom: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 12: Advanced DOM Manipulation</h1>
+    <div class="meta">
+        <strong>Group:</strong> Class Quiz Group 40<br>
+        <strong>Topic:</strong> Difference between <code>.html()</code>, <code>.text()</code>, and <code>.val()</code>
+    </div>
+
+    <h2>Writing Part</h2>
+
+    <p>In the Dynamic Table Manager page, the jQuery methods <code>.html()</code>, <code>.text()</code>, and <code>.val()</code> are all used to work with content, but each one serves a different purpose. The <code>.html()</code> method is used when we want to read or insert HTML markup inside an element. In the assignment solution, it updates the summary section below the table by placing a Bootstrap alert inside the <code>#gradeOutput</code> element. This is useful because the output contains formatted HTML such as <code>&lt;strong&gt;</code> tags and layout characters, not just plain text.</p>
+
+    <p>The <code>.text()</code> method is different because it works only with the visible text of an element. It ignores HTML tags and returns plain readable content. In the table manager, the grade for each student is read from the fourth table cell using code like <code>$(this).find('td').eq(3).text()</code>. This returns values such as 85, 72, or 91 as text before they are converted into numbers for calculations or sorting. The same method can also be used to collect student names or course titles from the table without bringing along any HTML markup.</p>
+
+    <p>The <code>.val()</code> method is specifically for form controls such as input boxes, select menus, and text areas. In this assignment, it is used to read the values entered by the user in the Name, Course, and Grade input fields before appending a new row to the table. For example, <code>$nameInput.val()</code> gets the student name, while <code>$gradeInput.val('')</code> clears the grade box after the new row has been added successfully. This makes <code>.val()</code> the correct method whenever the source of data is a form element rather than a normal paragraph, div, or table cell.</p>
+
+    <p>In summary, <code>.html()</code> is best for working with HTML structure, <code>.text()</code> is best for plain text content, and <code>.val()</code> is best for user-entered values in form elements. Together, these methods make the table manager interactive and allow the page to add rows, read table data, and display formatted output correctly.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Main Purpose</th>
+                <th>Example from the Assignment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>.html()</code></td>
+                <td>Reads or writes HTML markup inside an element.</td>
+                <td><code>$('#gradeOutput').html(...)</code> inserts the summary alert below the table.</td>
+            </tr>
+            <tr>
+                <td><code>.text()</code></td>
+                <td>Reads or writes plain visible text.</td>
+                <td><code>$(this).find('td').eq(3).text()</code> gets the grade from a table row.</td>
+            </tr>
+            <tr>
+                <td><code>.val()</code></td>
+                <td>Reads or writes the value of a form control.</td>
+                <td><code>$nameInput.val()</code> and <code>$gradeInput.val('')</code> handle user input fields.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

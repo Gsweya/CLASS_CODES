@@ -87,3 +87,6 @@ google-services.json
 
 # PHP
 vendor/
+
+# Nested git repos
+second_year_code/semester_two/CP 222 - Open Source/portfolio/kiwi/
